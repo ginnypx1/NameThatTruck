@@ -36,6 +36,7 @@ To zoom in on a photo, simply tap the photo, and all the photos change to a larg
 ## Technical Information
 
 The Flickr API can be found at: https://www.flickr.com/services/api/
+The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
 
 ## Improvements
 
@@ -52,4 +53,5 @@ To do:
 - Add a main menu screen to allow the user to select from four different version of the game: Emergency Trucks, Construction Trucks, City Trucks and All Trucks.
 - General design
 - Icon and launch screen design
+- Animated Transitions
 - Unit Testing
