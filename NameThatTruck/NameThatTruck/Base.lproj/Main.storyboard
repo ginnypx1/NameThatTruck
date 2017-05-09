@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XWE-kX-HXA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Name That Truck-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="GameViewController" customModule="NameThatTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-BQ-zyB">
+                                <rect key="frame" x="19" y="64" width="338" height="469.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcc-di-Z1S">
+                                    <size key="itemSize" width="159" height="151"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TruckViewCell" id="gZV-rj-dFL" customClass="TruckViewCell" customModule="NameThatTruck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="151"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="159" height="151"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-Ko-tVq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="159" height="151"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="GzM-Ko-tVq" firstAttribute="leading" secondItem="gZV-rj-dFL" secondAttribute="leading" id="2gT-XK-vaF"/>
+                                            <constraint firstAttribute="trailing" secondItem="GzM-Ko-tVq" secondAttribute="trailing" id="2zr-ED-4uR"/>
+                                            <constraint firstAttribute="bottom" secondItem="GzM-Ko-tVq" secondAttribute="bottom" id="6c3-HM-C8b"/>
+                                            <constraint firstItem="GzM-Ko-tVq" firstAttribute="top" secondItem="gZV-rj-dFL" secondAttribute="top" id="Duo-8o-ftf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="GzM-Ko-tVq" id="A7m-np-77g"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TYx-np-667"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Svp-Fc-nPB"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-KW-rdc">
+                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which truck is the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-8A-1Wd">
+                                <rect key="frame" x="0.0" y="533.5" width="375" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.125" id="3sL-O8-JCn"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pM-4I-ZVX"/>
+                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cx7-LG-5wk"/>
+                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="top" secondItem="a4C-8A-1Wd" secondAttribute="bottom" id="G63-gO-EOq"/>
+                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" id="GoI-Rp-URO"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MqL-ns-esK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yYZ-KW-rdc" secondAttribute="bottom" id="NcS-wJ-Syb"/>
+                            <constraint firstAttribute="trailing" secondItem="yYZ-KW-rdc" secondAttribute="trailing" id="Xh9-ma-8Vj"/>
+                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZVB-8O-0ch"/>
+                            <constraint firstAttribute="trailing" secondItem="a4C-8A-1Wd" secondAttribute="trailing" id="hzP-un-xcs"/>
+                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="xxy-1f-l3t"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="yAl-Vs-17z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Name That Truck" id="Hby-gi-njP"/>
+                    <connections>
+                        <outlet property="collectionView" destination="d0Q-BQ-zyB" id="Dw1-Va-QSI"/>
+                        <outlet property="flowLayout" destination="vcc-di-Z1S" id="t9I-l8-TwS"/>
+                        <outlet property="winningTruckLabel" destination="yYZ-KW-rdc" id="d1s-eU-6Rb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
+        </scene>
+        <!--Gif View Controller-->
+        <scene sceneID="EyY-c0-ZxG">
+            <objects>
+                <viewController storyboardIdentifier="GifViewController" id="CNw-7g-N74" customClass="GifViewController" customModule="NameThatTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQ6-65-nKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ogy-EW-8xl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z0T-1h-peM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csH-cu-iNa">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="csH-cu-iNa" secondAttribute="height" multiplier="1:1" id="HqJ-Y9-Xqx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjY-xc-ykV">
+                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="See More Trucks!">
+                                    <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeMoreTrucks:" destination="CNw-7g-N74" eventType="touchUpInside" id="qlx-Fz-Cf2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YjY-xc-ykV" secondAttribute="trailing" id="4Ma-N3-m9R"/>
+                            <constraint firstItem="YjY-xc-ykV" firstAttribute="leading" secondItem="z0T-1h-peM" secondAttribute="leading" id="A89-YG-VfD"/>
+                            <constraint firstItem="csH-cu-iNa" firstAttribute="centerY" secondItem="z0T-1h-peM" secondAttribute="centerY" id="P1g-zv-mto"/>
+                            <constraint firstItem="YjY-xc-ykV" firstAttribute="height" secondItem="z0T-1h-peM" secondAttribute="height" multiplier="0.125" id="RM9-aQ-0UP"/>
+                            <constraint firstItem="csH-cu-iNa" firstAttribute="centerX" secondItem="z0T-1h-peM" secondAttribute="centerX" id="hbg-5L-1Xl"/>
+                            <constraint firstItem="ogy-EW-8xl" firstAttribute="top" secondItem="YjY-xc-ykV" secondAttribute="bottom" id="rKl-Gr-pWD"/>
+                            <constraint firstItem="csH-cu-iNa" firstAttribute="width" secondItem="z0T-1h-peM" secondAttribute="width" id="v9e-Ya-WHF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="csH-cu-iNa" id="6o2-sd-cPl"/>
+                        <outlet property="moreTrucksButton" destination="YjY-xc-ykV" id="A8c-Lk-Ek5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grd-Gw-ZrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xEa-k2-uwT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWE-kX-HXA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rCd-st-lDh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BxL-ND-ogT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewr-Di-rhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="139"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="eH2-SR-tgg">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" automaticallyAdjustsScrollViewInsets="NO" id="UIM-WZ-d0O" customClass="PhotoViewController" customModule="NameThatTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JEO-76-Xe7"/>
+                        <viewControllerLayoutGuide type="bottom" id="J9r-3z-f0i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7or-Vr-5Uz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j47-H5-vQi">
+                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="See More Trucks!">
+                                    <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="importNewPhotos:" destination="UIM-WZ-d0O" eventType="touchUpInside" id="3fJ-VR-M6w"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-dt-Q8u">
+                                <rect key="frame" x="0.0" y="20" width="375" height="563.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B0S-ln-gyK">
+                                    <size key="itemSize" width="178" height="182"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoViewCell" id="WWd-NE-FY0" customClass="PhotoViewCell" customModule="NameThatTruck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="182"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1r1-z2-zTn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="182"/>
+                                                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zid-La-9JP">
+                                                    <rect key="frame" x="71" y="73" width="37" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="37" id="iR4-iN-sbd"/>
+                                                        <constraint firstAttribute="height" constant="37" id="uvI-aH-ETc"/>
+                                                    </constraints>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1r1-z2-zTn" firstAttribute="top" secondItem="WWd-NE-FY0" secondAttribute="top" id="Hpi-vc-aIS"/>
+                                            <constraint firstAttribute="bottom" secondItem="1r1-z2-zTn" secondAttribute="bottom" id="PCL-X9-wlL"/>
+                                            <constraint firstItem="zid-La-9JP" firstAttribute="centerY" secondItem="WWd-NE-FY0" secondAttribute="centerY" id="SDN-pl-b8M"/>
+                                            <constraint firstAttribute="trailing" secondItem="1r1-z2-zTn" secondAttribute="trailing" id="em3-JT-tYN"/>
+                                            <constraint firstItem="zid-La-9JP" firstAttribute="centerX" secondItem="WWd-NE-FY0" secondAttribute="centerX" id="iy6-Ef-z0E"/>
+                                            <constraint firstItem="1r1-z2-zTn" firstAttribute="leading" secondItem="WWd-NE-FY0" secondAttribute="leading" id="uE7-L6-Et9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="1r1-z2-zTn" id="tbk-ud-ZyZ"/>
+                                            <outlet property="spinner" destination="zid-La-9JP" id="1P9-Bz-Nly"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="UIM-WZ-d0O" id="8aA-B3-IcI"/>
+                                    <outlet property="delegate" destination="UIM-WZ-d0O" id="ZCs-FC-4Fa"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No images were found." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-Lj-dSa">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fLB-dt-Q8u" secondAttribute="trailing" id="92O-BG-N3A"/>
+                            <constraint firstItem="fLB-dt-Q8u" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leading" id="ANG-EB-je2"/>
+                            <constraint firstItem="Qkn-Lj-dSa" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leadingMargin" id="CoZ-ZC-we6"/>
+                            <constraint firstItem="fLB-dt-Q8u" firstAttribute="top" secondItem="JEO-76-Xe7" secondAttribute="bottom" id="H5W-6P-Kq9"/>
+                            <constraint firstItem="j47-H5-vQi" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leading" id="SPe-E6-rAX"/>
+                            <constraint firstItem="Qkn-Lj-dSa" firstAttribute="centerX" secondItem="7or-Vr-5Uz" secondAttribute="centerX" id="SkR-CT-6FR"/>
+                            <constraint firstItem="Qkn-Lj-dSa" firstAttribute="centerY" secondItem="7or-Vr-5Uz" secondAttribute="centerY" id="UB7-TF-tX4"/>
+                            <constraint firstItem="j47-H5-vQi" firstAttribute="top" secondItem="fLB-dt-Q8u" secondAttribute="bottom" id="Xnh-cr-5FO"/>
+                            <constraint firstItem="J9r-3z-f0i" firstAttribute="top" secondItem="j47-H5-vQi" secondAttribute="bottom" id="bQh-Qz-eJf"/>
+                            <constraint firstItem="j47-H5-vQi" firstAttribute="height" secondItem="7or-Vr-5Uz" secondAttribute="height" multiplier="0.125" id="dxS-cg-ErX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qkn-Lj-dSa" secondAttribute="trailing" id="ij9-ze-vvF"/>
+                            <constraint firstAttribute="trailing" secondItem="j47-H5-vQi" secondAttribute="trailing" id="nez-8a-yxU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionButton" destination="j47-H5-vQi" id="Ocw-3u-bFr"/>
+                        <outlet property="collectionView" destination="fLB-dt-Q8u" id="ltR-EN-1b5"/>
+                        <outlet property="flowLayout" destination="B0S-ln-gyK" id="O9d-dG-Gzh"/>
+                        <outlet property="noImagesLabel" destination="Qkn-Lj-dSa" id="Cz2-Ff-hQh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1RH-tk-LVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464.8000000000002" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

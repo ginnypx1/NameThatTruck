@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047D31EC23F1E00F8F395 /* AppDelegate.swift */; };
+		349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349047D71EC23F1E00F8F395 /* Main.storyboard */; };
+		349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349047DA1EC23F1E00F8F395 /* Assets.xcassets */; };
+		349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */; };
+		349047E91EC240C700F8F395 /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047E81EC240C700F8F395 /* TruckModel.swift */; };
+		349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */; };
+		349047ED1EC240FA00F8F395 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047EC1EC240FA00F8F395 /* GameModel.swift */; };
+		349047F21EC2413800F8F395 /* FlickrRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F11EC2413800F8F395 /* FlickrRequestModel.swift */; };
+		349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F31EC2414100F8F395 /* FlickrClient.swift */; };
+		349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F51EC2414A00F8F395 /* FlickrConvenience.swift */; };
+		349047F91EC2419700F8F395 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F81EC2419700F8F395 /* GameViewController.swift */; };
+		349047FB1EC241A000F8F395 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FA1EC241A000F8F395 /* GifViewController.swift */; };
+		349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FC1EC241AB00F8F395 /* PhotoViewController.swift */; };
+		349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FF1EC241F700F8F395 /* ActivityIndicator.swift */; };
+		349048021EC2420100F8F395 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048011EC2420100F8F395 /* Alerts.swift */; };
+		349048041EC2420900F8F395 /* CollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048031EC2420900F8F395 /* CollectionFlowLayout.swift */; };
+		349048061EC2421200F8F395 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048051EC2421200F8F395 /* PhotoViewCell.swift */; };
+		349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048071EC2421A00F8F395 /* TruckViewCell.swift */; };
+		3490480B1EC2424400F8F395 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490480A1EC2424400F8F395 /* Private.swift */; };
+		3490480D1EC2424C00F8F395 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490480C1EC2424C00F8F395 /* Reachability.swift */; };
+		349048111EC2475900F8F395 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3490480F1EC2475900F8F395 /* Model.xcdatamodeld */; };
+		349048161EC2481E00F8F395 /* TruckType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048121EC2481E00F8F395 /* TruckType+CoreDataClass.swift */; };
+		349048171EC2481E00F8F395 /* TruckType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048131EC2481E00F8F395 /* TruckType+CoreDataProperties.swift */; };
+		349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */; };
+		349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */; };
+		3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490481A1EC2488200F8F395 /* CoreDataStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		349047D01EC23F1E00F8F395 /* NameThatTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameThatTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		349047D31EC23F1E00F8F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		349047D81EC23F1E00F8F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		349047DA1EC23F1E00F8F395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		349047DD1EC23F1E00F8F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		349047DF1EC23F1E00F8F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349047E81EC240C700F8F395 /* TruckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckModel.swift; sourceTree = "<group>"; };
+		349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructionTrucks.swift; sourceTree = "<group>"; };
+		349047EC1EC240FA00F8F395 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		349047F11EC2413800F8F395 /* FlickrRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrRequestModel.swift; sourceTree = "<group>"; };
+		349047F31EC2414100F8F395 /* FlickrClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
+		349047F51EC2414A00F8F395 /* FlickrConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrConvenience.swift; sourceTree = "<group>"; };
+		349047F81EC2419700F8F395 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		349047FA1EC241A000F8F395 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		349047FC1EC241AB00F8F395 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		349047FF1EC241F700F8F395 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		349048011EC2420100F8F395 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		349048031EC2420900F8F395 /* CollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFlowLayout.swift; sourceTree = "<group>"; };
+		349048051EC2421200F8F395 /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		349048071EC2421A00F8F395 /* TruckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckViewCell.swift; sourceTree = "<group>"; };
+		3490480A1EC2424400F8F395 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		3490480C1EC2424C00F8F395 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		349048101EC2475900F8F395 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		349048121EC2481E00F8F395 /* TruckType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TruckType+CoreDataClass.swift"; path = "../TruckType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		349048131EC2481E00F8F395 /* TruckType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TruckType+CoreDataProperties.swift"; path = "../TruckType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataClass.swift"; path = "../FlickrPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataProperties.swift"; path = "../FlickrPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3490481A1EC2488200F8F395 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		349047CD1EC23F1E00F8F395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		349047C71EC23F1E00F8F395 = {
+			isa = PBXGroup;
+			children = (
+				349047D21EC23F1E00F8F395 /* NameThatTruck */,
+				349047D11EC23F1E00F8F395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		349047D11EC23F1E00F8F395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349047D01EC23F1E00F8F395 /* NameThatTruck.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		349047D21EC23F1E00F8F395 /* NameThatTruck */ = {
+			isa = PBXGroup;
+			children = (
+				349047D31EC23F1E00F8F395 /* AppDelegate.swift */,
+				349047E51EC23F8700F8F395 /* Models */,
+				349047F01EC2412300F8F395 /* Client */,
+				349047F71EC2418300F8F395 /* Controllers */,
+				349047FE1EC241DE00F8F395 /* View */,
+				3490480E1EC2425300F8F395 /* Assets */,
+				349048091EC2423200F8F395 /* SupportingFiles */,
+			);
+			path = NameThatTruck;
+			sourceTree = "<group>";
+		};
+		349047E51EC23F8700F8F395 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				349047E81EC240C700F8F395 /* TruckModel.swift */,
+				349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */,
+				349047EC1EC240FA00F8F395 /* GameModel.swift */,
+				3490481A1EC2488200F8F395 /* CoreDataStack.swift */,
+				3490480F1EC2475900F8F395 /* Model.xcdatamodeld */,
+				349048121EC2481E00F8F395 /* TruckType+CoreDataClass.swift */,
+				349048131EC2481E00F8F395 /* TruckType+CoreDataProperties.swift */,
+				349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */,
+				349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		349047F01EC2412300F8F395 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				349047F11EC2413800F8F395 /* FlickrRequestModel.swift */,
+				349047F31EC2414100F8F395 /* FlickrClient.swift */,
+				349047F51EC2414A00F8F395 /* FlickrConvenience.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		349047F71EC2418300F8F395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				349047F81EC2419700F8F395 /* GameViewController.swift */,
+				349047FA1EC241A000F8F395 /* GifViewController.swift */,
+				349047FC1EC241AB00F8F395 /* PhotoViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		349047FE1EC241DE00F8F395 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				349047FF1EC241F700F8F395 /* ActivityIndicator.swift */,
+				349048011EC2420100F8F395 /* Alerts.swift */,
+				349048031EC2420900F8F395 /* CollectionFlowLayout.swift */,
+				349048051EC2421200F8F395 /* PhotoViewCell.swift */,
+				349048071EC2421A00F8F395 /* TruckViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		349048091EC2423200F8F395 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				349047DF1EC23F1E00F8F395 /* Info.plist */,
+				3490480A1EC2424400F8F395 /* Private.swift */,
+				3490480C1EC2424C00F8F395 /* Reachability.swift */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3490480E1EC2425300F8F395 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				349047D71EC23F1E00F8F395 /* Main.storyboard */,
+				349047DA1EC23F1E00F8F395 /* Assets.xcassets */,
+				349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		349047CF1EC23F1E00F8F395 /* NameThatTruck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349047E21EC23F1E00F8F395 /* Build configuration list for PBXNativeTarget "NameThatTruck" */;
+			buildPhases = (
+				349047CC1EC23F1E00F8F395 /* Sources */,
+				349047CD1EC23F1E00F8F395 /* Frameworks */,
+				349047CE1EC23F1E00F8F395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NameThatTruck;
+			productName = NameThatTruck;
+			productReference = 349047D01EC23F1E00F8F395 /* NameThatTruck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		349047C81EC23F1E00F8F395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GhostBirdGames;
+				TargetAttributes = {
+					349047CF1EC23F1E00F8F395 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 349047CB1EC23F1E00F8F395 /* Build configuration list for PBXProject "NameThatTruck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 349047C71EC23F1E00F8F395;
+			productRefGroup = 349047D11EC23F1E00F8F395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				349047CF1EC23F1E00F8F395 /* NameThatTruck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349047CE1EC23F1E00F8F395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
+				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
+				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		349047CC1EC23F1E00F8F395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349047F21EC2413800F8F395 /* FlickrRequestModel.swift in Sources */,
+				3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */,
+				349048061EC2421200F8F395 /* PhotoViewCell.swift in Sources */,
+				349047ED1EC240FA00F8F395 /* GameModel.swift in Sources */,
+				3490480B1EC2424400F8F395 /* Private.swift in Sources */,
+				349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */,
+				349048111EC2475900F8F395 /* Model.xcdatamodeld in Sources */,
+				349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */,
+				349048161EC2481E00F8F395 /* TruckType+CoreDataClass.swift in Sources */,
+				3490480D1EC2424C00F8F395 /* Reachability.swift in Sources */,
+				349047F91EC2419700F8F395 /* GameViewController.swift in Sources */,
+				349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */,
+				349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */,
+				349047E91EC240C700F8F395 /* TruckModel.swift in Sources */,
+				349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */,
+				349047FB1EC241A000F8F395 /* GifViewController.swift in Sources */,
+				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
+				349048021EC2420100F8F395 /* Alerts.swift in Sources */,
+				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
+				349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */,
+				349048041EC2420900F8F395 /* CollectionFlowLayout.swift in Sources */,
+				349048171EC2481E00F8F395 /* TruckType+CoreDataProperties.swift in Sources */,
+				349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		349047D71EC23F1E00F8F395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349047D81EC23F1E00F8F395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349047DD1EC23F1E00F8F395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		349047E01EC23F1E00F8F395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		349047E11EC23F1E00F8F395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		349047E31EC23F1E00F8F395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = NameThatTruck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.NameThatTruck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		349047E41EC23F1E00F8F395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = NameThatTruck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.NameThatTruck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349047CB1EC23F1E00F8F395 /* Build configuration list for PBXProject "NameThatTruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349047E01EC23F1E00F8F395 /* Debug */,
+				349047E11EC23F1E00F8F395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349047E21EC23F1E00F8F395 /* Build configuration list for PBXNativeTarget "NameThatTruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349047E31EC23F1E00F8F395 /* Debug */,
+				349047E41EC23F1E00F8F395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3490480F1EC2475900F8F395 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				349048101EC2475900F8F395 /* Model.xcdatamodel */,
+			);
+			currentVersion = 349048101EC2475900F8F395 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 349047C81EC23F1E00F8F395 /* Project object */;
+}
