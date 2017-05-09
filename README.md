@@ -35,8 +35,8 @@ To zoom in on a photo, simply tap the photo, and all the photos change to a larg
 
 ## Technical Information
 
-The Flickr API can be found at: https://www.flickr.com/services/api/
-The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
+- The Flickr API can be found at: https://www.flickr.com/services/api/
+- The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
 
 ## Improvements
 
@@ -44,13 +44,15 @@ The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
 
 Already built:
 - A simple version of "Name That Truck" using a set of construction trucks.
-- Selecting the correct truck shows you a new screen with a gif of that truck working.
+- Selecting the correct truck shows you a new screen with a close-up of that truck working.
+- From the close-up picture of the truck, you can select **See More Trucks!** and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
 
 To do:
-- Add the segue to the truck photos and the call to the Flickr API.
-- Persist the photos for each truck in Core Data to allow toddlers to enjoy the app in an offline mode.
+- Segue from the photo view all the way back to the main game, skipping the interim video view.
 - Add the audio prompts
+- Add a soundtrack to the menu screen
 - Add a main menu screen to allow the user to select from four different version of the game: Emergency Trucks, Construction Trucks, City Trucks and All Trucks.
+- Return SwiftyGif and the gifs into the mix
 - General design
 - Icon and launch screen design
 - Animated Transitions
