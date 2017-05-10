@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-BQ-zyB">
-                                <rect key="frame" x="19" y="64" width="338" height="469.5"/>
+                                <rect key="frame" x="19" y="72" width="338" height="461.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcc-di-Z1S">
                                     <size key="itemSize" width="159" height="151"/>
@@ -82,7 +81,7 @@
                             <constraint firstItem="yYZ-KW-rdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cx7-LG-5wk"/>
                             <constraint firstItem="yYZ-KW-rdc" firstAttribute="top" secondItem="a4C-8A-1Wd" secondAttribute="bottom" id="G63-gO-EOq"/>
                             <constraint firstItem="a4C-8A-1Wd" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" id="GoI-Rp-URO"/>
-                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MqL-ns-esK"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MqL-ns-esK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yYZ-KW-rdc" secondAttribute="bottom" id="NcS-wJ-Syb"/>
                             <constraint firstAttribute="trailing" secondItem="yYZ-KW-rdc" secondAttribute="trailing" id="Xh9-ma-8Vj"/>
                             <constraint firstItem="a4C-8A-1Wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZVB-8O-0ch"/>
@@ -101,55 +100,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
-        </scene>
-        <!--Gif View Controller-->
-        <scene sceneID="EyY-c0-ZxG">
-            <objects>
-                <viewController storyboardIdentifier="GifViewController" id="CNw-7g-N74" customClass="GifViewController" customModule="NameThatTruck" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tQ6-65-nKb"/>
-                        <viewControllerLayoutGuide type="bottom" id="ogy-EW-8xl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="z0T-1h-peM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csH-cu-iNa">
-                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="csH-cu-iNa" secondAttribute="height" multiplier="1:1" id="HqJ-Y9-Xqx"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjY-xc-ykV">
-                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <state key="normal" title="See More Trucks!">
-                                    <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="seeMoreTrucks:" destination="CNw-7g-N74" eventType="touchUpInside" id="qlx-Fz-Cf2"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YjY-xc-ykV" secondAttribute="trailing" id="4Ma-N3-m9R"/>
-                            <constraint firstItem="YjY-xc-ykV" firstAttribute="leading" secondItem="z0T-1h-peM" secondAttribute="leading" id="A89-YG-VfD"/>
-                            <constraint firstItem="csH-cu-iNa" firstAttribute="centerY" secondItem="z0T-1h-peM" secondAttribute="centerY" id="P1g-zv-mto"/>
-                            <constraint firstItem="YjY-xc-ykV" firstAttribute="height" secondItem="z0T-1h-peM" secondAttribute="height" multiplier="0.125" id="RM9-aQ-0UP"/>
-                            <constraint firstItem="csH-cu-iNa" firstAttribute="centerX" secondItem="z0T-1h-peM" secondAttribute="centerX" id="hbg-5L-1Xl"/>
-                            <constraint firstItem="ogy-EW-8xl" firstAttribute="top" secondItem="YjY-xc-ykV" secondAttribute="bottom" id="rKl-Gr-pWD"/>
-                            <constraint firstItem="csH-cu-iNa" firstAttribute="width" secondItem="z0T-1h-peM" secondAttribute="width" id="v9e-Ya-WHF"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="csH-cu-iNa" id="6o2-sd-cPl"/>
-                        <outlet property="moreTrucksButton" destination="YjY-xc-ykV" id="A8c-Lk-Ek5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="grd-Gw-ZrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1792.8" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xEa-k2-uwT">
@@ -272,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RH-tk-LVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2464.8000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1770" y="139"/>
         </scene>
     </scenes>
 </document>

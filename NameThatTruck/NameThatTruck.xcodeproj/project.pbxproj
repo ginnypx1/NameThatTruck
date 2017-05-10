@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
+		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
 		349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047D31EC23F1E00F8F395 /* AppDelegate.swift */; };
 		349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349047D71EC23F1E00F8F395 /* Main.storyboard */; };
 		349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349047DA1EC23F1E00F8F395 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F31EC2414100F8F395 /* FlickrClient.swift */; };
 		349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F51EC2414A00F8F395 /* FlickrConvenience.swift */; };
 		349047F91EC2419700F8F395 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047F81EC2419700F8F395 /* GameViewController.swift */; };
-		349047FB1EC241A000F8F395 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FA1EC241A000F8F395 /* GifViewController.swift */; };
 		349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FC1EC241AB00F8F395 /* PhotoViewController.swift */; };
 		349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047FF1EC241F700F8F395 /* ActivityIndicator.swift */; };
 		349048021EC2420100F8F395 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048011EC2420100F8F395 /* Alerts.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
+		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
 		349047D01EC23F1E00F8F395 /* NameThatTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameThatTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349047D31EC23F1E00F8F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349047D81EC23F1E00F8F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		349047F31EC2414100F8F395 /* FlickrClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
 		349047F51EC2414A00F8F395 /* FlickrConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrConvenience.swift; sourceTree = "<group>"; };
 		349047F81EC2419700F8F395 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		349047FA1EC241A000F8F395 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		349047FC1EC241AB00F8F395 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		349047FF1EC241F700F8F395 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		349048011EC2420100F8F395 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -137,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				349047F81EC2419700F8F395 /* GameViewController.swift */,
-				349047FA1EC241A000F8F395 /* GifViewController.swift */,
+				345353A01EC3BE4F007D9021 /* PopdownView.swift */,
 				349047FC1EC241AB00F8F395 /* PhotoViewController.swift */,
 			);
 			name = Controllers;
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				349047D71EC23F1E00F8F395 /* Main.storyboard */,
+				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
 				349047DA1EC23F1E00F8F395 /* Assets.xcassets */,
 				349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */,
 			);
@@ -237,6 +240,7 @@
 			files = (
 				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
 				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
+				3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +258,7 @@
 				349047ED1EC240FA00F8F395 /* GameModel.swift in Sources */,
 				3490480B1EC2424400F8F395 /* Private.swift in Sources */,
 				349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */,
+				345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */,
 				349048111EC2475900F8F395 /* Model.xcdatamodeld in Sources */,
 				349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */,
 				349048161EC2481E00F8F395 /* TruckType+CoreDataClass.swift in Sources */,
@@ -263,7 +268,6 @@
 				349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */,
 				349047E91EC240C700F8F395 /* TruckModel.swift in Sources */,
 				349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */,
-				349047FB1EC241A000F8F395 /* GifViewController.swift in Sources */,
 				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
 				349048021EC2420100F8F395 /* Alerts.swift in Sources */,
 				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
