@@ -33,8 +33,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewWillAppear(true)
         // start a new game
         createGameBoard()
-        // check for truck entry in core data
-        checkForTruckType()
     }
     
     // MARK: - Create Game Board
@@ -51,33 +49,33 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // load the collection view
         fitCollectionFlowToSize(self.view.frame.size)
         collectionView.reloadData()
+        
+        // check for truck entry in core data
+        checkForTruckType()
     }
     
     // MARK: - TruckType Entity
     
     func checkForTruckType() {
         // if selected truck type can't be retrieved, one is created
-        let truckTypeFetchRequest = NSFetchRequest<TruckType>(entityName: "TruckType")
-        let predicate = NSPredicate(format: "name == %@", argumentArray: [self.winningTruck.name])
-        truckTypeFetchRequest.predicate = predicate
-        do {
-            let selectedTruck = try self.delegate.stack.context.fetch(truckTypeFetchRequest)
-            if selectedTruck.count != 0 {
-                print("Retrieved \(selectedTruck[0]) from core data.")
-            } else {
-                print("No truck type found. Creating new core data object.")
-                self.delegate.stack.addTruckTypeToDatabase(name: self.winningTruck.name)
-            }
-        } catch {
-            print("There was an error fetching the truck type from core data.")
+        if let truckExists = self.delegate.stack.fetchTruckType(name: self.winningTruck.name) {
+            print("Retrieved \(String(describing: truckExists.name)) from core data.")
+        } else {
+            print("No truck type found. Creating new core data object.")
+            self.delegate.stack.addTruckTypeToDatabase(name: self.winningTruck.name)
         }
-        // if selected truck type can't be retrieved, one is created
-//        if let truckRecord = self.delegate.stack.fetchTruckType(name: self.winningTruck.name) {
-//            print("Retrieved \(String(describing: truckRecord.name)) from core data.")
-//        } else {
-//            print("No truck type found. Creating new core data object.")
-//            self.delegate.stack.addTruckTypeToDatabase(name: self.winningTruck.name)
-//        }
+    }
+    
+    // MARK: - Animations
+    
+    func bounceTruck(cell: UICollectionViewCell, duration: TimeInterval, scale: CGFloat) {
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+            cell.transform = CGAffineTransform(scaleX: scale, y: scale)
+        }, completion: { finished in
+            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+                cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+            },completion: nil)
+        })
     }
     
     // MARK: - Collection View Delegate
@@ -100,13 +98,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let truckImage = truck.image
         cell.imageView.image = truckImage
         
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            cell.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                cell.transform = CGAffineTransform(scaleX: 1, y: 1)
-            },completion: nil)
-        })
+        bounceTruck(cell: cell, duration: 0.5, scale: 0.5)
         
         return cell
     }
@@ -115,13 +107,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // animates a bounce effect when the user presses the truck
         let cell = collectionView.cellForItem(at: indexPath)
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            cell!.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                cell!.transform = CGAffineTransform(scaleX: 1, y: 1)
-            },completion: nil)
-        })
+        
+        bounceTruck(cell: cell!, duration: 0.3, scale: 0.9)
         
         // check to see if user selected the winning truck
         let selectedTruck = gameTrucks[indexPath.row]
@@ -139,8 +126,11 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             
             // create black background
             self.createBlackBackground()
-            // show popdown view with animated gif
+            // popdown view slides in from top of screen
             self.addPopdownView()
+            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+                self.popdownView.center.y += 900
+            }, completion: nil)
             
         // if guess is incorrect, say name of truck and ask the question again
         } else {
@@ -157,8 +147,11 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if (self.popdownView != nil) {
             self.popdownView.view.removeFromSuperview()
         }
+        // get the height and width proportions of the view
+        let viewWidth = (self.view.frame.size.width * 0.8)
+        let viewHeight = (self.view.frame.size.height * 0.66)
         // create the popdown view
-        self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-325)/2 , y: 100, width: 325, height: 450))
+        self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
         self.popdownView.imageView.image = winningTruck.image
         self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
@@ -166,9 +159,14 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func backButtonPressed(sender: UIButton) {
-        // remove the superviews and start a new game
-        removeSuperviews()
-        createGameBoard()
+        // slide popup view up off screen
+        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+            self.popdownView.center.y -= 900
+        }, completion: { finished in
+            // remove the superviews and start a new game
+            self.removeSuperviews()
+            self.createGameBoard()
+        })
     }
     
     func moreTrucksButtonPressed(sender: UIButton) {

@@ -91,10 +91,15 @@ struct CoreDataStack {
         truckTypeFetchRequest.predicate = predicate
         do {
             let selectedTruck = try self.context.fetch(truckTypeFetchRequest)
-            print("Retrieved \(selectedTruck[0]) from core data.")
-            return selectedTruck[0]
+            if selectedTruck.count != 0 {
+                print("Retrieved \(selectedTruck[0]) from core data.")
+                return selectedTruck[0]
+            } else {
+                print("No truck type found in core data.")
+                return nil
+            }
         } catch {
-            print("No truck type found. Creating new core data object.")
+            print("Fetch request for truck type could not be completed.")
             return nil
         }
     }
