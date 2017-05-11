@@ -34,6 +34,18 @@
 		349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */; };
 		349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */; };
 		3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490481A1EC2488200F8F395 /* CoreDataStack.swift */; };
+		34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */; };
+		34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDB1EC51259003E4A19 /* bulldozer.gif */; };
+		34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */; };
+		34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDD1EC51259003E4A19 /* crane-truck.gif */; };
+		34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDE1EC51259003E4A19 /* dump-truck.gif */; };
+		34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDF1EC51259003E4A19 /* excavator.gif */; };
+		34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE01EC51259003E4A19 /* forklift.gif */; };
+		34ADEEED1EC51259003E4A19 /* grader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE11EC51259003E4A19 /* grader.gif */; };
+		34ADEEEE1EC51259003E4A19 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE21EC51259003E4A19 /* loader.gif */; };
+		34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE31EC51259003E4A19 /* paver.gif */; };
+		34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE41EC51259003E4A19 /* skid-steer.gif */; };
+		34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE51EC51259003E4A19 /* steamroller.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +78,18 @@
 		349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataClass.swift"; path = "../FlickrPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
 		349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataProperties.swift"; path = "../FlickrPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3490481A1EC2488200F8F395 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backhoe-loader.gif"; sourceTree = "<group>"; };
+		34ADEEDB1EC51259003E4A19 /* bulldozer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bulldozer.gif; sourceTree = "<group>"; };
+		34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cement-mixer.gif"; sourceTree = "<group>"; };
+		34ADEEDD1EC51259003E4A19 /* crane-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "crane-truck.gif"; sourceTree = "<group>"; };
+		34ADEEDE1EC51259003E4A19 /* dump-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dump-truck.gif"; sourceTree = "<group>"; };
+		34ADEEDF1EC51259003E4A19 /* excavator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = excavator.gif; sourceTree = "<group>"; };
+		34ADEEE01EC51259003E4A19 /* forklift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = forklift.gif; sourceTree = "<group>"; };
+		34ADEEE11EC51259003E4A19 /* grader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grader.gif; sourceTree = "<group>"; };
+		34ADEEE21EC51259003E4A19 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		34ADEEE31EC51259003E4A19 /* paver.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paver.gif; sourceTree = "<group>"; };
+		34ADEEE41EC51259003E4A19 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
+		34ADEEE51EC51259003E4A19 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,15 +136,9 @@
 		349047E51EC23F8700F8F395 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				349047E81EC240C700F8F395 /* TruckModel.swift */,
-				349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */,
+				34ADEEF31EC51282003E4A19 /* CoreData */,
+				34ADEEF21EC5126F003E4A19 /* Trucks */,
 				349047EC1EC240FA00F8F395 /* GameModel.swift */,
-				3490481A1EC2488200F8F395 /* CoreDataStack.swift */,
-				3490480F1EC2475900F8F395 /* Model.xcdatamodeld */,
-				349048121EC2481E00F8F395 /* TruckType+CoreDataClass.swift */,
-				349048131EC2481E00F8F395 /* TruckType+CoreDataProperties.swift */,
-				349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */,
-				349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -170,12 +188,54 @@
 		3490480E1EC2425300F8F395 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				34ADEED91EC5123C003E4A19 /* GIFs */,
 				349047D71EC23F1E00F8F395 /* Main.storyboard */,
 				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
 				349047DA1EC23F1E00F8F395 /* Assets.xcassets */,
 				349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		34ADEED91EC5123C003E4A19 /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */,
+				34ADEEDB1EC51259003E4A19 /* bulldozer.gif */,
+				34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */,
+				34ADEEDD1EC51259003E4A19 /* crane-truck.gif */,
+				34ADEEDE1EC51259003E4A19 /* dump-truck.gif */,
+				34ADEEDF1EC51259003E4A19 /* excavator.gif */,
+				34ADEEE01EC51259003E4A19 /* forklift.gif */,
+				34ADEEE11EC51259003E4A19 /* grader.gif */,
+				34ADEEE21EC51259003E4A19 /* loader.gif */,
+				34ADEEE31EC51259003E4A19 /* paver.gif */,
+				34ADEEE41EC51259003E4A19 /* skid-steer.gif */,
+				34ADEEE51EC51259003E4A19 /* steamroller.gif */,
+			);
+			name = GIFs;
+			sourceTree = "<group>";
+		};
+		34ADEEF21EC5126F003E4A19 /* Trucks */ = {
+			isa = PBXGroup;
+			children = (
+				349047E81EC240C700F8F395 /* TruckModel.swift */,
+				349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */,
+			);
+			name = Trucks;
+			sourceTree = "<group>";
+		};
+		34ADEEF31EC51282003E4A19 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3490481A1EC2488200F8F395 /* CoreDataStack.swift */,
+				3490480F1EC2475900F8F395 /* Model.xcdatamodeld */,
+				349048121EC2481E00F8F395 /* TruckType+CoreDataClass.swift */,
+				349048131EC2481E00F8F395 /* TruckType+CoreDataProperties.swift */,
+				349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */,
+				349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +298,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */,
 				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
+				34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */,
+				34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */,
+				34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */,
+				34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */,
 				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
+				34ADEEED1EC51259003E4A19 /* grader.gif in Resources */,
+				34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */,
+				34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */,
 				3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */,
+				34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
+				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
+				34ADEEEE1EC51259003E4A19 /* loader.gif in Resources */,
+				34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

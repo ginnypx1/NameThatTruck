@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "crane-truck.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "crane-truck-cutout-sm.jpg",
+      "filename" : "crane-truck@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "crane-truck@3x.png",
       "scale" : "3x"
     }
   ],
