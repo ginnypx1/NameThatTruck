@@ -46,6 +46,7 @@
 		34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE31EC51259003E4A19 /* paver.gif */; };
 		34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE41EC51259003E4A19 /* skid-steer.gif */; };
 		34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE51EC51259003E4A19 /* steamroller.gif */; };
+		34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		34ADEEE31EC51259003E4A19 /* paver.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paver.gif; sourceTree = "<group>"; };
 		34ADEEE41EC51259003E4A19 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
 		34ADEEE51EC51259003E4A19 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
+		34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTrucks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			children = (
 				349047E81EC240C700F8F395 /* TruckModel.swift */,
 				349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */,
+				34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */,
 			);
 			name = Trucks;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				349047F21EC2413800F8F395 /* FlickrRequestModel.swift in Sources */,
 				3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */,
 				349048061EC2421200F8F395 /* PhotoViewCell.swift in Sources */,
+				34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */,
 				349047ED1EC240FA00F8F395 /* GameModel.swift in Sources */,
 				3490480B1EC2424400F8F395 /* Private.swift in Sources */,
 				349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */,
