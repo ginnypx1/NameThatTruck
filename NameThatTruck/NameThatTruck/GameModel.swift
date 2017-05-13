@@ -14,8 +14,8 @@ struct Game {
     // MARK: - Methods
     
     // generate a set of random trucks
-    func generateGameSet() -> [Truck] {
-        var shuffledTrucks = shuffle(trucks: allConstructionTrucks)
+    func generateGameSet(withTrucks truckSet: [Truck]) -> [Truck] {
+        var shuffledTrucks = shuffle(trucks: truckSet)
         var gameTrucks: [Truck] = []
         for i in 0...5 {
             let truck = shuffledTrucks[i]

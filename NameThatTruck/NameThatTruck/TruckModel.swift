@@ -13,6 +13,8 @@ import UIKit
 
 class Truck {
     
+    static let allTrucks: [Truck] = allConstructionTrucks + allEmergencyTrucks
+    
     let name: String
     let displayName: String
     let image: UIImage?

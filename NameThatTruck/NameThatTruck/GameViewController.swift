@@ -24,6 +24,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var popdownView: PopdownView!
     var blackoutView: UIView!
 
+    var truckSet: [Truck]!
     var gameTrucks: [Truck]!
     var winningTruck: Truck!
     
@@ -40,7 +41,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func createGameBoard() {
         // start a new game
         let game = Game()
-        gameTrucks = game.generateGameSet()
+        gameTrucks = game.generateGameSet(withTrucks: self.truckSet)
         winningTruck = game.chooseWinner(from: self.gameTrucks)
         
         // put the name of the selected truck in winningTruckLabel

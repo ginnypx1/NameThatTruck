@@ -47,6 +47,8 @@
 		34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE41EC51259003E4A19 /* skid-steer.gif */; };
 		34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE51EC51259003E4A19 /* steamroller.gif */; };
 		34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */; };
+		34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1E1EC788F50091CC2A /* MenuViewController.swift */; };
+		34C13C211EC78BC80091CC2A /* CityTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C201EC78BC80091CC2A /* CityTrucks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		34ADEEE41EC51259003E4A19 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
 		34ADEEE51EC51259003E4A19 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
 		34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTrucks.swift; sourceTree = "<group>"; };
+		34C13C1E1EC788F50091CC2A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		34C13C201EC78BC80091CC2A /* CityTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTrucks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 		349047F71EC2418300F8F395 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34C13C1E1EC788F50091CC2A /* MenuViewController.swift */,
 				349047F81EC2419700F8F395 /* GameViewController.swift */,
 				345353A01EC3BE4F007D9021 /* PopdownView.swift */,
 				349047FC1EC241AB00F8F395 /* PhotoViewController.swift */,
@@ -224,6 +229,7 @@
 				349047E81EC240C700F8F395 /* TruckModel.swift */,
 				349047EA1EC240F100F8F395 /* ConstructionTrucks.swift */,
 				34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */,
+				34C13C201EC78BC80091CC2A /* CityTrucks.swift */,
 			);
 			name = Trucks;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 				3490480B1EC2424400F8F395 /* Private.swift in Sources */,
 				349047F61EC2414A00F8F395 /* FlickrConvenience.swift in Sources */,
 				345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */,
+				34C13C211EC78BC80091CC2A /* CityTrucks.swift in Sources */,
 				349048111EC2475900F8F395 /* Model.xcdatamodeld in Sources */,
 				349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */,
 				349048161EC2481E00F8F395 /* TruckType+CoreDataClass.swift in Sources */,
@@ -343,6 +350,7 @@
 				349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */,
 				349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */,
 				349047E91EC240C700F8F395 /* TruckModel.swift in Sources */,
+				34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */,
 				349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */,
 				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
 				349048021EC2420100F8F395 /* Alerts.swift in Sources */,

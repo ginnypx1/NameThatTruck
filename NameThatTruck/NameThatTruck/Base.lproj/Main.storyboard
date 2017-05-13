@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-BQ-zyB">
-                                <rect key="frame" x="19" y="72" width="338" height="461.5"/>
+                                <rect key="frame" x="16" y="28" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcc-di-Z1S">
                                     <size key="itemSize" width="159" height="151"/>
@@ -61,33 +61,33 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Svp-Fc-nPB"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-KW-rdc">
-                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you find the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-8A-1Wd">
-                                <rect key="frame" x="0.0" y="533.5" width="375" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p0x-u1-WWG">
+                                <rect key="frame" x="8" y="582" width="359" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Can you find the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-8A-1Wd">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-KW-rdc">
+                                        <rect key="frame" x="0.0" y="26.5" width="359" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.125" id="3sL-O8-JCn"/>
-                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pM-4I-ZVX"/>
-                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cx7-LG-5wk"/>
-                            <constraint firstItem="yYZ-KW-rdc" firstAttribute="top" secondItem="a4C-8A-1Wd" secondAttribute="bottom" id="G63-gO-EOq"/>
-                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" id="GoI-Rp-URO"/>
-                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MqL-ns-esK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yYZ-KW-rdc" secondAttribute="bottom" id="NcS-wJ-Syb"/>
-                            <constraint firstAttribute="trailing" secondItem="yYZ-KW-rdc" secondAttribute="trailing" id="Xh9-ma-8Vj"/>
-                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZVB-8O-0ch"/>
-                            <constraint firstAttribute="trailing" secondItem="a4C-8A-1Wd" secondAttribute="trailing" id="hzP-un-xcs"/>
-                            <constraint firstItem="a4C-8A-1Wd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="xxy-1f-l3t"/>
-                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="yAl-Vs-17z"/>
+                            <constraint firstAttribute="trailing" secondItem="p0x-u1-WWG" secondAttribute="trailing" constant="8" id="6BB-u1-5Ez"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p0x-u1-WWG" secondAttribute="bottom" constant="8" id="7Nq-xD-iHr"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CsV-dg-3qI"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Kxc-3W-Lb5"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wus-34-bCg"/>
+                            <constraint firstItem="p0x-u1-WWG" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" id="hPQ-2Z-5sy"/>
+                            <constraint firstItem="p0x-u1-WWG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="kFm-oP-3eh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name That Truck" id="Hby-gi-njP"/>
@@ -99,12 +99,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="502" y="152"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="2cS-m6-Hpu">
+            <objects>
+                <viewController id="0b8-Vg-5b7" customClass="MenuViewController" customModule="NameThatTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G52-fw-BgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="nWR-Ly-wZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T10-Dm-XNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name That Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLJ-uh-XGo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-gn-nw6">
+                                <rect key="frame" x="0.0" y="120" width="375" height="539"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-2i-Peu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Construction Trucks"/>
+                                        <connections>
+                                            <action selector="playConstructionTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="TIO-89-WLz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-6J-1VI">
+                                        <rect key="frame" x="0.0" y="135" width="375" height="134.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Emergency Trucks"/>
+                                        <connections>
+                                            <action selector="playEmergencyTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="yKl-1f-UeQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-IN-WNk">
+                                        <rect key="frame" x="0.0" y="269.5" width="375" height="135"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="City Trucks"/>
+                                        <connections>
+                                            <action selector="playCityTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="pty-Rz-RTZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-4s-deu">
+                                        <rect key="frame" x="0.0" y="404.5" width="375" height="134.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="All Trucks"/>
+                                        <connections>
+                                            <action selector="playAllTrucksGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="S0m-YC-HfN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nWR-Ly-wZM" firstAttribute="top" secondItem="mxt-gn-nw6" secondAttribute="bottom" constant="8" id="IBQ-AP-7HQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mxt-gn-nw6" secondAttribute="trailing" id="Urv-64-hE7"/>
+                            <constraint firstAttribute="trailing" secondItem="nLJ-uh-XGo" secondAttribute="trailing" id="afd-U2-A3M"/>
+                            <constraint firstItem="mxt-gn-nw6" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" id="qPT-aR-AiN"/>
+                            <constraint firstItem="nLJ-uh-XGo" firstAttribute="top" secondItem="G52-fw-BgN" secondAttribute="bottom" id="qUq-T3-OH5"/>
+                            <constraint firstItem="nLJ-uh-XGo" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" id="rnV-Ox-FcF"/>
+                            <constraint firstItem="mxt-gn-nw6" firstAttribute="top" secondItem="nLJ-uh-XGo" secondAttribute="bottom" constant="8" id="x2V-sz-qVa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OJU-lX-N6s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBi-fk-5TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xEa-k2-uwT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWE-kX-HXA" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GameNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XWE-kX-HXA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rCd-st-lDh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -112,12 +185,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BxL-ND-ogT"/>
+                        <segue destination="0b8-Vg-5b7" kind="relationship" relationship="rootViewController" id="B7d-hC-oR2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewr-Di-rhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="139"/>
+            <point key="canvasLocation" x="-1001" y="152"/>
         </scene>
         <!--Photo View Controller-->
         <scene sceneID="eH2-SR-tgg">
@@ -222,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RH-tk-LVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="139"/>
+            <point key="canvasLocation" x="1268" y="152"/>
         </scene>
     </scenes>
 </document>

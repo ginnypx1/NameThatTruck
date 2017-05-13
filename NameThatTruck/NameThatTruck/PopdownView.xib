@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,41 +21,42 @@
             <rect key="frame" x="0.0" y="0.0" width="325" height="450"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScH-st-uqJ">
-                    <rect key="frame" x="16" y="16" width="293" height="289.5"/>
-                </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8di-ZA-qYR">
-                    <rect key="frame" x="16" y="321.5" width="293" height="112.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K83-05-01t">
+                    <rect key="frame" x="16" y="16" width="293" height="418"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
-                            <rect key="frame" x="0.0" y="0.0" width="138.5" height="112.5"/>
-                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="Back">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Ou-9YL">
-                            <rect key="frame" x="154.5" y="0.0" width="138.5" height="112.5"/>
-                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="See More Trucks!">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScH-st-uqJ">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="381"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8di-ZA-qYR">
+                            <rect key="frame" x="0.0" y="389" width="293" height="29"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
+                                    <rect key="frame" x="0.0" y="0.0" width="142.5" height="29"/>
+                                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Back">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-Ou-9YL">
+                                    <rect key="frame" x="150.5" y="0.0" width="142.5" height="29"/>
+                                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="See More Trucks!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ScH-st-uqJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="23V-EM-kul"/>
-                <constraint firstAttribute="trailing" secondItem="ScH-st-uqJ" secondAttribute="trailing" constant="16" id="ExA-bn-HD2"/>
-                <constraint firstItem="8di-ZA-qYR" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.25" id="HzG-QB-gme"/>
-                <constraint firstItem="ScH-st-uqJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="VyT-H1-p8F"/>
-                <constraint firstAttribute="bottom" secondItem="8di-ZA-qYR" secondAttribute="bottom" constant="16" id="bSI-tw-6Qw"/>
-                <constraint firstItem="8di-ZA-qYR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hUO-OC-baT"/>
-                <constraint firstAttribute="trailing" secondItem="8di-ZA-qYR" secondAttribute="trailing" constant="16" id="m3T-7L-iXa"/>
-                <constraint firstItem="8di-ZA-qYR" firstAttribute="top" secondItem="ScH-st-uqJ" secondAttribute="bottom" constant="16" id="s0z-6I-KzX"/>
+                <constraint firstAttribute="trailing" secondItem="K83-05-01t" secondAttribute="trailing" constant="16" id="Jaa-sO-ek1"/>
+                <constraint firstItem="K83-05-01t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="fhE-Kb-GHu"/>
+                <constraint firstItem="K83-05-01t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="m1u-9l-w3w"/>
+                <constraint firstAttribute="bottom" secondItem="K83-05-01t" secondAttribute="bottom" constant="16" id="vzF-QI-8x1"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

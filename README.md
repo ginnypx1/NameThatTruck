@@ -43,17 +43,17 @@ To zoom in on a photo, simply tap the photo, and all the photos change to a larg
 **THIS BUILD IS CURRENTLY IN PROGRESS**
 
 Already built:
-- A simple version of "Name That Truck" using a set of construction trucks.
-- Selecting the correct truck shows you a new screen with a close-up of that truck working.
+- A version of "Name That Truck" that offers construction and emergency trucks.
+- Selecting the correct truck shows you a new screen with a close-up picture of that truck working.
 - From the close-up picture of the truck, you can select **See More Trucks!** and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
 
 To do:
-- Segue from the photo view all the way back to the main game, skipping the interim video view.
+- Add City Trucks
 - Add the audio prompts
-- Add a soundtrack to the menu screen
-- Add a main menu screen to allow the user to select from four different version of the game: Emergency Trucks, Construction Trucks, City Trucks and All Trucks.
-- Return SwiftyGif and the gifs into the mix
+- Add a soundtrack to the menu screen/ photo album
+- Animation on main menu
+- Push button sound effects
+- Return SwiftyGif and the gifs back into the mix
 - General design
 - Icon and launch screen design
-- Animated Transitions
 - Unit Testing
