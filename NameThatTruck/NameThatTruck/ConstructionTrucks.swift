@@ -26,9 +26,7 @@ enum ConstructionTruckTypes: String {
     case Steamroller = "steamroller"
 }
 
-// MARK: - Create trucks
-
-
+// MARK: - Create Construction trucks
 
 struct ConstructionTrucks {
     

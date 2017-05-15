@@ -27,6 +27,8 @@ class PhotoViewCell: UICollectionViewCell {
         update(with: nil)
     }
     
+    // MARK: - Show Activity Indicator
+    
     func update(with image: UIImage?) {
         if let imageToDisplay = image {
             spinner.stopAnimating()

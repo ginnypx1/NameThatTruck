@@ -10,7 +10,7 @@ import UIKit
 
 extension GameViewController {
     
-    // MARK: - Collection View Flow
+    // MARK: - Game Collection View Flow
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         // set up custom flow if screen size changes
@@ -36,7 +36,7 @@ extension GameViewController {
 
 extension PhotoViewController {
     
-    // MARK: - Collection View Flow
+    // MARK: - Photo Collection View Flow
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         // set up custom flow

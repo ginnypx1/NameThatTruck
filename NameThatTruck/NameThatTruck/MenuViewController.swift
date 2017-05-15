@@ -12,8 +12,8 @@ class MenuViewController: UIViewController {
     
     // MARK: - Properties
     
-    var truckSet: [Truck] = ConstructionTrucks.allConstructionTrucks
-    var gameType: GameType = .Construction
+    var truckSet: [Truck] = Truck.allTrucks
+    var gameType: GameType = .All
 
     // MARK: - Navigation
 
@@ -24,7 +24,7 @@ class MenuViewController: UIViewController {
         self.navigationController?.pushViewController(gameController, animated: true)
     }
     
-    // MARK: - Button Actions
+    // MARK: - Create one of four game types
     
     @IBAction func playConstructionTruckGame(_ sender: Any) {
         // segue to game with construction trucks
@@ -35,18 +35,17 @@ class MenuViewController: UIViewController {
     
     @IBAction func playEmergencyTruckGame(_ sender: Any) {
         // segue to game with emergency trucks
-        truckSet = allEmergencyTrucks
+        truckSet = EmergencyTrucks.allEmergencyTrucks
         gameType = .Emergency
         segueToGame()
     }
     
     @IBAction func playCityTruckGame(_ sender: Any) {
         // segue to game with city trucks
-        truckSet = allCityTrucks
+        truckSet = CityTrucks.allCityTrucks
         gameType = .City
         segueToGame()
     }
-    
 
     @IBAction func playAllTrucksGame(_ sender: Any) {
         // segue to game with all trucks

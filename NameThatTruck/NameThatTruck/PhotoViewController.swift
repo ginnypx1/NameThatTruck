@@ -147,10 +147,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         print("in controllerWillChangeContent")
     }
     
-    // The method may be called multiple times, once for each object added, deleted, or changed.
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
-            
         case .insert:
             print("Insert an item")
             insertedIndexPaths.append(newIndexPath!)
@@ -171,9 +169,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
-    // This method is invoked after all of the changed objects in the current batch have been collected
-    // into the three index path arrays (insert, delete, and upate). We now need to loop through the
-    // arrays and perform the changes.
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         print("in controllerDidChangeContent. changes.count: \(insertedIndexPaths.count + deletedIndexPaths.count)")
         

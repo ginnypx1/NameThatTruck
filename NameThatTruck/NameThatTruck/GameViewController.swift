@@ -15,8 +15,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
     @IBOutlet weak var winningTruckLabel: UILabel!
     @IBOutlet weak var bottomSignView: UIView!
     @IBOutlet weak var topSignView: UIView!
@@ -31,6 +33,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     var truckSet: [Truck]!
     var gameType: GameType!
+    
     var gameTrucks: [Truck]!
     var winningTruck: Truck!
     
@@ -73,6 +76,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func changeSignForGame(forGameType gameType: GameType) {
+        // change the sign coloring to match the game type
         switch gameType {
         case .Construction:
             self.bottomSignView.backgroundColor = UIColor.orange
@@ -246,7 +250,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
-    // MARK - Blackout View
+    // MARK: - Blackout View
     
     func createBlackBackground() {
         // grey out the game board when superview pops up
@@ -260,6 +264,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.popdownView.removeFromSuperview()
         self.blackoutView.removeFromSuperview()
     }
+    
+    // MARK: -  Return to Main Menu
 
     @IBAction func returnToMainMenu(_ sender: Any) {
         // return to menu view

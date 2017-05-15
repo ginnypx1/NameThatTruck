@@ -11,7 +11,6 @@ import UIKit
 
 // MARK: - City Trucks
 
-
 enum CityTruckTypes: String {
     case BigRig = "big-rig"
     case BucketTruck = "bucket-truck"

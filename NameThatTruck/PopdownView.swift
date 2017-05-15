@@ -9,14 +9,18 @@
 import UIKit
 
 @IBDesignable class PopdownView: UIView {
-    
-    var view: UIView!
 
     // MARK: - Outlets
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var moreTrucksButton: UIButton!
+    
+    // MARK: - Properties
+    
+    var view: UIView!
+    
+    // MARK: - Load Popdown View
     
     func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
