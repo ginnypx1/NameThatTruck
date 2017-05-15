@@ -13,9 +13,14 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // MARK: - Outlets
     
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var winningTruckLabel: UILabel!
+    @IBOutlet weak var bottomSignView: UIView!
+    @IBOutlet weak var topSignView: UIView!
+    @IBOutlet weak var canYouFindLabel: UILabel!
     
     // MARK: - Properties
     
@@ -25,13 +30,25 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var blackoutView: UIView!
 
     var truckSet: [Truck]!
+    var gameType: GameType!
     var gameTrucks: [Truck]!
     var winningTruck: Truck!
     
     // MARK: - View
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // add outline to title font
+        titleLabel.attributedText = setTitleLabelFont()
+        
+        // sign display
+        changeSignForGame(forGameType: self.gameType)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
         // start a new game
         createGameBoard()
     }
@@ -55,6 +72,48 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         checkForTruckType()
     }
     
+    func changeSignForGame(forGameType gameType: GameType) {
+        switch gameType {
+        case .Construction:
+            self.bottomSignView.backgroundColor = UIColor.orange
+            self.topSignView.backgroundColor = UIColor.orange
+            self.topSignView.layer.borderColor = UIColor.black.cgColor
+            self.winningTruckLabel.backgroundColor = UIColor.black
+            self.winningTruckLabel.textColor = UIColor.yellow
+            self.canYouFindLabel.textColor = UIColor.white
+        case .Emergency:
+            self.bottomSignView.backgroundColor = UIColor.white
+            self.topSignView.backgroundColor = UIColor.white
+            self.topSignView.layer.borderColor = UIColor.black.cgColor
+            self.winningTruckLabel.backgroundColor = UIColor.black
+            self.winningTruckLabel.textColor = UIColor.red
+            self.canYouFindLabel.textColor = UIColor.black
+        case .City:
+            self.bottomSignView.backgroundColor = UIColor.green
+            self.topSignView.backgroundColor = UIColor.green
+            self.topSignView.layer.borderColor = UIColor.white.cgColor
+            self.winningTruckLabel.backgroundColor = UIColor.white
+            self.winningTruckLabel.textColor = UIColor.black
+            self.canYouFindLabel.textColor = UIColor.white
+        case .All:
+            self.bottomSignView.backgroundColor = UIColor.blue
+            self.topSignView.backgroundColor = UIColor.blue
+            self.topSignView.layer.borderColor = UIColor.white.cgColor
+            self.winningTruckLabel.backgroundColor = UIColor.white
+            self.winningTruckLabel.textColor = UIColor.red
+            self.canYouFindLabel.textColor = UIColor.white
+        }
+    }
+    
+    func setTitleLabelFont() -> NSMutableAttributedString {
+        // adds an outline to the title label font
+        let mutableString = NSMutableAttributedString(string: "NAME THAT TRUCK", attributes: [
+            NSStrokeColorAttributeName: UIColor.black,
+            NSForegroundColorAttributeName: UIColor.orange,
+            NSStrokeWidthAttributeName: -1.0])
+        return mutableString
+    }
+
     // MARK: - TruckType Entity
     
     func checkForTruckType() {
@@ -202,5 +261,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.blackoutView.removeFromSuperview()
     }
 
+    @IBAction func returnToMainMenu(_ sender: Any) {
+        // return to menu view
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }
 

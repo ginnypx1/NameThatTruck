@@ -6,10 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lorimer_No2_Stencil.otf">
+            <string>LorimerNo2Stencil</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Name That Truck-->
         <scene sceneID="tne-QT-ifu">
@@ -23,8 +29,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krn-NR-fCK" userLabel="HeaderView">
+                                <rect key="frame" x="16" y="20" width="343" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tvt-zJ-iOk">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-VI-zn0">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sZr-VI-zn0" secondAttribute="height" multiplier="1:1" id="JsI-An-gjL"/>
+                                                </constraints>
+                                                <state key="normal" image="left-turn-sign"/>
+                                                <connections>
+                                                    <action selector="returnToMainMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flF-eJ-iOg"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME THAT TRUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-rF-Joc">
+                                                <rect key="frame" x="58" y="0.0" width="285" height="50"/>
+                                                <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="32"/>
+                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tvt-zJ-iOk" secondAttribute="trailing" id="9sE-VV-1gY"/>
+                                    <constraint firstItem="tvt-zJ-iOk" firstAttribute="top" secondItem="krn-NR-fCK" secondAttribute="top" id="ZsW-fa-R1v"/>
+                                    <constraint firstItem="tvt-zJ-iOk" firstAttribute="leading" secondItem="krn-NR-fCK" secondAttribute="leading" id="a21-4J-pfW"/>
+                                    <constraint firstAttribute="bottom" secondItem="tvt-zJ-iOk" secondAttribute="bottom" id="aVU-nJ-Ymo"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-BQ-zyB">
-                                <rect key="frame" x="16" y="28" width="343" height="554"/>
+                                <rect key="frame" x="16" y="70" width="343" height="439.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcc-di-Z1S">
                                     <size key="itemSize" width="159" height="151"/>
@@ -61,39 +100,83 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Svp-Fc-nPB"/>
                                 </connections>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p0x-u1-WWG">
-                                <rect key="frame" x="8" y="582" width="359" height="77"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-T1-mOD">
+                                <rect key="frame" x="16" y="517.5" width="343" height="133.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Can you find the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-8A-1Wd">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dump Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-KW-rdc">
-                                        <rect key="frame" x="0.0" y="26.5" width="359" height="50.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                        <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boa-LW-fYn">
+                                        <rect key="frame" x="4" y="4" width="335" height="125.5"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="p0x-u1-WWG">
+                                        <rect key="frame" x="4" y="20" width="335" height="91.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="CAN YOU FIND THE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-8A-1Wd">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DUMP TRUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-KW-rdc">
+                                                <rect key="frame" x="0.0" y="41.5" width="335" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="46"/>
+                                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="p0x-u1-WWG" firstAttribute="top" secondItem="boa-LW-fYn" secondAttribute="top" constant="16" id="CKy-eU-y5a"/>
+                                    <constraint firstItem="p0x-u1-WWG" firstAttribute="bottom" secondItem="boa-LW-fYn" secondAttribute="bottom" constant="-18" id="E9i-9i-2sv"/>
+                                    <constraint firstItem="p0x-u1-WWG" firstAttribute="trailing" secondItem="boa-LW-fYn" secondAttribute="trailing" id="OWT-Gx-d7C"/>
+                                    <constraint firstAttribute="bottom" secondItem="boa-LW-fYn" secondAttribute="bottom" constant="4" id="QMh-HL-cOs"/>
+                                    <constraint firstItem="p0x-u1-WWG" firstAttribute="leading" secondItem="boa-LW-fYn" secondAttribute="leading" id="Ram-Ry-DJ4"/>
+                                    <constraint firstItem="boa-LW-fYn" firstAttribute="top" secondItem="fKS-T1-mOD" secondAttribute="top" constant="4" id="TXB-f8-m5Q"/>
+                                    <constraint firstItem="boa-LW-fYn" firstAttribute="leading" secondItem="fKS-T1-mOD" secondAttribute="leading" constant="4" id="abz-L7-v6a"/>
+                                    <constraint firstAttribute="trailing" secondItem="boa-LW-fYn" secondAttribute="trailing" constant="4" id="ng5-d2-gRP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="p0x-u1-WWG" secondAttribute="trailing" constant="8" id="6BB-u1-5Ez"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p0x-u1-WWG" secondAttribute="bottom" constant="8" id="7Nq-xD-iHr"/>
+                            <constraint firstItem="fKS-T1-mOD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="6pS-My-k66"/>
+                            <constraint firstItem="krn-NR-fCK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8qK-I2-mHX"/>
+                            <constraint firstItem="fKS-T1-mOD" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" constant="8" id="C3u-tR-BI4"/>
+                            <constraint firstItem="krn-NR-fCK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CfQ-OD-aE4"/>
                             <constraint firstItem="d0Q-BQ-zyB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CsV-dg-3qI"/>
-                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Kxc-3W-Lb5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="krn-NR-fCK" secondAttribute="trailing" id="RMc-oL-aWl"/>
                             <constraint firstItem="d0Q-BQ-zyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wus-34-bCg"/>
-                            <constraint firstItem="p0x-u1-WWG" firstAttribute="top" secondItem="d0Q-BQ-zyB" secondAttribute="bottom" id="hPQ-2Z-5sy"/>
-                            <constraint firstItem="p0x-u1-WWG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="kFm-oP-3eh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fKS-T1-mOD" secondAttribute="trailing" id="cdR-a6-88P"/>
+                            <constraint firstItem="fKS-T1-mOD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dZn-rY-cxW"/>
+                            <constraint firstItem="krn-NR-fCK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="dxf-WN-QFr"/>
+                            <constraint firstItem="d0Q-BQ-zyB" firstAttribute="top" secondItem="krn-NR-fCK" secondAttribute="bottom" id="oas-F0-fPb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fKS-T1-mOD" secondAttribute="bottom" constant="16" id="z48-Ek-WAF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name That Truck" id="Hby-gi-njP"/>
                     <connections>
+                        <outlet property="backButton" destination="sZr-VI-zn0" id="o5R-kX-893"/>
+                        <outlet property="bottomSignView" destination="fKS-T1-mOD" id="Zep-NI-YE1"/>
+                        <outlet property="canYouFindLabel" destination="a4C-8A-1Wd" id="72I-dM-pRS"/>
                         <outlet property="collectionView" destination="d0Q-BQ-zyB" id="Dw1-Va-QSI"/>
                         <outlet property="flowLayout" destination="vcc-di-Z1S" id="t9I-l8-TwS"/>
+                        <outlet property="titleLabel" destination="Ylz-rF-Joc" id="Mb0-EX-aU5"/>
+                        <outlet property="topSignView" destination="boa-LW-fYn" id="rnR-Fm-gZg"/>
                         <outlet property="winningTruckLabel" destination="yYZ-KW-rdc" id="d1s-eU-6Rb"/>
                     </connections>
                 </viewController>
@@ -114,16 +197,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name That Truck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLJ-uh-XGo">
-                                <rect key="frame" x="0.0" y="64" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-gn-nw6">
-                                <rect key="frame" x="0.0" y="120" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="583"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-2i-Peu">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Construction Trucks"/>
                                         <connections>
@@ -131,7 +214,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-6J-1VI">
-                                        <rect key="frame" x="0.0" y="135" width="375" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="146" width="375" height="145.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Emergency Trucks"/>
                                         <connections>
@@ -139,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-IN-WNk">
-                                        <rect key="frame" x="0.0" y="269.5" width="375" height="135"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="375" height="146"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="City Trucks"/>
                                         <connections>
@@ -147,7 +230,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-4s-deu">
-                                        <rect key="frame" x="0.0" y="404.5" width="375" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="437.5" width="375" height="145.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="All Trucks"/>
                                         <connections>
@@ -177,9 +260,9 @@
         <!--Navigation Controller-->
         <scene sceneID="xEa-k2-uwT">
             <objects>
-                <navigationController storyboardIdentifier="GameNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XWE-kX-HXA" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GameNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XWE-kX-HXA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rCd-st-lDh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rCd-st-lDh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -298,4 +381,7 @@
             <point key="canvasLocation" x="1268" y="152"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="left-turn-sign" width="320" height="320"/>
+    </resources>
 </document>

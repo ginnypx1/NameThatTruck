@@ -13,7 +13,7 @@ import UIKit
 
 class Truck {
     
-    static let allTrucks: [Truck] = allConstructionTrucks + allEmergencyTrucks + allCityTrucks
+    static let allTrucks: [Truck] = ConstructionTrucks.allConstructionTrucks + EmergencyTrucks.allEmergencyTrucks + CityTrucks.allCityTrucks
     
     let name: String
     let displayName: String

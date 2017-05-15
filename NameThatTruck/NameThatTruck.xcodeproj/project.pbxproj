@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */; };
+		3410C6101ECA4238007BC759 /* Capture_it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60F1ECA4238007BC759 /* Capture_it.ttf */; };
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
 		3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345001EC955C900FA5FA2 /* big-rig.gif */; };
@@ -76,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lorimer_No2_Stencil.otf; sourceTree = "<group>"; };
+		3410C60F1ECA4238007BC759 /* Capture_it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Capture_it.ttf; sourceTree = "<group>"; };
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
 		346345001EC955C900FA5FA2 /* big-rig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "big-rig.gif"; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				34ADEED91EC5123C003E4A19 /* GIFs */,
+				3410C60F1ECA4238007BC759 /* Capture_it.ttf */,
+				3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */,
 				349047D71EC23F1E00F8F395 /* Main.storyboard */,
 				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
 				349047DA1EC23F1E00F8F395 /* Assets.xcassets */,
@@ -412,7 +418,9 @@
 				3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */,
 				34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */,
 				3463452D1EC955E200FA5FA2 /* rescue-helicopter.gif in Resources */,
+				3410C6101ECA4238007BC759 /* Capture_it.ttf in Resources */,
 				346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */,
+				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
 				34ADEEEE1EC51259003E4A19 /* loader.gif in Resources */,

@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+enum GameType {
+    case Construction
+    case Emergency
+    case City
+    case All
+}
+
 struct Game {
     
     // MARK: - Methods

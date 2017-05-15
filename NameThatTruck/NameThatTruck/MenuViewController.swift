@@ -12,25 +12,15 @@ class MenuViewController: UIViewController {
     
     // MARK: - Properties
     
-    var truckSet: [Truck] = allConstructionTrucks
-    
-    // MARK: - View
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        self.navigationController?.isNavigationBarHidden = false
-    }
+    var truckSet: [Truck] = ConstructionTrucks.allConstructionTrucks
+    var gameType: GameType = .Construction
 
     // MARK: - Navigation
 
     func segueToGame() {
         let gameController = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         gameController.truckSet = self.truckSet
+        gameController.gameType = self.gameType
         self.navigationController?.pushViewController(gameController, animated: true)
     }
     
@@ -38,19 +28,22 @@ class MenuViewController: UIViewController {
     
     @IBAction func playConstructionTruckGame(_ sender: Any) {
         // segue to game with construction trucks
-        truckSet = allConstructionTrucks
+        truckSet = ConstructionTrucks.allConstructionTrucks
+        gameType = .Construction
         segueToGame()
     }
     
     @IBAction func playEmergencyTruckGame(_ sender: Any) {
         // segue to game with emergency trucks
         truckSet = allEmergencyTrucks
+        gameType = .Emergency
         segueToGame()
     }
     
     @IBAction func playCityTruckGame(_ sender: Any) {
         // segue to game with city trucks
         truckSet = allCityTrucks
+        gameType = .City
         segueToGame()
     }
     
@@ -58,6 +51,7 @@ class MenuViewController: UIViewController {
     @IBAction func playAllTrucksGame(_ sender: Any) {
         // segue to game with all trucks
         truckSet = Truck.allTrucks
+        gameType = .All
         segueToGame()
     }
 
