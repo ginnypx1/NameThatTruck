@@ -11,69 +11,71 @@ import UIKit
 
 // MARK: - City Trucks
 
-/*
+
 enum CityTruckTypes: String {
-    case AirportFireTruck = "airport-fire-truck"
-    case Ambulance = "ambulance"
-    case FireBoat = "fire-boat"
-    case FireCheifsTruck = "fire-chiefs-truck"
-    case LadderTruck = "ladder-truck"
-    case MilitaryHelicopter = "military-helicopter"
-    case PoliceBoat = "police-boat"
-    case PoliceCar = "police-car"
-    case PumperTruck = "pumper-truck"
-    case RescueHelicopter = "rescue-helicopter"
-    case Snowplow = "snowplow"
-    case TowTruck = "tow-truck"
+    case BigRig = "big-rig"
+    case BucketTruck = "bucket-truck"
+    case CarTransporter = "car-transporter"
+    case DeliveryTruck = "delivery-truck"
+    case FuelTruck = "fuel-truck"
+    case GarbageTruck = "garbage-truck"
+    case IceCreamTruck = "ice-cream-truck"
+    case MailTruck = "mail-truck"
+    case PickupTruck = "pickup-truck"
+    case SchoolBus = "school-bus"
+    case StreetSweeper = "street-sweeper"
+    case Tractor = "tractor"
 }
 
 // MARK: - Create trucks
 
-/* All images are public domain found at pixabay or wikimedia
- With the exception of the fire chief's truck: Fire Chief’s Truck Photo By Lee Cannon from Bayville aka West Fenwick, DE, USA [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons
- https://upload.wikimedia.org/wikipedia/commons/5/5d/Frankford_Volunteer_Fire_Company%2C_Station_76%2C_DE_%284814086370%29.jpg
- */
-
+/* All images are public domain found at pixabay or wikimedia */
 // Gif images are from creative commons licensed videos on YouTube
 
-/* Airport fire rescue OSLO Gardemoen flypassbrannvesen by EmeggencyService911 https://www.youtube.com/watch?v=fWGAos6R5tU */
-let airportFireTruck = Truck(name: EmergencyTruckTypes.AirportFireTruck.rawValue, displayName: "Airport Fire Truck")
+/* Big Rig Racing by Lucu Motor TV https://www.youtube.com/watch?v=y8fTI4I2leI */
+let bigRig = Truck(name: CityTruckTypes.BigRig.rawValue, displayName: "Big Rig")
 
-/* Emergency Ambulance Responding in Dublin | Great Siren! by Dave's Videos https://www.youtube.com/watch?v=A9WspEav8eU */
-let ambulance = Truck(name: EmergencyTruckTypes.Ambulance.rawValue, displayName: "Ambulance")
+/* 2002 Chevrolet C7500 bucket truck for sale | no-reserve internet auction May 25, 2017 by Purple Wave
+ https://www.youtube.com/watch?v=98fuED9cnhc */
+let bucketTruck = Truck(name: CityTruckTypes.BucketTruck.rawValue, displayName: "Bucket Truck")
 
-/* 45 Foot Response Boat by Public Resource Org  https://www.youtube.com/watch?v=t2dFOhaj4Xw */
-let fireBoat = Truck(name: EmergencyTruckTypes.FireBoat.rawValue, displayName: "Fire Boat")
+/* Police VW Passat B7 Car Transporter Rare by Ynterstella https://www.youtube.com/watch?v=oLOvllNsySo*/
+let carTransporter = Truck(name: CityTruckTypes.CarTransporter.rawValue, displayName: "Car Transporter")
 
-/* Wheaton ALS742 Responding 10-3-16 by Fire Productions https://www.youtube.com/watch?v=O9cAfim99bk */
-let fireChiefsTruck = Truck(name: EmergencyTruckTypes.FireCheifsTruck.rawValue, displayName: "Fire Chief's Truck")
+/* an entire fleet of USPS trucks cruise westbound at by Youngho Kim https://www.youtube.com/watch?v=Juo--wVAn4I */
+let deliveryTruck = Truck(name: CityTruckTypes.DeliveryTruck.rawValue, displayName: "Delivery Truck")
 
-/* SFD Ladder 8 Responding from Station 18 by Sam Altenberger https://www.youtube.com/watch?v=amlH7nDxi6U */
-let ladderTruck = Truck(name: EmergencyTruckTypes.LadderTruck.rawValue, displayName: "Ladder Truck")
+/* Railroad Boosts Fuel Economy with Cent Premium Diesel 07 by chsincorporated https://www.youtube.com/watch?v=X6nWAclQqN4 */
+let fuelTruck = Truck(name: CityTruckTypes.FuelTruck.rawValue, displayName: "Fuel Truck")
 
-/* CH-53E Super Stallion - Biggest Helicopter in US Military - New 2017 by Renan Rissardo https://www.youtube.com/watch?v=PkUIjL0lMbE */
-let militaryHelicopter = Truck(name: EmergencyTruckTypes.MilitaryHelicopter.rawValue, displayName: "Military Helicopter")
+/* Automatic Trash Truck Collecting Garbage by WalkaboutAK https://www.youtube.com/watch?v=BNxjtQtZ4Cc */
+let garbageTruck = Truck(name: CityTruckTypes.GarbageTruck.rawValue, displayName: "Garbage Truck")
 
-/* boats, boats, boats by Queensland Police https://www.youtube.com/watch?v=EakuJxAbM0k */
-let policeBoat = Truck(name: EmergencyTruckTypes.PoliceBoat.rawValue, displayName: "Police Boat")
+/* Ice Cream Truck by Andrew Whites https://www.youtube.com/watch?v=rWu1s4Cinxc */
+let iceCreamTruck = Truck(name: CityTruckTypes.IceCreamTruck.rawValue, displayName: "Ice Cream Truck")
 
-/* Dacia Logan Politie (Police) with sirens and lights by ConnectorXP https://www.youtube.com/watch?v=JfzM_99kuTU */
-let policeCar = Truck(name: EmergencyTruckTypes.PoliceCar.rawValue, displayName: "Police Car")
+/* delivering mail before Christmas by The US Army https://www.youtube.com/watch?v=HYnYAbPgDX0 */
+let mailTruck = Truck(name: CityTruckTypes.MailTruck.rawValue, displayName: "Mail Truck")
 
-/* Engine 25 responding by New Rochelle Firefighters https://www.youtube.com/watch?v=4e54rI66c9M */
-let pumperTruck = Truck(name: EmergencyTruckTypes.PumperTruck.rawValue, displayName: "Pumper Truck")
+/* 2011 Ford F250 XLT super cab pickup truck for sale | no-reserve internet auction April 26, 2017
+ by Purple Wave
+ https://www.youtube.com/watch?v=rrfXMobIcNc */
+let pickupTruck = Truck(name: CityTruckTypes.PickupTruck.rawValue, displayName: "Pickup Truck")
 
-/* Rescue! Portland Coast Guard helicopter, West Cliff by Stuart Morris https://www.youtube.com/watch?v=awhL2WXdqMk */
-let rescueHelicopter = Truck(name: EmergencyTruckTypes.RescueHelicopter.rawValue, displayName: "Rescue Helicopter")
+/* 1992 Thomas Built Saf-T-Liner MVP School Bus for sale | Sold at auction September 9, 2014
+ by Purple Wave
+ https://www.youtube.com/watch?v=QYXrdjfslCU */
+let schoolBus = Truck(name: CityTruckTypes.SchoolBus.rawValue, displayName: "School Bus")
 
-/* Ottawa Snow Plow Sidewalk Clearing by Robert Schwartz https://www.youtube.com/watch?v=ov54w-U5zE8 */
-let snowplow = Truck(name: EmergencyTruckTypes.Snowplow.rawValue, displayName: "Snowplow")
+/* 2002 Johnson 3000 Street Sweeper for sale | sold at auction September 15, 2011 by Purple Wave
+ https://www.youtube.com/watch?v=Gcl_c6jeZBE*/
+let streetSweeper = Truck(name: CityTruckTypes.StreetSweeper.rawValue, displayName: "Street Sweeper")
 
-/* Hyster C350C double drum roller | no-reserve Internet auction August 25, 2011 by Purple Wave
- https://www.youtube.com/watch?v=pmXITU8IJbk */
-let towTruck = Truck(name: EmergencyTruckTypes.TowTruck.rawValue, displayName: "Tow Truck")
+/* H2012 John Deere 6125R MFWD tractor for sale | sold at auction March 26, 2014 by Purple Wave
+ https://www.youtube.com/watch?v=g95e2kefKQU */
+let tractor = Truck(name: CityTruckTypes.Tractor.rawValue, displayName: "Tractor")
 
-// MARK: - Create set of Emergency Trucks
- */
+// MARK: - Create set of City Trucks
 
-let allCityTrucks: [Truck] = [airportFireTruck, ambulance, fireBoat, fireChiefsTruck, ladderTruck, militaryHelicopter, policeBoat, policeCar, pumperTruck, rescueHelicopter, snowplow, towTruck]
+
+let allCityTrucks: [Truck] = [bigRig, bucketTruck, carTransporter, deliveryTruck, fuelTruck, garbageTruck, iceCreamTruck, mailTruck, pickupTruck, schoolBus, streetSweeper, tractor]
