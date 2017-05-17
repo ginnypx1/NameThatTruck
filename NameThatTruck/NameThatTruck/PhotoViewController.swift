@@ -66,7 +66,11 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // hide noImagesLabel
         noImagesLabel.isHidden = true
         // set button label
-        collectionButton.setTitle("See More \(self.selectedTruck.displayName)s!", for: .normal)
+        if selectedTruck.name != CityTruckTypes.SchoolBus.rawValue {
+            collectionButton.setTitle("See More \(self.selectedTruck.displayName)s!", for: .normal)
+        } else {
+            collectionButton.setTitle("See More \(self.selectedTruck.displayName)ses!", for: .normal)
+        }
         // add orange outlines to button
         collectionButton.layer.borderColor = GameDesign.constructionOrange.cgColor
         constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
