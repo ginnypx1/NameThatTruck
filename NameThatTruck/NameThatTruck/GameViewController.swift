@@ -183,8 +183,13 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.createBlackBackground()
             // popdown view slides in from top of screen
             self.addPopdownView()
+            
+            // find the size classes
+            let dropHeight = (self.view.frame.size.height * 0.1)
+            
+            // drop down the popdownView
             UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                self.popdownView.center.y += 900
+                self.popdownView.center.y += (800 + dropHeight)
             }, completion: nil)
             
         // if guess is incorrect, say name of truck and ask the question again
@@ -202,9 +207,20 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if (self.popdownView != nil) {
             self.popdownView.view.removeFromSuperview()
         }
-        // get the height and width proportions of the view
-        let viewWidth = (self.view.frame.size.width * 0.8)
-        let viewHeight = (self.view.frame.size.height * 0.66)
+        // find the size classes
+        // let horizontalClass = self.traitCollection.horizontalSizeClass
+        let verticalClass = self.traitCollection.verticalSizeClass
+        
+        // view sized for regular height devices
+        var viewWidth = (self.view.frame.size.width * 0.8)
+        var viewHeight = (self.view.frame.size.height * 0.66)
+        
+        if verticalClass == UIUserInterfaceSizeClass.compact {
+            // resize view for compact height
+            viewWidth = (self.view.frame.size.width * 0.66)
+            viewHeight = (self.view.frame.size.height * 0.8)
+        }
+    
         // create the popdown view
         self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
         self.popdownView.imageView.image = winningTruck.image

@@ -33,10 +33,10 @@
                     <rect key="frame" x="16" y="16" width="293" height="315"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojS-ru-KLh">
-                    <rect key="frame" x="16" y="339" width="293" height="95"/>
+                    <rect key="frame" x="13" y="339" width="300" height="95"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
-                            <rect key="frame" x="0.0" y="0.0" width="95.5" height="95"/>
+                            <rect key="frame" x="0.5" y="0.0" width="95.5" height="95"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="d01-cU-xDM" secondAttribute="height" multiplier="1:1" id="LWs-yV-dyj"/>
                             </constraints>
@@ -45,13 +45,16 @@
                             </state>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-tA-fTb">
-                            <rect key="frame" x="103.5" y="0.0" width="189.5" height="95"/>
+                            <rect key="frame" x="104" y="0.0" width="196.5" height="95"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="construction-stripes" translatesAutoresizingMaskIntoConstraints="NO" id="h8Z-mx-Gog">
-                                    <rect key="frame" x="0.0" y="0.0" width="189.5" height="95"/>
+                                    <rect key="frame" x="-0.5" y="0.0" width="196.5" height="95"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="h8Z-mx-Gog" secondAttribute="height" multiplier="196:95" id="yvM-Iq-8Om"/>
+                                    </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="24"/>
+                                            <integer key="value" value="8"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                             <integer key="value" value="2"/>
@@ -59,14 +62,14 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
-                                    <rect key="frame" x="8" y="8" width="173.5" height="79"/>
+                                    <rect key="frame" x="7.5" y="8" width="180.5" height="79"/>
                                     <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
                                     <state key="normal" title="+" image="airport-fire-truck">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="24"/>
+                                            <integer key="value" value="8"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                             <integer key="value" value="1"/>
@@ -103,12 +106,11 @@
             <constraints>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="85u-n4-eD5"/>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="DOO-K1-Npu"/>
+                <constraint firstItem="ojS-ru-KLh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R2I-f0-Iop"/>
                 <constraint firstItem="ojS-ru-KLh" firstAttribute="top" secondItem="ScH-st-uqJ" secondAttribute="bottom" constant="8" id="VMU-O2-D8S"/>
                 <constraint firstAttribute="trailing" secondItem="ScH-st-uqJ" secondAttribute="trailing" constant="16" id="XjJ-AT-mUH"/>
-                <constraint firstItem="ojS-ru-KLh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Xlx-xF-fI6"/>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="g75-FP-M7b"/>
                 <constraint firstAttribute="bottom" secondItem="ojS-ru-KLh" secondAttribute="bottom" constant="16" id="hI0-WT-YWa"/>
-                <constraint firstAttribute="trailing" secondItem="ojS-ru-KLh" secondAttribute="trailing" constant="16" id="z6g-Qx-U7v"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -122,7 +124,7 @@
     </objects>
     <resources>
         <image name="airport-fire-truck" width="758" height="320"/>
-        <image name="construction-stripes" width="205" height="204"/>
+        <image name="construction-stripes" width="711" height="400"/>
         <image name="left-turn-sign" width="320" height="320"/>
     </resources>
 </document>
