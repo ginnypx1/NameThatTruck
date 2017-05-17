@@ -15,9 +15,11 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Outlets
     
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var constructionStripes: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionButton: UIButton!
     @IBOutlet weak var noImagesLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     // MARK: - Properties
     
@@ -59,10 +61,15 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         print("Truck Type is: \(self.truckType.name!)")
         
+        // add outline to title font
+        titleLabel.attributedText = GameDesign.setTitleLabelFont()
         // hide noImagesLabel
         noImagesLabel.isHidden = true
         // set button label
-        self.collectionButton.setTitle("See More \(self.selectedTruck.displayName)s!", for: .normal)
+        collectionButton.setTitle("See More \(self.selectedTruck.displayName)s!", for: .normal)
+        // add orange outlines to button
+        collectionButton.layer.borderColor = GameDesign.constructionOrange.cgColor
+        constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
         // add activity indicator
         addActivityIndicator()
         // set up custom flow
@@ -81,6 +88,18 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         } catch {
             print("Error performing initial fetch for album photos.")
         }
+    }
+    
+    // MARK: - Animations
+    
+    func bounceButton(button: UIButton, duration: TimeInterval, scale: CGFloat) {
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+            button.transform = CGAffineTransform(scaleX: scale, y: scale)
+        }, completion: { finished in
+            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+                button.transform = CGAffineTransform(scaleX: 1, y: 1)
+            },completion: nil)
+        })
     }
     
     // MARK: - Collection View
@@ -248,12 +267,18 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Import New Photos or Delete
     
     @IBAction func importNewPhotos(_ sender: Any) {
-        print("Button pressed.")
-        
+        // animate
+        bounceButton(button: self.collectionButton, duration: 0.5, scale: 0.3)
+        // disable button while new photos load
         collectionButton.isEnabled = false
-        
+        // delete saved images
         deleteAllFlickrPhotos()
+        // fetch new images
         fetchImages()
     }
     
+    @IBAction func returnToGame(_ sender: Any) {
+        // return to game view
+        self.navigationController?.popViewController(animated: true)
+    }
 }

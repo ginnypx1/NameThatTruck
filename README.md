@@ -48,12 +48,10 @@ Already built:
 - From the close-up picture of the truck, you can select **See More Trucks!** and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
 
 To do:
-- Add City Trucks
 - Add the audio prompts
 - Add a soundtrack to the menu screen/ photo album
-- Animation on main menu
 - Push button sound effects
 - Return SwiftyGif and the gifs back into the mix
-- General design
+- Responsive design
 - Icon and launch screen design
 - Unit Testing

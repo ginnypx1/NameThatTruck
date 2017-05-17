@@ -48,7 +48,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME THAT TRUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-rF-Joc">
                                                 <rect key="frame" x="58" y="0.0" width="285" height="50"/>
                                                 <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="32"/>
-                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.98039215686274506" green="0.38823529411764707" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -105,7 +105,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boa-LW-fYn">
                                         <rect key="frame" x="4" y="4" width="335" height="125.5"/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="24"/>
@@ -128,13 +128,13 @@
                                                 <rect key="frame" x="0.0" y="41.5" width="335" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="46"/>
-                                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="p0x-u1-WWG" firstAttribute="top" secondItem="boa-LW-fYn" secondAttribute="top" constant="16" id="CKy-eU-y5a"/>
                                     <constraint firstItem="p0x-u1-WWG" firstAttribute="bottom" secondItem="boa-LW-fYn" secondAttribute="bottom" constant="-18" id="E9i-9i-2sv"/>
@@ -196,66 +196,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME THAT TRUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLJ-uh-XGo">
-                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
-                                <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="40"/>
-                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-gn-nw6">
-                                <rect key="frame" x="0.0" y="68" width="375" height="591"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-background" translatesAutoresizingMaskIntoConstraints="NO" id="z9B-p1-UEi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-gn-nw6">
+                                <rect key="frame" x="16" y="36" width="169" height="615"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-2i-Peu">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="Construction Trucks"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-2i-Peu">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="142"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3QW-2i-Peu" secondAttribute="height" multiplier="1:1" id="Puq-qJ-s2r"/>
+                                        </constraints>
+                                        <state key="normal" image="construction-truck-button"/>
                                         <connections>
                                             <action selector="playConstructionTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="TIO-89-WLz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-6J-1VI">
-                                        <rect key="frame" x="0.0" y="118" width="375" height="118.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="Emergency Trucks"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-6J-1VI">
+                                        <rect key="frame" x="0.0" y="158" width="142" height="141.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="L2b-6J-1VI" secondAttribute="height" multiplier="1:1" id="O4R-b5-QEZ"/>
+                                        </constraints>
+                                        <state key="normal" image="emergency-truck-button"/>
                                         <connections>
                                             <action selector="playEmergencyTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="yKl-1f-UeQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-IN-WNk">
-                                        <rect key="frame" x="0.0" y="236.5" width="375" height="118"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="City Trucks"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-IN-WNk">
+                                        <rect key="frame" x="0.0" y="315.5" width="142" height="142"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kyQ-IN-WNk" secondAttribute="height" multiplier="1:1" id="uZB-uE-5zr"/>
+                                        </constraints>
+                                        <state key="normal" image="city-truck-button"/>
                                         <connections>
                                             <action selector="playCityTruckGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="pty-Rz-RTZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-4s-deu">
-                                        <rect key="frame" x="0.0" y="354.5" width="375" height="118.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="All Trucks"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-4s-deu">
+                                        <rect key="frame" x="0.0" y="473.5" width="142" height="141.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YMT-4s-deu" secondAttribute="height" multiplier="1:1" id="K16-2r-X3i"/>
+                                        </constraints>
+                                        <state key="normal" image="all-truck-button"/>
                                         <connections>
                                             <action selector="playAllTrucksGame:" destination="0b8-Vg-5b7" eventType="touchUpInside" id="S0m-YC-HfN"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j47-NC-Rcj">
-                                        <rect key="frame" x="0.0" y="473" width="375" height="118"/>
-                                        <state key="normal" title="Sound on or Off"/>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nWR-Ly-wZM" firstAttribute="top" secondItem="mxt-gn-nw6" secondAttribute="bottom" constant="8" id="IBQ-AP-7HQ"/>
-                            <constraint firstAttribute="trailing" secondItem="mxt-gn-nw6" secondAttribute="trailing" id="Urv-64-hE7"/>
-                            <constraint firstAttribute="trailing" secondItem="nLJ-uh-XGo" secondAttribute="trailing" id="afd-U2-A3M"/>
-                            <constraint firstItem="mxt-gn-nw6" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" id="qPT-aR-AiN"/>
-                            <constraint firstItem="nLJ-uh-XGo" firstAttribute="top" secondItem="G52-fw-BgN" secondAttribute="bottom" id="qUq-T3-OH5"/>
-                            <constraint firstItem="nLJ-uh-XGo" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" id="rnV-Ox-FcF"/>
-                            <constraint firstItem="mxt-gn-nw6" firstAttribute="top" secondItem="nLJ-uh-XGo" secondAttribute="bottom" constant="8" id="x2V-sz-qVa"/>
+                            <constraint firstItem="nWR-Ly-wZM" firstAttribute="top" secondItem="z9B-p1-UEi" secondAttribute="bottom" id="2EL-6X-FcP"/>
+                            <constraint firstItem="mxt-gn-nw6" firstAttribute="top" secondItem="G52-fw-BgN" secondAttribute="bottom" constant="16" id="6ap-8e-Wv3"/>
+                            <constraint firstItem="nWR-Ly-wZM" firstAttribute="top" secondItem="mxt-gn-nw6" secondAttribute="bottom" constant="16" id="IBQ-AP-7HQ"/>
+                            <constraint firstItem="z9B-p1-UEi" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" id="Of6-iy-CUq"/>
+                            <constraint firstItem="z9B-p1-UEi" firstAttribute="top" secondItem="G52-fw-BgN" secondAttribute="bottom" id="RDF-dB-WhC"/>
+                            <constraint firstAttribute="trailing" secondItem="z9B-p1-UEi" secondAttribute="trailing" id="RgO-so-CG0"/>
+                            <constraint firstItem="mxt-gn-nw6" firstAttribute="width" secondItem="T10-Dm-XNJ" secondAttribute="width" multiplier="0.45" id="hjH-GR-I5q"/>
+                            <constraint firstItem="mxt-gn-nw6" firstAttribute="leading" secondItem="T10-Dm-XNJ" secondAttribute="leading" constant="16" id="qPT-aR-AiN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OJU-lX-N6s"/>
+                    <connections>
+                        <outlet property="allGameButton" destination="YMT-4s-deu" id="oqE-54-Qxw"/>
+                        <outlet property="cityGameButton" destination="kyQ-IN-WNk" id="vFN-mp-U6T"/>
+                        <outlet property="constructionGameButton" destination="3QW-2i-Peu" id="evF-AZ-kHu"/>
+                        <outlet property="emergencyGameButton" destination="L2b-6J-1VI" id="tGi-Xk-uju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBi-fk-5TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,11 +311,14 @@
                                                     <constraint firstAttribute="width" secondItem="x01-fK-ezJ" secondAttribute="height" multiplier="1:1" id="fO3-aZ-prB"/>
                                                 </constraints>
                                                 <state key="normal" image="left-turn-sign"/>
+                                                <connections>
+                                                    <action selector="returnToGame:" destination="UIM-WZ-d0O" eventType="touchUpInside" id="Noe-iG-Ghf"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME THAT TRUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydr-le-Tb2">
                                                 <rect key="frame" x="58" y="0.0" width="285" height="50"/>
                                                 <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="32"/>
-                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -322,7 +333,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-dt-Q8u">
-                                <rect key="frame" x="0.0" y="70" width="375" height="489.5"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B0S-ln-gyK">
                                     <size key="itemSize" width="178" height="182"/>
@@ -376,51 +387,78 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j47-H5-vQi">
-                                <rect key="frame" x="16" y="567.5" width="343" height="83.5"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="32"/>
-                                <state key="normal" title="SEE MORE TRUCKS!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="24"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="importNewPhotos:" destination="UIM-WZ-d0O" eventType="touchUpInside" id="3fJ-VR-M6w"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NX-gZ-rgn">
+                                <rect key="frame" x="16" y="584.5" width="343" height="66.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="construction-stripes" translatesAutoresizingMaskIntoConstraints="NO" id="jgf-Xa-BCa">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="66.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wia-x7-Mww">
+                                        <rect key="frame" x="8" y="8" width="327" height="50.5"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="22"/>
+                                        <state key="normal" title="SEE MORE TRUCKS!"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="importNewPhotos:" destination="UIM-WZ-d0O" eventType="touchUpInside" id="LgM-BN-Hck"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wia-x7-Mww" firstAttribute="top" secondItem="jgf-Xa-BCa" secondAttribute="top" constant="8" id="0Z4-rf-HOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="jgf-Xa-BCa" secondAttribute="trailing" id="2x0-3t-3g0"/>
+                                    <constraint firstItem="jgf-Xa-BCa" firstAttribute="top" secondItem="4NX-gZ-rgn" secondAttribute="top" id="8ga-7f-E2H"/>
+                                    <constraint firstItem="wia-x7-Mww" firstAttribute="trailing" secondItem="jgf-Xa-BCa" secondAttribute="trailing" constant="-8" id="HrQ-hD-ZXe"/>
+                                    <constraint firstItem="wia-x7-Mww" firstAttribute="leading" secondItem="jgf-Xa-BCa" secondAttribute="leading" constant="8" id="INk-HU-WhO"/>
+                                    <constraint firstItem="jgf-Xa-BCa" firstAttribute="leading" secondItem="4NX-gZ-rgn" secondAttribute="leading" id="lIf-mQ-m5u"/>
+                                    <constraint firstItem="wia-x7-Mww" firstAttribute="bottom" secondItem="jgf-Xa-BCa" secondAttribute="bottom" constant="-8" id="ra5-by-efg"/>
+                                    <constraint firstAttribute="bottom" secondItem="jgf-Xa-BCa" secondAttribute="bottom" id="ypH-Iq-ci7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2CY-jY-XDm" firstAttribute="top" secondItem="JEO-76-Xe7" secondAttribute="bottom" id="62t-Rt-xuA"/>
+                            <constraint firstItem="J9r-3z-f0i" firstAttribute="top" secondItem="fLB-dt-Q8u" secondAttribute="bottom" id="7I0-UG-oZC"/>
                             <constraint firstAttribute="trailing" secondItem="fLB-dt-Q8u" secondAttribute="trailing" id="92O-BG-N3A"/>
                             <constraint firstItem="fLB-dt-Q8u" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leading" id="ANG-EB-je2"/>
                             <constraint firstItem="Qkn-Lj-dSa" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leadingMargin" id="CoZ-ZC-we6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4NX-gZ-rgn" secondAttribute="trailing" id="Gum-sY-MZQ"/>
+                            <constraint firstItem="4NX-gZ-rgn" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leadingMargin" id="Myz-dt-aEB"/>
                             <constraint firstItem="2CY-jY-XDm" firstAttribute="height" secondItem="7or-Vr-5Uz" secondAttribute="height" multiplier="0.075" id="Rnn-FO-EuB"/>
-                            <constraint firstItem="j47-H5-vQi" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leading" constant="16" id="SPe-E6-rAX"/>
                             <constraint firstItem="Qkn-Lj-dSa" firstAttribute="centerX" secondItem="7or-Vr-5Uz" secondAttribute="centerX" id="SkR-CT-6FR"/>
                             <constraint firstItem="Qkn-Lj-dSa" firstAttribute="centerY" secondItem="7or-Vr-5Uz" secondAttribute="centerY" id="UB7-TF-tX4"/>
-                            <constraint firstItem="j47-H5-vQi" firstAttribute="top" secondItem="fLB-dt-Q8u" secondAttribute="bottom" constant="8" id="Xnh-cr-5FO"/>
-                            <constraint firstItem="J9r-3z-f0i" firstAttribute="top" secondItem="j47-H5-vQi" secondAttribute="bottom" constant="16" id="bQh-Qz-eJf"/>
+                            <constraint firstItem="4NX-gZ-rgn" firstAttribute="height" secondItem="7or-Vr-5Uz" secondAttribute="height" multiplier="0.1" id="ah0-Fg-KOa"/>
                             <constraint firstItem="2CY-jY-XDm" firstAttribute="leading" secondItem="7or-Vr-5Uz" secondAttribute="leadingMargin" id="cBu-Jt-u9K"/>
-                            <constraint firstItem="j47-H5-vQi" firstAttribute="height" secondItem="7or-Vr-5Uz" secondAttribute="height" multiplier="0.125" id="dxS-cg-ErX"/>
+                            <constraint firstItem="J9r-3z-f0i" firstAttribute="top" secondItem="4NX-gZ-rgn" secondAttribute="bottom" constant="16" id="flA-Ju-Uey"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qkn-Lj-dSa" secondAttribute="trailing" id="ij9-ze-vvF"/>
-                            <constraint firstAttribute="trailing" secondItem="j47-H5-vQi" secondAttribute="trailing" constant="16" id="nez-8a-yxU"/>
                             <constraint firstItem="2CY-jY-XDm" firstAttribute="trailing" secondItem="7or-Vr-5Uz" secondAttribute="trailingMargin" id="nmB-nP-ojy"/>
-                            <constraint firstItem="fLB-dt-Q8u" firstAttribute="top" secondItem="2CY-jY-XDm" secondAttribute="bottom" id="oeH-St-Stp"/>
+                            <constraint firstItem="fLB-dt-Q8u" firstAttribute="top" secondItem="2CY-jY-XDm" secondAttribute="bottom" constant="8" id="oeH-St-Stp"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionButton" destination="j47-H5-vQi" id="Ocw-3u-bFr"/>
+                        <outlet property="collectionButton" destination="wia-x7-Mww" id="mqC-SH-Ewp"/>
                         <outlet property="collectionView" destination="fLB-dt-Q8u" id="ltR-EN-1b5"/>
+                        <outlet property="constructionStripes" destination="jgf-Xa-BCa" id="TUj-6e-Eov"/>
                         <outlet property="flowLayout" destination="B0S-ln-gyK" id="O9d-dG-Gzh"/>
                         <outlet property="noImagesLabel" destination="Qkn-Lj-dSa" id="Cz2-Ff-hQh"/>
+                        <outlet property="titleLabel" destination="Ydr-le-Tb2" id="Zxy-TI-GGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RH-tk-LVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -429,6 +467,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="all-truck-button" width="175" height="175"/>
+        <image name="city-truck-button" width="175" height="175"/>
+        <image name="construction-stripes" width="205" height="204"/>
+        <image name="construction-truck-button" width="175" height="175"/>
+        <image name="emergency-truck-button" width="175" height="175"/>
         <image name="left-turn-sign" width="320" height="320"/>
+        <image name="sign-background" width="523" height="782"/>
     </resources>
 </document>

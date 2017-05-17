@@ -43,7 +43,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         
         // add outline to title font
-        titleLabel.attributedText = setTitleLabelFont()
+        titleLabel.attributedText = GameDesign.setTitleLabelFont()
         
         // sign display
         changeSignForGame(forGameType: self.gameType)
@@ -79,43 +79,34 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // change the sign coloring to match the game type
         switch gameType {
         case .Construction:
-            self.bottomSignView.backgroundColor = UIColor.orange
-            self.topSignView.backgroundColor = UIColor.orange
+            self.bottomSignView.backgroundColor = GameDesign.constructionOrange
+            self.topSignView.backgroundColor = GameDesign.constructionOrange
             self.topSignView.layer.borderColor = UIColor.black.cgColor
             self.winningTruckLabel.backgroundColor = UIColor.black
-            self.winningTruckLabel.textColor = UIColor.yellow
+            self.winningTruckLabel.textColor = GameDesign.constructionYellow
             self.canYouFindLabel.textColor = UIColor.white
         case .Emergency:
             self.bottomSignView.backgroundColor = UIColor.white
             self.topSignView.backgroundColor = UIColor.white
             self.topSignView.layer.borderColor = UIColor.black.cgColor
             self.winningTruckLabel.backgroundColor = UIColor.black
-            self.winningTruckLabel.textColor = UIColor.red
+            self.winningTruckLabel.textColor = GameDesign.roadSignRed
             self.canYouFindLabel.textColor = UIColor.black
         case .City:
-            self.bottomSignView.backgroundColor = UIColor.green
-            self.topSignView.backgroundColor = UIColor.green
+            self.bottomSignView.backgroundColor = GameDesign.roadSignGreen
+            self.topSignView.backgroundColor = GameDesign.roadSignGreen
             self.topSignView.layer.borderColor = UIColor.white.cgColor
             self.winningTruckLabel.backgroundColor = UIColor.white
-            self.winningTruckLabel.textColor = UIColor.black
+            self.winningTruckLabel.textColor = GameDesign.constructionYellow
             self.canYouFindLabel.textColor = UIColor.white
         case .All:
-            self.bottomSignView.backgroundColor = UIColor.blue
-            self.topSignView.backgroundColor = UIColor.blue
+            self.bottomSignView.backgroundColor = GameDesign.roadSignBlue
+            self.topSignView.backgroundColor = GameDesign.roadSignBlue
             self.topSignView.layer.borderColor = UIColor.white.cgColor
             self.winningTruckLabel.backgroundColor = UIColor.white
-            self.winningTruckLabel.textColor = UIColor.red
+            self.winningTruckLabel.textColor = GameDesign.constructionOrange
             self.canYouFindLabel.textColor = UIColor.white
         }
-    }
-    
-    func setTitleLabelFont() -> NSMutableAttributedString {
-        // adds an outline to the title label font
-        let mutableString = NSMutableAttributedString(string: "NAME THAT TRUCK", attributes: [
-            NSStrokeColorAttributeName: UIColor.black,
-            NSForegroundColorAttributeName: UIColor.orange,
-            NSStrokeWidthAttributeName: -1.0])
-        return mutableString
     }
 
     // MARK: - TruckType Entity
@@ -217,7 +208,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // create the popdown view
         self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
         self.popdownView.imageView.image = winningTruck.image
+        self.popdownView.constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
+        self.popdownView.moreTrucksButton.layer.borderColor = GameDesign.constructionOrange.cgColor
         self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+        self.popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
         self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(popdownView)
     }
@@ -235,14 +229,12 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func moreTrucksButtonPressed(sender: UIButton) {
         // segue to photo album view of the winning truck
-        print("Getting pictures of trucks...")
-        
-        removeSuperviews()
-        
+        self.removeSuperviews()
         // fetch the current truck type from core data
         let truckType = delegate.stack.fetchTruckType(name: self.winningTruck.name)
         // pass it to photo view controller and segue to pictures of trucks
         if let truckType = truckType {
+            // segue to photo album
             let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
             photoViewController.selectedTruck = self.winningTruck
             photoViewController.truckType = truckType

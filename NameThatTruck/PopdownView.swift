@@ -12,6 +12,7 @@ import UIKit
 
     // MARK: - Outlets
     
+    @IBOutlet weak var constructionStripes: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var moreTrucksButton: UIButton!
