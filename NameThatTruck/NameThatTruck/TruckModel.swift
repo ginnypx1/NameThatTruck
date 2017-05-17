@@ -25,7 +25,7 @@ class Truck {
         self.name = name
         self.displayName = displayName
         self.image = UIImage(named: name)
-        self.gifString = "\(name)-gif.gif"
+        self.gifString = name
         self.searchTag = name.replacingOccurrences(of: "-", with: "+")
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwiftyGif
 
 class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -36,6 +37,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var gameTrucks: [Truck]!
     var winningTruck: Truck!
+    
+    let gifmanager = SwiftyGifManager(memoryLimit:20)
     
     // MARK: - View
     
@@ -173,12 +176,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if selectedTruck.name == winningTruck.name {
             print("You got it!")
             
-            // TODO: Load SwiftyGif and set up the gif manager to play the gif
-            //        let gifmanager = SwiftyGifManager(memoryLimit:20)
-            //        let gif = UIImage(gifName: "\(selectedTruck.gifString)")
-            //        print("Gif is \(selectedTruck.gifString)")
-            //        self.imageView.setGifImage(gif, manager: gifmanager)
-            
             // create black background
             self.createBlackBackground()
             // popdown view slides in from top of screen
@@ -213,7 +210,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // view sized for regular height devices
         var viewWidth = (self.view.frame.size.width * 0.8)
-        var viewHeight = (self.view.frame.size.height * 0.66)
+        var viewHeight = (self.view.frame.size.height * 0.5)
         
         if verticalClass == UIUserInterfaceSizeClass.compact {
             // resize view for compact height
@@ -223,7 +220,13 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
         // create the popdown view
         self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
-        self.popdownView.imageView.image = winningTruck.image
+        
+        // Load SwiftyGif and set up the gif manager to play the gif
+        let gif = UIImage(gifName: "\(winningTruck.gifString)")
+        print("Gif is \(winningTruck.gifString)")
+        self.popdownView.imageView.setGifImage(gif, manager: self.gifmanager)
+        //self.popdownView.imageView.image = winningTruck.image
+        
         self.popdownView.constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
         self.popdownView.moreTrucksButton.layer.borderColor = GameDesign.constructionOrange.cgColor
         self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)

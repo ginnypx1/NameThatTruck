@@ -68,13 +68,14 @@
 		34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDF1EC51259003E4A19 /* excavator.gif */; };
 		34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE01EC51259003E4A19 /* forklift.gif */; };
 		34ADEEED1EC51259003E4A19 /* grader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE11EC51259003E4A19 /* grader.gif */; };
-		34ADEEEE1EC51259003E4A19 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE21EC51259003E4A19 /* loader.gif */; };
+		34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE21EC51259003E4A19 /* front-end-loader.gif */; };
 		34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE31EC51259003E4A19 /* paver.gif */; };
 		34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE41EC51259003E4A19 /* skid-steer.gif */; };
 		34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE51EC51259003E4A19 /* steamroller.gif */; };
 		34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */; };
 		34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1E1EC788F50091CC2A /* MenuViewController.swift */; };
 		34C13C211EC78BC80091CC2A /* CityTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C201EC78BC80091CC2A /* CityTrucks.swift */; };
+		58DDAFEDC450352C88420100 /* Pods_NameThatTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6C8515707E5620798B144B /* Pods_NameThatTruck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,13 +142,16 @@
 		34ADEEDF1EC51259003E4A19 /* excavator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = excavator.gif; sourceTree = "<group>"; };
 		34ADEEE01EC51259003E4A19 /* forklift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = forklift.gif; sourceTree = "<group>"; };
 		34ADEEE11EC51259003E4A19 /* grader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grader.gif; sourceTree = "<group>"; };
-		34ADEEE21EC51259003E4A19 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		34ADEEE21EC51259003E4A19 /* front-end-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "front-end-loader.gif"; sourceTree = "<group>"; };
 		34ADEEE31EC51259003E4A19 /* paver.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paver.gif; sourceTree = "<group>"; };
 		34ADEEE41EC51259003E4A19 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
 		34ADEEE51EC51259003E4A19 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
 		34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTrucks.swift; sourceTree = "<group>"; };
 		34C13C1E1EC788F50091CC2A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		34C13C201EC78BC80091CC2A /* CityTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTrucks.swift; sourceTree = "<group>"; };
+		3A48CD73435232BF41123A68 /* Pods-NameThatTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameThatTruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck.release.xcconfig"; sourceTree = "<group>"; };
+		BB6C8515707E5620798B144B /* Pods_NameThatTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameThatTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD17B5AE2C6616B700C81F1 /* Pods-NameThatTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameThatTruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DDAFEDC450352C88420100 /* Pods_NameThatTruck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +171,8 @@
 			children = (
 				349047D21EC23F1E00F8F395 /* NameThatTruck */,
 				349047D11EC23F1E00F8F395 /* Products */,
+				E6BA443C3BA82BA1226F4065 /* Pods */,
+				FF6AFB1DB763C135D8792FDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,7 +300,7 @@
 				34ADEEDF1EC51259003E4A19 /* excavator.gif */,
 				34ADEEE01EC51259003E4A19 /* forklift.gif */,
 				34ADEEE11EC51259003E4A19 /* grader.gif */,
-				34ADEEE21EC51259003E4A19 /* loader.gif */,
+				34ADEEE21EC51259003E4A19 /* front-end-loader.gif */,
 				34ADEEE31EC51259003E4A19 /* paver.gif */,
 				34ADEEE41EC51259003E4A19 /* skid-steer.gif */,
 				34ADEEE51EC51259003E4A19 /* steamroller.gif */,
@@ -325,6 +332,23 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		E6BA443C3BA82BA1226F4065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFD17B5AE2C6616B700C81F1 /* Pods-NameThatTruck.debug.xcconfig */,
+				3A48CD73435232BF41123A68 /* Pods-NameThatTruck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF6AFB1DB763C135D8792FDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB6C8515707E5620798B144B /* Pods_NameThatTruck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,9 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349047E21EC23F1E00F8F395 /* Build configuration list for PBXNativeTarget "NameThatTruck" */;
 			buildPhases = (
+				D5CFBDC9DD835123FBFB5795 /* [CP] Check Pods Manifest.lock */,
 				349047CC1EC23F1E00F8F395 /* Sources */,
 				349047CD1EC23F1E00F8F395 /* Frameworks */,
 				349047CE1EC23F1E00F8F395 /* Resources */,
+				2C1FE72F383E6540247C4476 /* [CP] Embed Pods Frameworks */,
+				977FBE08957FB04CDBAFB7FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -423,7 +450,7 @@
 				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
-				34ADEEEE1EC51259003E4A19 /* loader.gif in Resources */,
+				34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */,
 				346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */,
 				346345171EC955CA00FA5FA2 /* tractor.gif in Resources */,
 				34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */,
@@ -431,6 +458,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C1FE72F383E6540247C4476 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		977FBE08957FB04CDBAFB7FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CFBDC9DD835123FBFB5795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		349047CC1EC23F1E00F8F395 /* Sources */ = {
@@ -585,6 +660,7 @@
 		};
 		349047E31EC23F1E00F8F395 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD17B5AE2C6616B700C81F1 /* Pods-NameThatTruck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B875NM54ML;
@@ -598,6 +674,7 @@
 		};
 		349047E41EC23F1E00F8F395 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A48CD73435232BF41123A68 /* Pods-NameThatTruck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B875NM54ML;
