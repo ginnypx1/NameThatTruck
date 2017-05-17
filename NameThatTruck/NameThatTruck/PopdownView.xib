@@ -62,7 +62,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
-                                    <rect key="frame" x="7.5" y="8" width="180.5" height="79"/>
+                                    <rect key="frame" x="4" y="4" width="188.5" height="87"/>
                                     <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
                                     <state key="normal" title="+" image="airport-fire-truck">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,13 +80,13 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="h8Z-mx-Gog" secondAttribute="trailing" id="9qk-ra-8dC"/>
-                                <constraint firstAttribute="trailing" secondItem="qrj-Qn-nA4" secondAttribute="trailing" constant="8" id="JeY-uM-w9L"/>
-                                <constraint firstAttribute="bottom" secondItem="qrj-Qn-nA4" secondAttribute="bottom" constant="8" id="PQL-Xr-Hzb"/>
+                                <constraint firstAttribute="trailing" secondItem="qrj-Qn-nA4" secondAttribute="trailing" constant="4" id="JeY-uM-w9L"/>
+                                <constraint firstAttribute="bottom" secondItem="qrj-Qn-nA4" secondAttribute="bottom" constant="4" id="PQL-Xr-Hzb"/>
                                 <constraint firstItem="h8Z-mx-Gog" firstAttribute="leading" secondItem="Cez-tA-fTb" secondAttribute="leading" id="RaH-va-uvS"/>
                                 <constraint firstAttribute="bottom" secondItem="h8Z-mx-Gog" secondAttribute="bottom" id="VSg-Iq-hSI"/>
                                 <constraint firstItem="h8Z-mx-Gog" firstAttribute="top" secondItem="Cez-tA-fTb" secondAttribute="top" id="Z4b-HN-Zu9"/>
-                                <constraint firstItem="qrj-Qn-nA4" firstAttribute="leading" secondItem="Cez-tA-fTb" secondAttribute="leading" constant="8" id="dtQ-aX-edT"/>
-                                <constraint firstItem="qrj-Qn-nA4" firstAttribute="top" secondItem="Cez-tA-fTb" secondAttribute="top" constant="8" id="eBy-WO-T0k"/>
+                                <constraint firstItem="qrj-Qn-nA4" firstAttribute="leading" secondItem="Cez-tA-fTb" secondAttribute="leading" constant="4" id="dtQ-aX-edT"/>
+                                <constraint firstItem="qrj-Qn-nA4" firstAttribute="top" secondItem="Cez-tA-fTb" secondAttribute="top" constant="4" id="eBy-WO-T0k"/>
                             </constraints>
                         </view>
                     </subviews>
