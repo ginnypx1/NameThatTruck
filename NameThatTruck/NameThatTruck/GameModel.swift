@@ -36,6 +36,11 @@ struct GameDesign {
 
 struct Game {
     
+    // MARK: - Properties
+    
+    var winningTruck: Truck?
+    var lastWinner: Truck?
+    
     // MARK: - Methods
     
     // generate a set of random trucks
@@ -63,11 +68,18 @@ struct Game {
     }
     
     // choose a winner
-    func chooseWinner(from gameTrucks: [Truck]) -> Truck {
+    mutating func chooseWinner(from gameTrucks: [Truck]) {
         let random = Int(arc4random_uniform(UInt32(gameTrucks.count)))
-        let winner = gameTrucks[random]
-        print("Winning truck: \(winner.displayName)")
-        return winner
+        winningTruck = gameTrucks[random]
+        
+        if let winningTruck = winningTruck, var lastWinner = lastWinner {
+            if winningTruck.name == lastWinner.name {
+                chooseWinner(from: gameTrucks)
+            } else {
+                lastWinner = winningTruck
+            }
+        }
+        print("Winning truck: \(String(describing: winningTruck?.displayName))")
     }
     
 }

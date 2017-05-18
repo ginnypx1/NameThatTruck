@@ -63,9 +63,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func createGameBoard() {
         // start a new game
-        let game = Game()
+        var game = Game()
         gameTrucks = game.generateGameSet(withTrucks: self.truckSet)
-        winningTruck = game.chooseWinner(from: self.gameTrucks)
+        game.chooseWinner(from: self.gameTrucks)
+        winningTruck = game.winningTruck
         
         // put the name of the selected truck in winningTruckLabel
         winningTruckLabel.text = winningTruck.displayName
@@ -182,7 +183,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.addPopdownView()
             
             // find the size classes
-            let dropHeight = (self.view.frame.size.height * 0.1)
+            let dropHeight = (self.view.frame.size.height * 0.15)
             
             // drop down the popdownView
             UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
@@ -227,8 +228,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.popdownView.imageView.setGifImage(gif, manager: self.gifmanager)
         //self.popdownView.imageView.image = winningTruck.image
         
-        self.popdownView.constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
-        self.popdownView.moreTrucksButton.layer.borderColor = GameDesign.constructionOrange.cgColor
+        self.popdownView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
         self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
         self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
