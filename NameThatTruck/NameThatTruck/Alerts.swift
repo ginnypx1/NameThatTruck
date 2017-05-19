@@ -16,7 +16,7 @@ class Alerts {
     // display Internet Out alert
     static func displayInternetConnectionAlert(from viewController: UIViewController) {
         
-        let alertController = UIAlertController(title: "No Internet Connection", message: "Make Sure Your Device is Connected to the Internet.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "No Internet Connection", message: "Please Make Sure Your Device is Connected to the Internet.", preferredStyle: .alert)
         
         let dismissAction = UIAlertAction(title: "Dismiss", style: .default) { (action: UIAlertAction) -> Void in
             alertController.dismiss(animated: true, completion: nil)
@@ -24,7 +24,7 @@ class Alerts {
         
         // Change font of the title and message
         let messageFont:[String : AnyObject] = [ NSFontAttributeName : UIFont(name: "HelveticaNeue", size: 14)! ]
-        let attributedMessage = NSMutableAttributedString(string: "Make Sure Your Device is Connected to the Internet.", attributes: messageFont)
+        let attributedMessage = NSMutableAttributedString(string: "Please Make Sure Your Device is Connected to the Internet.", attributes: messageFont)
         alertController.setValue(attributedMessage, forKey: "attributedMessage")
         
         // add actions to alert controller
@@ -37,7 +37,7 @@ class Alerts {
     // alert there was an error downloading the images
     static func displayStandardAlert(from viewController: UIViewController) {
         
-        let alertController = UIAlertController(title: nil, message: "There Was an Error Retrieving the Images.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: nil, message: "There Was an Error Retrieving the Images. Please Try Again.", preferredStyle: .alert)
         
         let dismissAction = UIAlertAction(title: "Dismiss", style: .default) { (action: UIAlertAction) -> Void in
             alertController.dismiss(animated: true, completion: nil)
@@ -45,7 +45,7 @@ class Alerts {
         
         // Change font of the title and message
         let messageFont:[String : AnyObject] = [ NSFontAttributeName : UIFont(name: "HelveticaNeue", size: 14)! ]
-        let attributedMessage = NSMutableAttributedString(string: "There Was an Error Retrieving the Student Data..", attributes: messageFont)
+        let attributedMessage = NSMutableAttributedString(string: "There Was an Error Retrieving the Images. Please Try Again.", attributes: messageFont)
         alertController.setValue(attributedMessage, forKey: "attributedMessage")
         
         // add actions to alert controller

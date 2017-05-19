@@ -15,7 +15,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Outlets
     
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    @IBOutlet weak var constructionStripes: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionButton: UIButton!
     @IBOutlet weak var noImagesLabel: UILabel!
@@ -27,6 +26,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     var selectedTruck: Truck!
     
     var isSmall: Bool = true
+    
+    var soundManager: SoundManager!
     
     // API call
     var flickrClient = FlickrClient()
@@ -71,9 +72,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         } else {
             collectionButton.setTitle("See More \(self.selectedTruck.displayName)es!", for: .normal)
         }
-        // add orange outlines to button
-        collectionButton.layer.borderColor = GameDesign.constructionOrange.cgColor
-        constructionStripes.layer.borderColor = GameDesign.constructionOrange.cgColor
         // add activity indicator
         addActivityIndicator()
         // set up custom flow
@@ -271,6 +269,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Import New Photos or Delete
     
     @IBAction func importNewPhotos(_ sender: Any) {
+        // truck horn sound effect
+        soundManager.playTruckHornSoundEffect()
         // animate
         bounceButton(button: self.collectionButton, duration: 0.5, scale: 0.3)
         // disable button while new photos load

@@ -13,6 +13,8 @@ import UIKit
 
 class Truck {
     
+    static var lastSelectedTruck: Truck? 
+    
     static let allTrucks: [Truck] = ConstructionTrucks.allConstructionTrucks + EmergencyTrucks.allEmergencyTrucks + CityTrucks.allCityTrucks
     
     let name: String

@@ -39,6 +39,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var winningTruck: Truck!
     
     let gifmanager = SwiftyGifManager(memoryLimit:20)
+    var soundManager: SoundManager!
     
     // MARK: - View
     
@@ -190,6 +191,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 self.popdownView.center.y += (800 + dropHeight)
             }, completion: nil)
             
+            // play sound
+            soundManager.playSoundForGif(selectedTruck: self.winningTruck)
+            
         // if guess is incorrect, say name of truck and ask the question again
         } else {
             // TODO: Say the name of the selected truck
@@ -236,6 +240,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func backButtonPressed(sender: UIButton) {
+        // stop audio
+        soundManager.stopSound()
         // slide popup view up off screen
         UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
             self.popdownView.center.y -= 900
@@ -247,6 +253,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func moreTrucksButtonPressed(sender: UIButton) {
+        // stop audio
+        soundManager.stopSound()
+        // play truck horn sound effect
+        soundManager.playTruckHornSoundEffect()
         // segue to photo album view of the winning truck
         self.removeSuperviews()
         // fetch the current truck type from core data
@@ -257,6 +267,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
             photoViewController.selectedTruck = self.winningTruck
             photoViewController.truckType = truckType
+            photoViewController.soundManager = self.soundManager
             self.navigationController?.pushViewController(photoViewController, animated: true)
         }
     }

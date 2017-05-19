@@ -46,7 +46,7 @@
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
                             <rect key="frame" x="107.5" y="0.0" width="191" height="103"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="1.85:1" id="bAV-CG-Nte"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="1.85:1" id="bAV-CG-Nte"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
                             <state key="normal" title="+" image="airport-fire-truck">

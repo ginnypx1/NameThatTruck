@@ -73,5 +73,16 @@ struct EmergencyTrucks {
         /* Hyster C350C double drum roller | no-reserve Internet auction August 25, 2011 by Purple Wave https://www.youtube.com/watch?v=pmXITU8IJbk */
         Truck(name: EmergencyTruckTypes.TowTruck.rawValue, displayName: "Tow Truck")
     ]
+    
+    static let emergencyTrucksWithSirens: [String] = [
+        EmergencyTruckTypes.AirportFireTruck.rawValue,
+        EmergencyTruckTypes.Ambulance.rawValue,
+        EmergencyTruckTypes.FireBoat.rawValue,
+        EmergencyTruckTypes.FireCheifsTruck.rawValue,
+        EmergencyTruckTypes.LadderTruck.rawValue,
+        EmergencyTruckTypes.PoliceBoat.rawValue,
+        EmergencyTruckTypes.PoliceCar.rawValue,
+        EmergencyTruckTypes.PumperTruck.rawValue
+    ]
 }
 

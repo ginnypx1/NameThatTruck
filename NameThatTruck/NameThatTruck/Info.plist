@@ -8,7 +8,6 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Capture_it.ttf</string>
 		<string>Lorimer_No2_Stencil.otf</string>
 	</array>
 	<key>CFBundleIdentifier</key>

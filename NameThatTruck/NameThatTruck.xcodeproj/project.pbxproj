@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */; };
-		3410C6101ECA4238007BC759 /* Capture_it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60F1ECA4238007BC759 /* Capture_it.ttf */; };
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
 		3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345001EC955C900FA5FA2 /* big-rig.gif */; };
@@ -18,7 +17,7 @@
 		346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345041EC955C900FA5FA2 /* fuel-truck.gif */; };
 		346345111EC955C900FA5FA2 /* garbage-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345051EC955C900FA5FA2 /* garbage-truck.gif */; };
 		346345121EC955C900FA5FA2 /* ice-cream-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345061EC955C900FA5FA2 /* ice-cream-truck.gif */; };
-		346345131EC955C900FA5FA2 /* mail-delivery.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345071EC955C900FA5FA2 /* mail-delivery.gif */; };
+		346345131EC955C900FA5FA2 /* mail-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345071EC955C900FA5FA2 /* mail-truck.gif */; };
 		346345141EC955C900FA5FA2 /* pickup-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345081EC955C900FA5FA2 /* pickup-truck.gif */; };
 		346345151EC955CA00FA5FA2 /* school-bus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345091EC955C900FA5FA2 /* school-bus.gif */; };
 		346345161EC955CA00FA5FA2 /* street-sweeper.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463450A1EC955C900FA5FA2 /* street-sweeper.gif */; };
@@ -75,12 +74,20 @@
 		34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */; };
 		34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1E1EC788F50091CC2A /* MenuViewController.swift */; };
 		34C13C211EC78BC80091CC2A /* CityTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C201EC78BC80091CC2A /* CityTrucks.swift */; };
+		34F9D6321ECE1C23004ABE98 /* truck-horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */; };
+		34F9D6331ECE1C23004ABE98 /* sirens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6301ECE1C23004ABE98 /* sirens.mp3 */; };
+		34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */; };
+		34F9D6561ECF7637004ABE98 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9D6551ECF7637004ABE98 /* SoundManager.swift */; };
+		34F9D6591ECF7A95004ABE98 /* truck-horn1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6571ECF7A95004ABE98 /* truck-horn1.mp3 */; };
+		34F9D65A1ECF7A95004ABE98 /* truck-horn2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6581ECF7A95004ABE98 /* truck-horn2.mp3 */; };
+		34F9D65C1ECF8BBF004ABE98 /* GameDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */; };
+		34F9D65F1ECFB2FC004ABE98 /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D65D1ECFB2FA004ABE98 /* helicopter.mp3 */; };
+		34F9D6601ECFB2FC004ABE98 /* ice-cream-truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D65E1ECFB2FB004ABE98 /* ice-cream-truck.mp3 */; };
 		58DDAFEDC450352C88420100 /* Pods_NameThatTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6C8515707E5620798B144B /* Pods_NameThatTruck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lorimer_No2_Stencil.otf; sourceTree = "<group>"; };
-		3410C60F1ECA4238007BC759 /* Capture_it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Capture_it.ttf; sourceTree = "<group>"; };
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
 		346345001EC955C900FA5FA2 /* big-rig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "big-rig.gif"; sourceTree = "<group>"; };
@@ -90,7 +97,7 @@
 		346345041EC955C900FA5FA2 /* fuel-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fuel-truck.gif"; sourceTree = "<group>"; };
 		346345051EC955C900FA5FA2 /* garbage-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "garbage-truck.gif"; sourceTree = "<group>"; };
 		346345061EC955C900FA5FA2 /* ice-cream-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ice-cream-truck.gif"; sourceTree = "<group>"; };
-		346345071EC955C900FA5FA2 /* mail-delivery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mail-delivery.gif"; sourceTree = "<group>"; };
+		346345071EC955C900FA5FA2 /* mail-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mail-truck.gif"; sourceTree = "<group>"; };
 		346345081EC955C900FA5FA2 /* pickup-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pickup-truck.gif"; sourceTree = "<group>"; };
 		346345091EC955C900FA5FA2 /* school-bus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "school-bus.gif"; sourceTree = "<group>"; };
 		3463450A1EC955C900FA5FA2 /* street-sweeper.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "street-sweeper.gif"; sourceTree = "<group>"; };
@@ -149,6 +156,15 @@
 		34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTrucks.swift; sourceTree = "<group>"; };
 		34C13C1E1EC788F50091CC2A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		34C13C201EC78BC80091CC2A /* CityTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTrucks.swift; sourceTree = "<group>"; };
+		34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-horn.mp3"; sourceTree = "<group>"; };
+		34F9D6301ECE1C23004ABE98 /* sirens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sirens.mp3; sourceTree = "<group>"; };
+		34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-driving.mp3"; sourceTree = "<group>"; };
+		34F9D6551ECF7637004ABE98 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		34F9D6571ECF7A95004ABE98 /* truck-horn1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-horn1.mp3"; sourceTree = "<group>"; };
+		34F9D6581ECF7A95004ABE98 /* truck-horn2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-horn2.mp3"; sourceTree = "<group>"; };
+		34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDesign.swift; sourceTree = "<group>"; };
+		34F9D65D1ECFB2FA004ABE98 /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = helicopter.mp3; sourceTree = "<group>"; };
+		34F9D65E1ECFB2FB004ABE98 /* ice-cream-truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ice-cream-truck.mp3"; sourceTree = "<group>"; };
 		3A48CD73435232BF41123A68 /* Pods-NameThatTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameThatTruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck.release.xcconfig"; sourceTree = "<group>"; };
 		BB6C8515707E5620798B144B /* Pods_NameThatTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameThatTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD17B5AE2C6616B700C81F1 /* Pods-NameThatTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameThatTruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NameThatTruck/Pods-NameThatTruck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +253,7 @@
 				349048031EC2420900F8F395 /* CollectionFlowLayout.swift */,
 				349048051EC2421200F8F395 /* PhotoViewCell.swift */,
 				349048071EC2421A00F8F395 /* TruckViewCell.swift */,
+				34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -244,6 +261,8 @@
 		349048091EC2423200F8F395 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				34F9D6551ECF7637004ABE98 /* SoundManager.swift */,
+				34F9D62E1ECE1C06004ABE98 /* Sounds */,
 				349047DF1EC23F1E00F8F395 /* Info.plist */,
 				3490480A1EC2424400F8F395 /* Private.swift */,
 				3490480C1EC2424C00F8F395 /* Reachability.swift */,
@@ -255,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				34ADEED91EC5123C003E4A19 /* GIFs */,
-				3410C60F1ECA4238007BC759 /* Capture_it.ttf */,
 				3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */,
 				349047D71EC23F1E00F8F395 /* Main.storyboard */,
 				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
@@ -287,7 +305,7 @@
 				346345041EC955C900FA5FA2 /* fuel-truck.gif */,
 				346345051EC955C900FA5FA2 /* garbage-truck.gif */,
 				346345061EC955C900FA5FA2 /* ice-cream-truck.gif */,
-				346345071EC955C900FA5FA2 /* mail-delivery.gif */,
+				346345071EC955C900FA5FA2 /* mail-truck.gif */,
 				346345081EC955C900FA5FA2 /* pickup-truck.gif */,
 				346345091EC955C900FA5FA2 /* school-bus.gif */,
 				3463450A1EC955C900FA5FA2 /* street-sweeper.gif */,
@@ -330,6 +348,20 @@
 				349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		34F9D62E1ECE1C06004ABE98 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				34F9D65D1ECFB2FA004ABE98 /* helicopter.mp3 */,
+				34F9D65E1ECFB2FB004ABE98 /* ice-cream-truck.mp3 */,
+				34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */,
+				34F9D6571ECF7A95004ABE98 /* truck-horn1.mp3 */,
+				34F9D6581ECF7A95004ABE98 /* truck-horn2.mp3 */,
+				34F9D6301ECE1C23004ABE98 /* sirens.mp3 */,
+				34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		E6BA443C3BA82BA1226F4065 /* Pods */ = {
@@ -415,6 +447,8 @@
 				3463450F1EC955C900FA5FA2 /* delivery-truck.gif in Resources */,
 				3463452F1EC955E200FA5FA2 /* tow-truck.gif in Resources */,
 				3463452B1EC955E200FA5FA2 /* police-car.gif in Resources */,
+				34F9D65F1ECFB2FC004ABE98 /* helicopter.mp3 in Resources */,
+				34F9D6591ECF7A95004ABE98 /* truck-horn1.mp3 in Resources */,
 				346345241EC955E200FA5FA2 /* airport-fire-truck.gif in Resources */,
 				34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */,
 				3463452C1EC955E200FA5FA2 /* pumper-truck.gif in Resources */,
@@ -426,18 +460,21 @@
 				3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */,
 				346345121EC955C900FA5FA2 /* ice-cream-truck.gif in Resources */,
 				34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */,
-				346345131EC955C900FA5FA2 /* mail-delivery.gif in Resources */,
+				346345131EC955C900FA5FA2 /* mail-truck.gif in Resources */,
 				346345111EC955C900FA5FA2 /* garbage-truck.gif in Resources */,
 				346345281EC955E200FA5FA2 /* ladder-truck.gif in Resources */,
 				34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */,
 				346345151EC955CA00FA5FA2 /* school-bus.gif in Resources */,
 				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
 				34ADEEED1EC51259003E4A19 /* grader.gif in Resources */,
+				34F9D65A1ECF7A95004ABE98 /* truck-horn2.mp3 in Resources */,
 				34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */,
 				3463450D1EC955C900FA5FA2 /* bucket-truck.gif in Resources */,
 				3463452A1EC955E200FA5FA2 /* police-boat.gif in Resources */,
 				346345291EC955E200FA5FA2 /* military-helicopter.gif in Resources */,
 				346345161EC955CA00FA5FA2 /* street-sweeper.gif in Resources */,
+				34F9D6601ECFB2FC004ABE98 /* ice-cream-truck.mp3 in Resources */,
+				34F9D6321ECE1C23004ABE98 /* truck-horn.mp3 in Resources */,
 				346345271EC955E200FA5FA2 /* fire-chiefs-truck.gif in Resources */,
 				34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */,
 				346345251EC955E200FA5FA2 /* ambulance.gif in Resources */,
@@ -445,12 +482,13 @@
 				3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */,
 				34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */,
 				3463452D1EC955E200FA5FA2 /* rescue-helicopter.gif in Resources */,
-				3410C6101ECA4238007BC759 /* Capture_it.ttf in Resources */,
 				346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */,
+				34F9D6331ECE1C23004ABE98 /* sirens.mp3 in Resources */,
 				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
 				34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */,
+				34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */,
 				346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */,
 				346345171EC955CA00FA5FA2 /* tractor.gif in Resources */,
 				34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */,
@@ -527,8 +565,10 @@
 				3490480D1EC2424C00F8F395 /* Reachability.swift in Sources */,
 				349047F91EC2419700F8F395 /* GameViewController.swift in Sources */,
 				349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */,
+				34F9D65C1ECF8BBF004ABE98 /* GameDesign.swift in Sources */,
 				349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */,
 				349047E91EC240C700F8F395 /* TruckModel.swift in Sources */,
+				34F9D6561ECF7637004ABE98 /* SoundManager.swift in Sources */,
 				34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */,
 				349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */,
 				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
