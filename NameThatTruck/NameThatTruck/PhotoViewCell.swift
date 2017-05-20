@@ -15,27 +15,28 @@ class PhotoViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var spinner: UIActivityIndicatorView!
     
+    let backgroundImage = UIImage(named: "collection-view-background-image")
+    
     // MARK: - Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        update(with: nil)
+        update(with: self.backgroundImage)
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        update(with: nil)
+        update(with: self.backgroundImage)
     }
     
     // MARK: - Show Activity Indicator
     
     func update(with image: UIImage?) {
-        if let imageToDisplay = image {
-            spinner.stopAnimating()
-            imageView.image = imageToDisplay
-        } else {
+        if image == backgroundImage {
             spinner.startAnimating()
-            imageView.image = nil
+        } else {
+            spinner.stopAnimating()
+            imageView.image = image
         }
     }
     
