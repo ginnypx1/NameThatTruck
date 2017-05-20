@@ -27,16 +27,22 @@ class MenuViewController: UIViewController {
     var soundManager = SoundManager()
     
     // MARK: - View
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
         // check sound preferences
         checkSoundPreferences()
+        
+        // play soundtrack
+        soundManager.playSoundtrack()
     }
 
     // MARK: - Navigation
 
     func segueToGame() {
+        // stop soundtrack
+        soundManager.stopSound()
+        // segue to game controller
         let gameController = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         gameController.truckSet = self.truckSet
         gameController.gameType = self.gameType
@@ -44,24 +50,12 @@ class MenuViewController: UIViewController {
         self.navigationController?.pushViewController(gameController, animated: true)
     }
     
-    // MARK: - Animations
-    
-    func bounceButton(button: UIButton, duration: TimeInterval, scale: CGFloat) {
-        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            button.transform = CGAffineTransform(scaleX: scale, y: scale)
-        }, completion: { finished in
-            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                button.transform = CGAffineTransform(scaleX: 1, y: 1)
-            },completion: nil)
-        })
-    }
-    
     // MARK: - Sound
     
     func checkSoundPreferences() {
         // check to see if sound is save as on or off, set isMuted to that variable
         soundManager.isMuted = UserDefaults.standard.bool(forKey: "isMuted")
-        print("User Sound Preference: \(soundManager.isMuted)")
+        print("User Sound is Muted: \(soundManager.isMuted)")
         // change image of toggleSoundButton accordingly
         toggleSoundButtonImage()
     }
@@ -84,13 +78,14 @@ class MenuViewController: UIViewController {
     @IBAction func playConstructionTruckGame(_ sender: Any) {
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
-        // segue to game with construction trucks
+        // bounce button when pressed
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 3, options: [], animations: {
             self.constructionGameButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         }, completion: { finished in
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 3, options: [], animations: {
                 self.constructionGameButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             },completion: { finished in
+                // segue to construction truck game
                 self.truckSet = ConstructionTrucks.allConstructionTrucks
                 self.gameType = .Construction
                 self.segueToGame()
@@ -101,12 +96,14 @@ class MenuViewController: UIViewController {
     @IBAction func playEmergencyTruckGame(_ sender: Any) {
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
+        // bounce button when pressed
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
             self.emergencyGameButton.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         }, completion: { finished in
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
                 self.emergencyGameButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             },completion: { finished in
+                // segue to emergency truck game
                 self.truckSet = EmergencyTrucks.allEmergencyTrucks
                 self.gameType = .Emergency
                 self.segueToGame()
@@ -117,31 +114,32 @@ class MenuViewController: UIViewController {
     @IBAction func playCityTruckGame(_ sender: Any) {
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
-        // segue to game with city trucks
+        // bounce button when pressed
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
             self.cityGameButton.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         }, completion: { finished in
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
                 self.cityGameButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             },completion: { finished in
+                // segue to city truck game
                 self.truckSet = CityTrucks.allCityTrucks
                 self.gameType = .City
                 self.segueToGame()
             })
         })
-        
     }
 
     @IBAction func playAllTrucksGame(_ sender: Any) {
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
-        // segue to game with all trucks
+        // bounce button when pressed
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
             self.allGameButton.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         }, completion: { finished in
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
                 self.allGameButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             },completion: { finished in
+                // segue to all trucks game
                 self.truckSet = Truck.allTrucks
                 self.gameType = .All
                 self.segueToGame()

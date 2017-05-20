@@ -59,6 +59,9 @@
 		349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */; };
 		349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */; };
 		3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490481A1EC2488200F8F395 /* CoreDataStack.swift */; };
+		34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */; };
+		34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A689831ED0EE9600D86147 /* PhotoView.xib */; };
+		34A689861ED0EED600D86147 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A689851ED0EED600D86147 /* PhotoView.swift */; };
 		34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */; };
 		34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDB1EC51259003E4A19 /* bulldozer.gif */; };
 		34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */; };
@@ -141,6 +144,9 @@
 		349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataClass.swift"; path = "../FlickrPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
 		349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataProperties.swift"; path = "../FlickrPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3490481A1EC2488200F8F395 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trucks-are-on-the-road.m4a"; sourceTree = "<group>"; };
+		34A689831ED0EE9600D86147 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		34A689851ED0EED600D86147 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backhoe-loader.gif"; sourceTree = "<group>"; };
 		34ADEEDB1EC51259003E4A19 /* bulldozer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bulldozer.gif; sourceTree = "<group>"; };
 		34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cement-mixer.gif"; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 			children = (
 				349047D31EC23F1E00F8F395 /* AppDelegate.swift */,
 				349047E51EC23F8700F8F395 /* Models */,
+				349047EC1EC240FA00F8F395 /* GameModel.swift */,
 				349047F01EC2412300F8F395 /* Client */,
 				349047F71EC2418300F8F395 /* Controllers */,
 				349047FE1EC241DE00F8F395 /* View */,
@@ -219,7 +226,6 @@
 			children = (
 				34ADEEF31EC51282003E4A19 /* CoreData */,
 				34ADEEF21EC5126F003E4A19 /* Trucks */,
-				349047EC1EC240FA00F8F395 /* GameModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				349047F81EC2419700F8F395 /* GameViewController.swift */,
 				345353A01EC3BE4F007D9021 /* PopdownView.swift */,
 				349047FC1EC241AB00F8F395 /* PhotoViewController.swift */,
+				34A689851ED0EED600D86147 /* PhotoView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -251,9 +258,9 @@
 				349047FF1EC241F700F8F395 /* ActivityIndicator.swift */,
 				349048011EC2420100F8F395 /* Alerts.swift */,
 				349048031EC2420900F8F395 /* CollectionFlowLayout.swift */,
+				34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */,
 				349048051EC2421200F8F395 /* PhotoViewCell.swift */,
 				349048071EC2421A00F8F395 /* TruckViewCell.swift */,
-				34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -261,11 +268,11 @@
 		349048091EC2423200F8F395 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				34F9D6551ECF7637004ABE98 /* SoundManager.swift */,
-				34F9D62E1ECE1C06004ABE98 /* Sounds */,
 				349047DF1EC23F1E00F8F395 /* Info.plist */,
 				3490480A1EC2424400F8F395 /* Private.swift */,
 				3490480C1EC2424C00F8F395 /* Reachability.swift */,
+				34F9D6551ECF7637004ABE98 /* SoundManager.swift */,
+				34F9D62E1ECE1C06004ABE98 /* Sounds */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -273,14 +280,23 @@
 		3490480E1EC2425300F8F395 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				34ADEED91EC5123C003E4A19 /* GIFs */,
-				3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */,
-				349047D71EC23F1E00F8F395 /* Main.storyboard */,
-				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
 				349047DA1EC23F1E00F8F395 /* Assets.xcassets */,
+				34A689821ED0EB4300D86147 /* Fonts */,
+				34ADEED91EC5123C003E4A19 /* GIFs */,
 				349047DC1EC23F1E00F8F395 /* LaunchScreen.storyboard */,
+				349047D71EC23F1E00F8F395 /* Main.storyboard */,
+				34A689831ED0EE9600D86147 /* PhotoView.xib */,
+				3453539E1EC3BE26007D9021 /* PopdownView.xib */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		34A689821ED0EB4300D86147 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		34ADEED91EC5123C003E4A19 /* GIFs */ = {
@@ -357,6 +373,7 @@
 				34F9D65E1ECFB2FB004ABE98 /* ice-cream-truck.mp3 */,
 				34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */,
 				34F9D6571ECF7A95004ABE98 /* truck-horn1.mp3 */,
+				34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */,
 				34F9D6581ECF7A95004ABE98 /* truck-horn2.mp3 */,
 				34F9D6301ECE1C23004ABE98 /* sirens.mp3 */,
 				34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */,
@@ -451,6 +468,7 @@
 				34F9D6591ECF7A95004ABE98 /* truck-horn1.mp3 in Resources */,
 				346345241EC955E200FA5FA2 /* airport-fire-truck.gif in Resources */,
 				34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */,
+				34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */,
 				3463452C1EC955E200FA5FA2 /* pumper-truck.gif in Resources */,
 				346345141EC955C900FA5FA2 /* pickup-truck.gif in Resources */,
 				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
@@ -487,6 +505,7 @@
 				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
+				34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */,
 				34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */,
 				34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */,
 				346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */,
@@ -576,6 +595,7 @@
 				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
 				349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */,
 				349048041EC2420900F8F395 /* CollectionFlowLayout.swift in Sources */,
+				34A689861ED0EED600D86147 /* PhotoView.swift in Sources */,
 				349048171EC2481E00F8F395 /* TruckType+CoreDataProperties.swift in Sources */,
 				349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */,
 			);

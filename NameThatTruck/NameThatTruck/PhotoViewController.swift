@@ -25,9 +25,10 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     var truckType: TruckType!
     var selectedTruck: Truck!
     
-    var isSmall: Bool = true
-    
     var soundManager: SoundManager!
+    
+    var photoView: PhotoView!
+    var blackoutView: UIView!
     
     // API call
     var flickrClient = FlickrClient()
@@ -75,7 +76,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // add activity indicator
         addActivityIndicator()
         // set up custom flow
-        fitCollectionFlowToSize(self.view.frame.size, numberHorizontal: 5.0, numberVertical: 3.0)
+        fitCollectionFlowToSize(self.view.frame.size)
         
         // start the fetched results controller
         do {
@@ -107,27 +108,34 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Collection View
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        // loads number of sections or 0
         return self.fetchedResultsController.sections?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // loads the number of FlickrImages found for this Truck for tType
         let sectionInfo = self.fetchedResultsController.sections![section]
         print("number Of Cells: \(sectionInfo.numberOfObjects)")
         return sectionInfo.numberOfObjects
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if isSmall {
-            fitCollectionFlowToSize(self.view.frame.size, numberHorizontal: 3.0, numberVertical: 2.0)
-            self.isSmall = false
-        } else {
-            fitCollectionFlowToSize(self.view.frame.size, numberHorizontal: 5.0, numberVertical: 3.0)
-            self.isSmall = true
-        }
+        // play truck horn sound
+        soundManager.playTruckHornSoundEffect()
         
+        // grab selected image
+        guard let cell = collectionView.cellForItem(at: indexPath) as? PhotoViewCell else { return }
+        guard let selectedImage = cell.imageView.image else { return }
+        
+        // create black background
+        self.createBlackBackground()
+        // popdown view slides in from top of screen
+        self.addPhotoView(withImage: selectedImage)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // load images fetched from Flickr in the cells
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoViewCell", for: indexPath) as! PhotoViewCell
         
         if self.fetchedResultsController.fetchedObjects?.count != 0 {
@@ -209,12 +217,13 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Fetch Images from Flickr
     
     func fetchImages() {
+        // change UI to indicate loading
         activityIndicator.startAnimating()
         collectionButton.isEnabled = false
         noImagesLabel.isHidden = true
         
         print("1. Starting request for photos...")
-        
+        // retrieve images from flickr
         flickrClient.fetchImagesWithSearchTag(tag: self.selectedTruck.searchTag) { (data: AnyObject?, error: NSError?) -> Void in
             // returned from JSON parsing on main thread
             
@@ -256,6 +265,61 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                 print("New collection changes could not be saved.")
             }
         }
+    }
+    
+    // MARK: - Photo View
+    
+    func addPhotoView(withImage image: UIImage) {
+        // make sure there's not already a photo view on screen
+        if (self.photoView != nil) {
+            self.photoView.view.removeFromSuperview()
+        }
+        // find the size classes
+        // let horizontalClass = self.traitCollection.horizontalSizeClass
+        let verticalClass = self.traitCollection.verticalSizeClass
+        
+        // view sized for regular height devices
+        var viewWidth = (self.view.frame.size.width * 0.8)
+        var viewHeight = viewWidth
+        
+        if verticalClass == UIUserInterfaceSizeClass.compact {
+            // resize view for compact height
+            viewHeight = (self.view.frame.size.height * 0.8)
+            viewWidth = viewHeight
+        }
+        
+        // create the popdown view
+        self.photoView = PhotoView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: (self.view.frame.size.height-viewHeight)/2, width: viewWidth, height: viewHeight))
+        
+        // Load cell's image as photoView's image
+        self.photoView.imageView.image = image
+        
+        self.photoView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
+        self.photoView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(photoView)
+    }
+    
+    func backButtonPressed(sender: UIButton) {
+        // slide photo view up off screen
+        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+            self.photoView.center.y -= 900
+        }, completion: { finished in
+            // remove the superviews
+            self.removeSuperviews()
+        })
+    }
+    
+    func createBlackBackground() {
+        // grey out the photo album when superview pops up
+        self.blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
+        self.blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
+        self.view.addSubview(self.blackoutView);
+    }
+    
+    func removeSuperviews() {
+        // remove the superviews from the photo album view
+        self.photoView.removeFromSuperview()
+        self.blackoutView.removeFromSuperview()
     }
     
     // MARK: - Remove Selected Photos

@@ -21,6 +21,7 @@ class Truck {
     let displayName: String
     let image: UIImage?
     let gifString: String
+    let audioString: String
     let searchTag: String
     
     init(name: String, displayName: String) {
@@ -28,6 +29,7 @@ class Truck {
         self.displayName = displayName
         self.image = UIImage(named: name)
         self.gifString = name
+        self.audioString = name
         self.searchTag = name.replacingOccurrences(of: "-", with: "+")
     }
     

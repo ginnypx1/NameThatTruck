@@ -78,6 +78,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // check for truck entry in core data
         checkForTruckType()
+        
+        // TODO: Play Game Prompt
+        // soundManager.playGamePrompt(forTruck: game.winningTruck)
     }
     
     func changeSignForGame(forGameType gameType: GameType) {
@@ -177,6 +180,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // if guess is correct, segue to gif view
         if selectedTruck.name == winningTruck.name {
             print("You got it!")
+            // TODO: Add audio prompt for win
+            // soundManager.playResults(win: true, forTruck: self.winningTruck)
             
             // create black background
             self.createBlackBackground()
@@ -196,9 +201,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             
         // if guess is incorrect, say name of truck and ask the question again
         } else {
-            // TODO: Say the name of the selected truck
-            // TODO: Ask about the winning truck again
             print("Try again!")
+            // TODO: Add audio prompts for loss
+            // soundManager.playResults(win: false, forTruck: self.winningTruck)
+            // soundManager.playGamePrompt(forTruck: self.winningTruck)
         }
     }
     

@@ -1,20 +1,19 @@
 //
-//  PopdownView.swift
+//  PhotoView.swift
 //  NameThatTruck
 //
-//  Created by Ginny Pennekamp on 5/10/17.
+//  Created by Ginny Pennekamp on 5/20/17.
 //  Copyright © 2017 GhostBirdGames. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable class PopdownView: UIView {
+@IBDesignable class PhotoView: UIView {
 
     // MARK: - Outlets
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var moreTrucksButton: UIButton!
     
     // MARK: - Properties
     
@@ -24,7 +23,7 @@ import UIKit
     
     func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "PopdownView", bundle: bundle)
+        let nib = UINib(nibName: "PhotoView", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
     }
