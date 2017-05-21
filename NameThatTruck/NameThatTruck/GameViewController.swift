@@ -220,12 +220,12 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let verticalClass = self.traitCollection.verticalSizeClass
         
         // view sized for regular height devices
-        var viewWidth = (self.view.frame.size.width * 0.8)
+        var viewWidth = (self.view.frame.size.width * 0.9)
         var viewHeight = (self.view.frame.size.height * 0.5)
         
         if verticalClass == UIUserInterfaceSizeClass.compact {
             // resize view for compact height
-            viewWidth = (self.view.frame.size.width * 0.66)
+            viewWidth = (self.view.frame.size.width * 0.75)
             viewHeight = (self.view.frame.size.height * 0.8)
         }
     

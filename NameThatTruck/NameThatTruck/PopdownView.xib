@@ -31,8 +31,8 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScH-st-uqJ">
                     <rect key="frame" x="16" y="16" width="293" height="315"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-d8-7Zy">
-                    <rect key="frame" x="13.5" y="339" width="298.5" height="103"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-d8-7Zy">
+                    <rect key="frame" x="-19" y="339" width="363.5" height="103"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
                             <rect key="frame" x="0.0" y="0.0" width="103.5" height="103"/>
@@ -44,10 +44,7 @@
                             </state>
                         </button>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
-                            <rect key="frame" x="107.5" y="0.0" width="191" height="103"/>
-                            <constraints>
-                                <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="1.85:1" id="bAV-CG-Nte"/>
-                            </constraints>
+                            <rect key="frame" x="119.5" y="0.0" width="244" height="103"/>
                             <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
                             <state key="normal" title="+" image="airport-fire-truck">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

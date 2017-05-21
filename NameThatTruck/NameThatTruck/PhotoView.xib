@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dz-Wz-1na">
-                    <rect key="frame" x="16" y="16" width="30" height="30"/>
+                    <rect key="frame" x="16" y="16" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="0Dz-Wz-1na" secondAttribute="height" multiplier="1:1" id="NCY-Va-0gJ"/>
                     </constraints>
@@ -41,7 +41,7 @@
                 <constraint firstItem="0Dz-Wz-1na" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ZXE-ks-7bz"/>
                 <constraint firstItem="0Dz-Wz-1na" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="lpl-sA-V6f"/>
                 <constraint firstAttribute="trailing" secondItem="0Zt-Ga-Mdg" secondAttribute="trailing" id="nAx-Ot-yqH"/>
-                <constraint firstItem="0Dz-Wz-1na" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.1" id="sjJ-dS-vvp"/>
+                <constraint firstItem="0Dz-Wz-1na" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="sjJ-dS-vvp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
