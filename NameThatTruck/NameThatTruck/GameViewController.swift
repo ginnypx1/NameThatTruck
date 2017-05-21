@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 import CoreData
 import SwiftyGif
 
@@ -79,8 +80,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // check for truck entry in core data
         checkForTruckType()
         
-        // TODO: Play Game Prompt
-        // soundManager.playGamePrompt(forTruck: game.winningTruck)
+        // play Game Prompt
+        soundManager.playGamePrompt(forTruck: winningTruck)
+        
     }
     
     func changeSignForGame(forGameType gameType: GameType) {
@@ -180,31 +182,16 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // if guess is correct, segue to gif view
         if selectedTruck.name == winningTruck.name {
             print("You got it!")
-            // TODO: Add audio prompt for win
-            // soundManager.playResults(win: true, forTruck: self.winningTruck)
-            
-            // create black background
-            self.createBlackBackground()
-            // popdown view slides in from top of screen
-            self.addPopdownView()
-            
-            // find the size classes
-            let dropHeight = (self.view.frame.size.height * 0.15)
-            
-            // drop down the popdownView
-            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                self.popdownView.center.y += (800 + dropHeight)
-            }, completion: nil)
-            
-            // play sound
-            soundManager.playSoundForGif(selectedTruck: self.winningTruck)
+            // audio prompt for win
+            soundManager.playResultsAudio(forTruck: selectedTruck, win: true)
+            audioPlayerDidFinishPlaying(self.soundManager.playerQueue, successfully: true)
             
         // if guess is incorrect, say name of truck and ask the question again
         } else {
             print("Try again!")
-            // TODO: Add audio prompts for loss
-            // soundManager.playResults(win: false, forTruck: self.winningTruck)
-            // soundManager.playGamePrompt(forTruck: self.winningTruck)
+            // audio prompts for loss
+            soundManager.sayName(ofTruck: selectedTruck)
+            
         }
     }
     
@@ -234,15 +221,32 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // Load SwiftyGif and set up the gif manager to play the gif
         let gif = UIImage(gifName: "\(winningTruck.gifString)")
-        print("Gif is \(winningTruck.gifString)")
         self.popdownView.imageView.setGifImage(gif, manager: self.gifmanager)
-        //self.popdownView.imageView.image = winningTruck.image
         
+        // load other elements of popdown window
         self.popdownView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
         self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
         self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(popdownView)
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVQueuePlayer, successfully flag: Bool) {
+        // create black background
+        self.createBlackBackground()
+        // popdown view slides in from top of screen
+        self.addPopdownView()
+        
+        // find the size classes
+        let dropHeight = (self.view.frame.size.height * 0.15)
+        
+        // drop down the popdownView
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+            self.popdownView.center.y += (800 + dropHeight)
+        }, completion: nil)
+        
+        // play sound
+        self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
     }
     
     func backButtonPressed(sender: UIButton) {

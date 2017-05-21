@@ -7,6 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340F0BC31ED1EA42005DEE09 /* airport-fire-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BB71ED1EA42005DEE09 /* airport-fire-truck.aac */; };
+		340F0BC41ED1EA42005DEE09 /* ambulance.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BB81ED1EA42005DEE09 /* ambulance.aac */; };
+		340F0BC51ED1EA42005DEE09 /* fire-boat.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BB91ED1EA42005DEE09 /* fire-boat.aac */; };
+		340F0BC61ED1EA42005DEE09 /* fire-chiefs-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBA1ED1EA42005DEE09 /* fire-chiefs-truck.aac */; };
+		340F0BC71ED1EA42005DEE09 /* ladder-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBB1ED1EA42005DEE09 /* ladder-truck.aac */; };
+		340F0BC81ED1EA42005DEE09 /* military-helicopter.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBC1ED1EA42005DEE09 /* military-helicopter.aac */; };
+		340F0BC91ED1EA42005DEE09 /* police-boat.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBD1ED1EA42005DEE09 /* police-boat.aac */; };
+		340F0BCA1ED1EA42005DEE09 /* police-car.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBE1ED1EA42005DEE09 /* police-car.aac */; };
+		340F0BCB1ED1EA42005DEE09 /* pumper-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BBF1ED1EA42005DEE09 /* pumper-truck.aac */; };
+		340F0BCC1ED1EA42005DEE09 /* rescue-helicopter.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BC01ED1EA42005DEE09 /* rescue-helicopter.aac */; };
+		340F0BCD1ED1EA42005DEE09 /* snowplow.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BC11ED1EA42005DEE09 /* snowplow.aac */; };
+		340F0BCE1ED1EA42005DEE09 /* tow-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BC21ED1EA42005DEE09 /* tow-truck.aac */; };
+		340F0BDB1ED1EA4F005DEE09 /* backhoe-loader.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BCF1ED1EA4F005DEE09 /* backhoe-loader.aac */; };
+		340F0BDC1ED1EA4F005DEE09 /* bulldozer.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD01ED1EA4F005DEE09 /* bulldozer.aac */; };
+		340F0BDD1ED1EA4F005DEE09 /* cement-mixer.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD11ED1EA4F005DEE09 /* cement-mixer.aac */; };
+		340F0BDE1ED1EA4F005DEE09 /* crane-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD21ED1EA4F005DEE09 /* crane-truck.aac */; };
+		340F0BDF1ED1EA4F005DEE09 /* dump-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD31ED1EA4F005DEE09 /* dump-truck.aac */; };
+		340F0BE01ED1EA4F005DEE09 /* excavator.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD41ED1EA4F005DEE09 /* excavator.aac */; };
+		340F0BE11ED1EA4F005DEE09 /* forklift.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD51ED1EA4F005DEE09 /* forklift.aac */; };
+		340F0BE21ED1EA4F005DEE09 /* front-end-loader.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD61ED1EA4F005DEE09 /* front-end-loader.aac */; };
+		340F0BE31ED1EA4F005DEE09 /* grader.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD71ED1EA4F005DEE09 /* grader.aac */; };
+		340F0BE41ED1EA4F005DEE09 /* paver.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD81ED1EA4F005DEE09 /* paver.aac */; };
+		340F0BE51ED1EA4F005DEE09 /* skid-steer.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BD91ED1EA4F005DEE09 /* skid-steer.aac */; };
+		340F0BE61ED1EA4F005DEE09 /* steamroller.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BDA1ED1EA4F005DEE09 /* steamroller.aac */; };
+		340F0BF31ED1EA5B005DEE09 /* big-rig.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BE71ED1EA5B005DEE09 /* big-rig.aac */; };
+		340F0BF41ED1EA5B005DEE09 /* bucket-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BE81ED1EA5B005DEE09 /* bucket-truck.aac */; };
+		340F0BF51ED1EA5B005DEE09 /* car-transporter.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BE91ED1EA5B005DEE09 /* car-transporter.aac */; };
+		340F0BF61ED1EA5B005DEE09 /* delivery-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BEA1ED1EA5B005DEE09 /* delivery-truck.aac */; };
+		340F0BF71ED1EA5B005DEE09 /* fuel-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BEB1ED1EA5B005DEE09 /* fuel-truck.aac */; };
+		340F0BF81ED1EA5B005DEE09 /* garbage-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BEC1ED1EA5B005DEE09 /* garbage-truck.aac */; };
+		340F0BF91ED1EA5B005DEE09 /* ice-cream-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BED1ED1EA5B005DEE09 /* ice-cream-truck.aac */; };
+		340F0BFA1ED1EA5B005DEE09 /* mail-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BEE1ED1EA5B005DEE09 /* mail-truck.aac */; };
+		340F0BFB1ED1EA5B005DEE09 /* pickup-truck.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BEF1ED1EA5B005DEE09 /* pickup-truck.aac */; };
+		340F0BFC1ED1EA5B005DEE09 /* school-bus.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BF01ED1EA5B005DEE09 /* school-bus.aac */; };
+		340F0BFD1ED1EA5B005DEE09 /* street-sweeper.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BF11ED1EA5B005DEE09 /* street-sweeper.aac */; };
+		340F0BFE1ED1EA5B005DEE09 /* tractor.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BF21ED1EA5B005DEE09 /* tractor.aac */; };
+		340F0C051ED1EA6A005DEE09 /* can-you-find-the.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0BFF1ED1EA6A005DEE09 /* can-you-find-the.aac */; };
+		340F0C061ED1EA6A005DEE09 /* good-job.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C001ED1EA6A005DEE09 /* good-job.aac */; };
+		340F0C071ED1EA6A005DEE09 /* that-truck-is-a.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C011ED1EA6A005DEE09 /* that-truck-is-a.aac */; };
+		340F0C081ED1EA6A005DEE09 /* thats-right.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C021ED1EA6A005DEE09 /* thats-right.aac */; };
+		340F0C091ED1EA6A005DEE09 /* which-truck-is-the.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C031ED1EA6A005DEE09 /* which-truck-is-the.aac */; };
+		340F0C0A1ED1EA6A005DEE09 /* you-touched-the.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C041ED1EA6A005DEE09 /* you-touched-the.aac */; };
 		3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */; };
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
@@ -90,6 +132,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340F0BB71ED1EA42005DEE09 /* airport-fire-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "airport-fire-truck.aac"; sourceTree = "<group>"; };
+		340F0BB81ED1EA42005DEE09 /* ambulance.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ambulance.aac; sourceTree = "<group>"; };
+		340F0BB91ED1EA42005DEE09 /* fire-boat.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fire-boat.aac"; sourceTree = "<group>"; };
+		340F0BBA1ED1EA42005DEE09 /* fire-chiefs-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fire-chiefs-truck.aac"; sourceTree = "<group>"; };
+		340F0BBB1ED1EA42005DEE09 /* ladder-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ladder-truck.aac"; sourceTree = "<group>"; };
+		340F0BBC1ED1EA42005DEE09 /* military-helicopter.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "military-helicopter.aac"; sourceTree = "<group>"; };
+		340F0BBD1ED1EA42005DEE09 /* police-boat.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "police-boat.aac"; sourceTree = "<group>"; };
+		340F0BBE1ED1EA42005DEE09 /* police-car.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "police-car.aac"; sourceTree = "<group>"; };
+		340F0BBF1ED1EA42005DEE09 /* pumper-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pumper-truck.aac"; sourceTree = "<group>"; };
+		340F0BC01ED1EA42005DEE09 /* rescue-helicopter.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rescue-helicopter.aac"; sourceTree = "<group>"; };
+		340F0BC11ED1EA42005DEE09 /* snowplow.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowplow.aac; sourceTree = "<group>"; };
+		340F0BC21ED1EA42005DEE09 /* tow-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tow-truck.aac"; sourceTree = "<group>"; };
+		340F0BCF1ED1EA4F005DEE09 /* backhoe-loader.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "backhoe-loader.aac"; sourceTree = "<group>"; };
+		340F0BD01ED1EA4F005DEE09 /* bulldozer.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = bulldozer.aac; sourceTree = "<group>"; };
+		340F0BD11ED1EA4F005DEE09 /* cement-mixer.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cement-mixer.aac"; sourceTree = "<group>"; };
+		340F0BD21ED1EA4F005DEE09 /* crane-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crane-truck.aac"; sourceTree = "<group>"; };
+		340F0BD31ED1EA4F005DEE09 /* dump-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dump-truck.aac"; sourceTree = "<group>"; };
+		340F0BD41ED1EA4F005DEE09 /* excavator.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = excavator.aac; sourceTree = "<group>"; };
+		340F0BD51ED1EA4F005DEE09 /* forklift.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = forklift.aac; sourceTree = "<group>"; };
+		340F0BD61ED1EA4F005DEE09 /* front-end-loader.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "front-end-loader.aac"; sourceTree = "<group>"; };
+		340F0BD71ED1EA4F005DEE09 /* grader.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = grader.aac; sourceTree = "<group>"; };
+		340F0BD81ED1EA4F005DEE09 /* paver.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = paver.aac; sourceTree = "<group>"; };
+		340F0BD91ED1EA4F005DEE09 /* skid-steer.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "skid-steer.aac"; sourceTree = "<group>"; };
+		340F0BDA1ED1EA4F005DEE09 /* steamroller.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = steamroller.aac; sourceTree = "<group>"; };
+		340F0BE71ED1EA5B005DEE09 /* big-rig.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-rig.aac"; sourceTree = "<group>"; };
+		340F0BE81ED1EA5B005DEE09 /* bucket-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bucket-truck.aac"; sourceTree = "<group>"; };
+		340F0BE91ED1EA5B005DEE09 /* car-transporter.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "car-transporter.aac"; sourceTree = "<group>"; };
+		340F0BEA1ED1EA5B005DEE09 /* delivery-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "delivery-truck.aac"; sourceTree = "<group>"; };
+		340F0BEB1ED1EA5B005DEE09 /* fuel-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fuel-truck.aac"; sourceTree = "<group>"; };
+		340F0BEC1ED1EA5B005DEE09 /* garbage-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "garbage-truck.aac"; sourceTree = "<group>"; };
+		340F0BED1ED1EA5B005DEE09 /* ice-cream-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ice-cream-truck.aac"; sourceTree = "<group>"; };
+		340F0BEE1ED1EA5B005DEE09 /* mail-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mail-truck.aac"; sourceTree = "<group>"; };
+		340F0BEF1ED1EA5B005DEE09 /* pickup-truck.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pickup-truck.aac"; sourceTree = "<group>"; };
+		340F0BF01ED1EA5B005DEE09 /* school-bus.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "school-bus.aac"; sourceTree = "<group>"; };
+		340F0BF11ED1EA5B005DEE09 /* street-sweeper.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "street-sweeper.aac"; sourceTree = "<group>"; };
+		340F0BF21ED1EA5B005DEE09 /* tractor.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = tractor.aac; sourceTree = "<group>"; };
+		340F0BFF1ED1EA6A005DEE09 /* can-you-find-the.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "can-you-find-the.aac"; sourceTree = "<group>"; };
+		340F0C001ED1EA6A005DEE09 /* good-job.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "good-job.aac"; sourceTree = "<group>"; };
+		340F0C011ED1EA6A005DEE09 /* that-truck-is-a.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "that-truck-is-a.aac"; sourceTree = "<group>"; };
+		340F0C021ED1EA6A005DEE09 /* thats-right.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "thats-right.aac"; sourceTree = "<group>"; };
+		340F0C031ED1EA6A005DEE09 /* which-truck-is-the.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "which-truck-is-the.aac"; sourceTree = "<group>"; };
+		340F0C041ED1EA6A005DEE09 /* you-touched-the.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "you-touched-the.aac"; sourceTree = "<group>"; };
 		3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lorimer_No2_Stencil.otf; sourceTree = "<group>"; };
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
@@ -369,6 +453,48 @@
 		34F9D62E1ECE1C06004ABE98 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				340F0BFF1ED1EA6A005DEE09 /* can-you-find-the.aac */,
+				340F0C001ED1EA6A005DEE09 /* good-job.aac */,
+				340F0C011ED1EA6A005DEE09 /* that-truck-is-a.aac */,
+				340F0C021ED1EA6A005DEE09 /* thats-right.aac */,
+				340F0C031ED1EA6A005DEE09 /* which-truck-is-the.aac */,
+				340F0C041ED1EA6A005DEE09 /* you-touched-the.aac */,
+				340F0BE71ED1EA5B005DEE09 /* big-rig.aac */,
+				340F0BE81ED1EA5B005DEE09 /* bucket-truck.aac */,
+				340F0BE91ED1EA5B005DEE09 /* car-transporter.aac */,
+				340F0BEA1ED1EA5B005DEE09 /* delivery-truck.aac */,
+				340F0BEB1ED1EA5B005DEE09 /* fuel-truck.aac */,
+				340F0BEC1ED1EA5B005DEE09 /* garbage-truck.aac */,
+				340F0BED1ED1EA5B005DEE09 /* ice-cream-truck.aac */,
+				340F0BEE1ED1EA5B005DEE09 /* mail-truck.aac */,
+				340F0BEF1ED1EA5B005DEE09 /* pickup-truck.aac */,
+				340F0BF01ED1EA5B005DEE09 /* school-bus.aac */,
+				340F0BF11ED1EA5B005DEE09 /* street-sweeper.aac */,
+				340F0BF21ED1EA5B005DEE09 /* tractor.aac */,
+				340F0BCF1ED1EA4F005DEE09 /* backhoe-loader.aac */,
+				340F0BD01ED1EA4F005DEE09 /* bulldozer.aac */,
+				340F0BD11ED1EA4F005DEE09 /* cement-mixer.aac */,
+				340F0BD21ED1EA4F005DEE09 /* crane-truck.aac */,
+				340F0BD31ED1EA4F005DEE09 /* dump-truck.aac */,
+				340F0BD41ED1EA4F005DEE09 /* excavator.aac */,
+				340F0BD51ED1EA4F005DEE09 /* forklift.aac */,
+				340F0BD61ED1EA4F005DEE09 /* front-end-loader.aac */,
+				340F0BD71ED1EA4F005DEE09 /* grader.aac */,
+				340F0BD81ED1EA4F005DEE09 /* paver.aac */,
+				340F0BD91ED1EA4F005DEE09 /* skid-steer.aac */,
+				340F0BDA1ED1EA4F005DEE09 /* steamroller.aac */,
+				340F0BB71ED1EA42005DEE09 /* airport-fire-truck.aac */,
+				340F0BB81ED1EA42005DEE09 /* ambulance.aac */,
+				340F0BB91ED1EA42005DEE09 /* fire-boat.aac */,
+				340F0BBA1ED1EA42005DEE09 /* fire-chiefs-truck.aac */,
+				340F0BBB1ED1EA42005DEE09 /* ladder-truck.aac */,
+				340F0BBC1ED1EA42005DEE09 /* military-helicopter.aac */,
+				340F0BBD1ED1EA42005DEE09 /* police-boat.aac */,
+				340F0BBE1ED1EA42005DEE09 /* police-car.aac */,
+				340F0BBF1ED1EA42005DEE09 /* pumper-truck.aac */,
+				340F0BC01ED1EA42005DEE09 /* rescue-helicopter.aac */,
+				340F0BC11ED1EA42005DEE09 /* snowplow.aac */,
+				340F0BC21ED1EA42005DEE09 /* tow-truck.aac */,
 				34F9D65D1ECFB2FA004ABE98 /* helicopter.mp3 */,
 				34F9D65E1ECFB2FB004ABE98 /* ice-cream-truck.mp3 */,
 				34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */,
@@ -461,56 +587,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340F0BC41ED1EA42005DEE09 /* ambulance.aac in Resources */,
 				3463450F1EC955C900FA5FA2 /* delivery-truck.gif in Resources */,
 				3463452F1EC955E200FA5FA2 /* tow-truck.gif in Resources */,
+				340F0BF51ED1EA5B005DEE09 /* car-transporter.aac in Resources */,
+				340F0BFC1ED1EA5B005DEE09 /* school-bus.aac in Resources */,
+				340F0C081ED1EA6A005DEE09 /* thats-right.aac in Resources */,
 				3463452B1EC955E200FA5FA2 /* police-car.gif in Resources */,
+				340F0BDD1ED1EA4F005DEE09 /* cement-mixer.aac in Resources */,
+				340F0BCB1ED1EA42005DEE09 /* pumper-truck.aac in Resources */,
 				34F9D65F1ECFB2FC004ABE98 /* helicopter.mp3 in Resources */,
 				34F9D6591ECF7A95004ABE98 /* truck-horn1.mp3 in Resources */,
 				346345241EC955E200FA5FA2 /* airport-fire-truck.gif in Resources */,
 				34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */,
 				34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */,
+				340F0C091ED1EA6A005DEE09 /* which-truck-is-the.aac in Resources */,
+				340F0BFA1ED1EA5B005DEE09 /* mail-truck.aac in Resources */,
 				3463452C1EC955E200FA5FA2 /* pumper-truck.gif in Resources */,
 				346345141EC955C900FA5FA2 /* pickup-truck.gif in Resources */,
 				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
+				340F0BC71ED1EA42005DEE09 /* ladder-truck.aac in Resources */,
 				34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */,
+				340F0C071ED1EA6A005DEE09 /* that-truck-is-a.aac in Resources */,
 				3463450E1EC955C900FA5FA2 /* car-transporter.gif in Resources */,
 				34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */,
+				340F0BC61ED1EA42005DEE09 /* fire-chiefs-truck.aac in Resources */,
+				340F0BC81ED1EA42005DEE09 /* military-helicopter.aac in Resources */,
 				3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */,
 				346345121EC955C900FA5FA2 /* ice-cream-truck.gif in Resources */,
+				340F0BFE1ED1EA5B005DEE09 /* tractor.aac in Resources */,
 				34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */,
+				340F0BF41ED1EA5B005DEE09 /* bucket-truck.aac in Resources */,
 				346345131EC955C900FA5FA2 /* mail-truck.gif in Resources */,
 				346345111EC955C900FA5FA2 /* garbage-truck.gif in Resources */,
+				340F0BFB1ED1EA5B005DEE09 /* pickup-truck.aac in Resources */,
 				346345281EC955E200FA5FA2 /* ladder-truck.gif in Resources */,
+				340F0C061ED1EA6A005DEE09 /* good-job.aac in Resources */,
 				34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */,
 				346345151EC955CA00FA5FA2 /* school-bus.gif in Resources */,
 				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
 				34ADEEED1EC51259003E4A19 /* grader.gif in Resources */,
+				340F0BCA1ED1EA42005DEE09 /* police-car.aac in Resources */,
+				340F0BDB1ED1EA4F005DEE09 /* backhoe-loader.aac in Resources */,
 				34F9D65A1ECF7A95004ABE98 /* truck-horn2.mp3 in Resources */,
+				340F0BF31ED1EA5B005DEE09 /* big-rig.aac in Resources */,
+				340F0C051ED1EA6A005DEE09 /* can-you-find-the.aac in Resources */,
+				340F0BF71ED1EA5B005DEE09 /* fuel-truck.aac in Resources */,
+				340F0BE01ED1EA4F005DEE09 /* excavator.aac in Resources */,
+				340F0BF61ED1EA5B005DEE09 /* delivery-truck.aac in Resources */,
 				34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */,
 				3463450D1EC955C900FA5FA2 /* bucket-truck.gif in Resources */,
 				3463452A1EC955E200FA5FA2 /* police-boat.gif in Resources */,
 				346345291EC955E200FA5FA2 /* military-helicopter.gif in Resources */,
 				346345161EC955CA00FA5FA2 /* street-sweeper.gif in Resources */,
+				340F0BFD1ED1EA5B005DEE09 /* street-sweeper.aac in Resources */,
 				34F9D6601ECFB2FC004ABE98 /* ice-cream-truck.mp3 in Resources */,
 				34F9D6321ECE1C23004ABE98 /* truck-horn.mp3 in Resources */,
 				346345271EC955E200FA5FA2 /* fire-chiefs-truck.gif in Resources */,
+				340F0BE21ED1EA4F005DEE09 /* front-end-loader.aac in Resources */,
 				34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */,
 				346345251EC955E200FA5FA2 /* ambulance.gif in Resources */,
+				340F0BE51ED1EA4F005DEE09 /* skid-steer.aac in Resources */,
+				340F0BF81ED1EA5B005DEE09 /* garbage-truck.aac in Resources */,
+				340F0C0A1ED1EA6A005DEE09 /* you-touched-the.aac in Resources */,
 				3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */,
+				340F0BE31ED1EA4F005DEE09 /* grader.aac in Resources */,
 				3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */,
 				34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */,
+				340F0BCE1ED1EA42005DEE09 /* tow-truck.aac in Resources */,
+				340F0BE41ED1EA4F005DEE09 /* paver.aac in Resources */,
 				3463452D1EC955E200FA5FA2 /* rescue-helicopter.gif in Resources */,
 				346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */,
 				34F9D6331ECE1C23004ABE98 /* sirens.mp3 in Resources */,
 				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
+				340F0BC51ED1EA42005DEE09 /* fire-boat.aac in Resources */,
+				340F0BDC1ED1EA4F005DEE09 /* bulldozer.aac in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
+				340F0BCD1ED1EA42005DEE09 /* snowplow.aac in Resources */,
 				34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */,
+				340F0BC31ED1EA42005DEE09 /* airport-fire-truck.aac in Resources */,
 				34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */,
+				340F0BE61ED1EA4F005DEE09 /* steamroller.aac in Resources */,
+				340F0BC91ED1EA42005DEE09 /* police-boat.aac in Resources */,
 				34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */,
+				340F0BDE1ED1EA4F005DEE09 /* crane-truck.aac in Resources */,
+				340F0BE11ED1EA4F005DEE09 /* forklift.aac in Resources */,
 				346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */,
 				346345171EC955CA00FA5FA2 /* tractor.gif in Resources */,
 				34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */,
+				340F0BCC1ED1EA42005DEE09 /* rescue-helicopter.aac in Resources */,
+				340F0BDF1ED1EA4F005DEE09 /* dump-truck.aac in Resources */,
+				340F0BF91ED1EA5B005DEE09 /* ice-cream-truck.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

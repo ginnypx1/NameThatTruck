@@ -223,6 +223,12 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         noImagesLabel.isHidden = true
         
         print("1. Starting request for photos...")
+        
+        // exception needed to better images for Paver
+        if selectedTruck.name == ConstructionTruckTypes.Paver.rawValue {
+            self.selectedTruck.searchTag = "road+paver"
+        }
+        
         // retrieve images from flickr
         flickrClient.fetchImagesWithSearchTag(tag: self.selectedTruck.searchTag) { (data: AnyObject?, error: NSError?) -> Void in
             // returned from JSON parsing on main thread

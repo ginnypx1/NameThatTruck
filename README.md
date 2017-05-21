@@ -47,13 +47,9 @@ Already built:
 - Selecting the correct truck shows you a new screen with a repeating gif of that truck working.
 - From the close-up picture of the truck, you can select the photo of the truck and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
 - Push button sound effects
+- Audio Prompts
 
 To do:
 
-- AUDIO:
-- Add the audio prompts
-- Add a soundtrack to the menu screen and photo album
-
-- OTHER:
 - Can I change the background menu pic just for iPads in 1/3 screen splits?
 - Testing

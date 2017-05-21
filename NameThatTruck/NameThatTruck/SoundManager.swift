@@ -13,14 +13,15 @@ class SoundManager {
     // MARK: - Properties
     
     var audioPlayer: AVAudioPlayer!
+    var playerQueue: AVQueuePlayer!
+    
     var isMuted: Bool = false
     
     let allHornSounds: [String] = ["truck-horn", "truck-horn1", "truck-horn2"]
     
-    // TODO: ADD AUDIO FILES
-    let findPrompts: [String] = []
-    let winPrompts: [String] = []
-    let tryAgainPrompts: [String] = []
+    let findPrompts: [String] = ["can-you-find-the", "which-truck-is-the"]
+    let winPrompts: [String] = ["good-job", "thats-right"]
+    let tryAgainPrompts: [String] = ["that-truck-is-a", "you-touched-the"]
     
     // MARK: - Soundtrack
     
@@ -90,26 +91,37 @@ class SoundManager {
     
     // MARK: - Game Prompt
     
-    func startGamePrompt() {
+    func playGamePrompt(forTruck truck: Truck) {
         if !self.isMuted {
-            let random = Int(arc4random_uniform(UInt32(self.findPrompts.count)))
-            let findPrompt = self.findPrompts[random]
             
-            let sound = Bundle.main.url(forResource: findPrompt, withExtension: "mp3")
-            do {
-                self.audioPlayer = try AVAudioPlayer(contentsOf: sound!)
-                guard let player = self.audioPlayer else { return }
-                player.prepareToPlay()
-                player.play()
-            } catch let error {
-                print(error.localizedDescription)
+            let gamePrompt: String
+            if Truck.notTrucks.contains(truck.name) {
+                gamePrompt = "can-you-find-the"
+            } else {
+                let random = Int(arc4random_uniform(UInt32(self.findPrompts.count)))
+                gamePrompt = self.findPrompts[random]
             }
+            
+            var audioItems: [AVPlayerItem] = []
+            
+            if let sound1 = Bundle.main.url(forResource: gamePrompt, withExtension: "aac"),
+                let sound2 = Bundle.main.url(forResource: truck.name, withExtension: "aac") {
+                
+                let item1 = AVPlayerItem.init(url: sound1)
+                let item2 = AVPlayerItem.init(url: sound2)
+                
+                audioItems.append(item1)
+                audioItems.append(item2)
+            }
+            
+            self.playerQueue = AVQueuePlayer(items: audioItems)
+            self.playerQueue.play()
         }
     }
     
     func sayName(ofTruck truck: Truck) {
         if !self.isMuted {
-            let sound = Bundle.main.url(forResource: truck.name, withExtension: "mp3")
+            let sound = Bundle.main.url(forResource: truck.name, withExtension: "aac")
             do {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: sound!)
                 guard let player = self.audioPlayer else { return }
@@ -120,18 +132,14 @@ class SoundManager {
             }
         }
     }
-    
-    func playGamePrompt(forTruck truck: Truck) {
-        startGamePrompt()
-        sayName(ofTruck: truck)
-    }
+
     
     // MARK: - Win or Lose Audio
     
-    func startResultsAudio(win: Bool) {
+    func playResultsAudio(forTruck truck: Truck, win: Bool) {
         if !self.isMuted {
             // check for correct or incorrect identification
-            var result: String = ""
+            var result: String
             if win {
                 let random = Int(arc4random_uniform(UInt32(self.winPrompts.count)))
                 result = self.winPrompts[random]
@@ -140,21 +148,21 @@ class SoundManager {
                 result = self.tryAgainPrompts[random]
             }
             
-            let sound = Bundle.main.url(forResource: result, withExtension: "mp3")
-            do {
-                self.audioPlayer = try AVAudioPlayer(contentsOf: sound!)
-                guard let player = self.audioPlayer else { return }
-                player.prepareToPlay()
-                player.play()
-            } catch let error {
-                print(error.localizedDescription)
+            var audioItems: [AVPlayerItem] = []
+            
+            if let sound1 = Bundle.main.url(forResource: result, withExtension: "aac"),
+               let sound2 = Bundle.main.url(forResource: truck.name, withExtension: "aac") {
+                
+                let item1 = AVPlayerItem.init(url: sound1)
+                let item2 = AVPlayerItem.init(url: sound2)
+                
+                audioItems.append(item1)
+                audioItems.append(item2)
             }
+            
+            self.playerQueue = AVQueuePlayer(items: audioItems)
+            self.playerQueue.play()
         }
-    }
-    
-    func playResults(win: Bool, forTruck truck: Truck) {
-        startResultsAudio(win: win)
-        sayName(ofTruck: truck)
     }
     
     // MARK: - Stop Sound

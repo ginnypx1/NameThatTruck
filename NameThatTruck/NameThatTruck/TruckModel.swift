@@ -17,12 +17,14 @@ class Truck {
     
     static let allTrucks: [Truck] = ConstructionTrucks.allConstructionTrucks + EmergencyTrucks.allEmergencyTrucks + CityTrucks.allCityTrucks
     
+    static let notTrucks: [String] = [EmergencyTruckTypes.MilitaryHelicopter.rawValue, EmergencyTruckTypes.RescueHelicopter.rawValue, EmergencyTruckTypes.FireBoat.rawValue, EmergencyTruckTypes.PoliceBoat.rawValue]
+    
     let name: String
     let displayName: String
     let image: UIImage?
     let gifString: String
     let audioString: String
-    let searchTag: String
+    var searchTag: String
     
     init(name: String, displayName: String) {
         self.name = name
