@@ -119,6 +119,8 @@ class SoundManager {
         }
     }
     
+    // MARK: - Say name of truck
+    
     func sayName(ofTruck truck: Truck) {
         if !self.isMuted {
             let sound = Bundle.main.url(forResource: truck.name, withExtension: "aac")

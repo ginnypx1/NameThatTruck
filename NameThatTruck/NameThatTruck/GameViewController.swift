@@ -184,7 +184,22 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             print("You got it!")
             // audio prompt for win
             soundManager.playResultsAudio(forTruck: selectedTruck, win: true)
-            audioPlayerDidFinishPlaying(self.soundManager.playerQueue, successfully: true)
+            
+            // create black background
+            self.createBlackBackground()
+            // popdown view slides in from top of screen
+            self.addPopdownView()
+            
+            // find the size classes
+            let dropHeight = (self.view.frame.size.height * 0.15)
+            
+            // drop down the popdownView
+            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
+                self.popdownView.center.y += (800 + dropHeight)
+            }, completion: nil)
+            
+            // play sound
+            self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
             
         // if guess is incorrect, say name of truck and ask the question again
         } else {
@@ -229,24 +244,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
         self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(popdownView)
-    }
-    
-    func audioPlayerDidFinishPlaying(_ player: AVQueuePlayer, successfully flag: Bool) {
-        // create black background
-        self.createBlackBackground()
-        // popdown view slides in from top of screen
-        self.addPopdownView()
-        
-        // find the size classes
-        let dropHeight = (self.view.frame.size.height * 0.15)
-        
-        // drop down the popdownView
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            self.popdownView.center.y += (800 + dropHeight)
-        }, completion: nil)
-        
-        // play sound
-        self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
     }
     
     func backButtonPressed(sender: UIButton) {
