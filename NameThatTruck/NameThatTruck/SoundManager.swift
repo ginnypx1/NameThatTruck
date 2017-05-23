@@ -7,6 +7,7 @@
 //
 
 import AVFoundation
+import UIKit
 
 class SoundManager {
     
@@ -167,11 +168,57 @@ class SoundManager {
         }
     }
     
+    // MARK: - Change Sound Preferences
+    
+    func checkSoundPreferences(button: UIButton) {
+        // check to see if sound is save as on or off, set isMuted to that variable
+        self.isMuted = UserDefaults.standard.bool(forKey: "isMuted")
+        print("User Sound is Muted: \(self.isMuted)")
+        // change image of toggleSoundButton accordingly
+        self.toggleSoundButtonImage(button: button)
+    }
+    
+    func toggleSoundOnOrOff(button: UIButton) {
+        if self.isMuted {
+            // change it to sound-on (isMuted = false)
+            self.isMuted = false
+            UserDefaults.standard.set(false, forKey: "isMuted")
+            UserDefaults.standard.synchronize()
+            self.playSoundtrack()
+            self.toggleSoundButtonImage(button: button)
+        } else {
+            // sound will be turned off
+            self.stopSound()
+            self.isMuted = true
+            UserDefaults.standard.set(true, forKey: "isMuted")
+            UserDefaults.standard.synchronize()
+            self.toggleSoundButtonImage(button: button)
+        }
+    }
+    
+    func toggleSoundButtonImage(button: UIButton) {
+        // change the image of the sound button according to sound preferences
+        if self.isMuted {
+            // change image to sound-off
+            let soundOffImage = UIImage(named: "sound-off")
+            button.setImage(soundOffImage, for: .normal)
+        } else {
+            // change image to sound-on
+            let soundOnImage = UIImage(named: "sound-on")
+            button.setImage(soundOnImage, for: .normal)
+        }
+    }
+    
     // MARK: - Stop Sound
     
     func stopSound() {
         guard let player = self.audioPlayer else { return }
         player.stop()
+    }
+    
+    func stopQueuedSound() {
+        guard let player = self.playerQueue else { return }
+        player.removeAllItems()
     }
     
     

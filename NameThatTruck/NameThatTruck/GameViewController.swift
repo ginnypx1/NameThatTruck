@@ -46,17 +46,14 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // add outline to title font
         titleLabel.attributedText = GameDesign.setTitleLabelFont()
-        
         // sign display
-        changeSignForGame(forGameType: self.gameType)
+        GameDesign.changeSignForGame(forGameType: self.gameType, bottomSignView: self.bottomSignView, topSignView: self.topSignView, winningTruckLabel: self.winningTruckLabel, canYouFindLabel: self.canYouFindLabel)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
         // start a new game
         createGameBoard()
     }
@@ -78,69 +75,10 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.reloadData()
         
         // check for truck entry in core data
-        checkForTruckType()
+        self.delegate.stack.checkForTruckType(truck: winningTruck)
         
         // play Game Prompt
         soundManager.playGamePrompt(forTruck: winningTruck)
-        
-    }
-    
-    func changeSignForGame(forGameType gameType: GameType) {
-        // change the sign coloring to match the game type
-        switch gameType {
-        case .Construction:
-            self.bottomSignView.backgroundColor = GameDesign.constructionOrange
-            self.topSignView.backgroundColor = GameDesign.constructionOrange
-            self.topSignView.layer.borderColor = UIColor.black.cgColor
-            self.winningTruckLabel.backgroundColor = UIColor.black
-            self.winningTruckLabel.textColor = GameDesign.constructionYellow
-            self.canYouFindLabel.textColor = UIColor.white
-        case .Emergency:
-            self.bottomSignView.backgroundColor = UIColor.white
-            self.topSignView.backgroundColor = UIColor.white
-            self.topSignView.layer.borderColor = UIColor.black.cgColor
-            self.winningTruckLabel.backgroundColor = UIColor.black
-            self.winningTruckLabel.textColor = GameDesign.roadSignRed
-            self.canYouFindLabel.textColor = UIColor.black
-        case .City:
-            self.bottomSignView.backgroundColor = GameDesign.roadSignGreen
-            self.topSignView.backgroundColor = GameDesign.roadSignGreen
-            self.topSignView.layer.borderColor = UIColor.white.cgColor
-            self.winningTruckLabel.backgroundColor = UIColor.white
-            self.winningTruckLabel.textColor = GameDesign.constructionYellow
-            self.canYouFindLabel.textColor = UIColor.white
-        case .All:
-            self.bottomSignView.backgroundColor = GameDesign.roadSignBlue
-            self.topSignView.backgroundColor = GameDesign.roadSignBlue
-            self.topSignView.layer.borderColor = UIColor.white.cgColor
-            self.winningTruckLabel.backgroundColor = UIColor.white
-            self.winningTruckLabel.textColor = GameDesign.constructionOrange
-            self.canYouFindLabel.textColor = UIColor.white
-        }
-    }
-
-    // MARK: - TruckType Entity
-    
-    func checkForTruckType() {
-        // if selected truck type can't be retrieved, one is created
-        if let truckExists = self.delegate.stack.fetchTruckType(name: self.winningTruck.name) {
-            print("Retrieved \(String(describing: truckExists.name)) from core data.")
-        } else {
-            print("No truck type found. Creating new core data object.")
-            self.delegate.stack.addTruckTypeToDatabase(name: self.winningTruck.name)
-        }
-    }
-    
-    // MARK: - Animations
-    
-    func bounceTruck(cell: UICollectionViewCell, duration: TimeInterval, scale: CGFloat) {
-        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            cell.transform = CGAffineTransform(scaleX: scale, y: scale)
-        }, completion: { finished in
-            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                cell.transform = CGAffineTransform(scaleX: 1, y: 1)
-            },completion: nil)
-        })
     }
     
     // MARK: - Collection View Delegate
@@ -163,7 +101,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let truckImage = truck.image
         cell.imageView.image = truckImage
         
-        bounceTruck(cell: cell, duration: 0.5, scale: 0.5)
+        AnimationManager.bounceTruck(cell: cell, duration: 0.5, scale: 0.5)
         
         return cell
     }
@@ -171,9 +109,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         // animates a bounce effect when the user presses the truck
-        let cell = collectionView.cellForItem(at: indexPath)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? TruckViewCell else { return }
         
-        bounceTruck(cell: cell!, duration: 0.3, scale: 0.9)
+        AnimationManager.bounceTruck(cell: cell, duration: 0.3, scale: 0.9)
         
         // check to see if user selected the winning truck
         let selectedTruck = gameTrucks[indexPath.row]
@@ -182,32 +120,38 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // if guess is correct, segue to gif view
         if selectedTruck.name == winningTruck.name {
             print("You got it!")
-            // audio prompt for win
-            soundManager.playResultsAudio(forTruck: selectedTruck, win: true)
+            self.activateWin(truck: selectedTruck)
             
-            // create black background
-            self.createBlackBackground()
-            // popdown view slides in from top of screen
-            self.addPopdownView()
-            
-            // find the size classes
-            let dropHeight = (self.view.frame.size.height * 0.15)
-            
-            // drop down the popdownView
-            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                self.popdownView.center.y += (800 + dropHeight)
-            }, completion: nil)
-            
-            // play sound
-            self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
-            
-        // if guess is incorrect, say name of truck and ask the question again
         } else {
             print("Try again!")
-            // audio prompts for loss
-            soundManager.sayName(ofTruck: selectedTruck)
-            
+            self.activateLoss(cell: cell, truck: selectedTruck)
         }
+    }
+    
+    // MARK: - Activate Win or Lose
+    
+    func activateWin(truck: Truck) {
+        // audio prompt for win
+        soundManager.playResultsAudio(forTruck: truck, win: true)
+        
+        // create black background
+        self.createBlackBackground()
+        // popdown view slides in from top of screen
+        self.addPopdownView()
+        
+        // drop down the popdownView
+        let dropHeight = (self.view.frame.size.height * 0.15)
+        AnimationManager.animateViewPopdown(popdownView: self.popdownView, dropHeight: dropHeight)
+        
+        // play sound
+        self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
+    }
+    
+    func activateLoss(cell: TruckViewCell, truck: Truck) {
+        // shake Truck
+        // AnimationManager.shakeTruck(cell: cell)
+        // audio prompts for loss
+        soundManager.sayName(ofTruck: truck)
     }
     
     // MARK: - Popdown View
@@ -217,20 +161,11 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if (self.popdownView != nil) {
             self.popdownView.view.removeFromSuperview()
         }
-        // find the size classes
-        // let horizontalClass = self.traitCollection.horizontalSizeClass
-        let verticalClass = self.traitCollection.verticalSizeClass
         
-        // view sized for regular height devices
-        var viewWidth = (self.view.frame.size.width * 0.9)
-        var viewHeight = (self.view.frame.size.height * 0.5)
+        let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.7)
         
-        if verticalClass == UIUserInterfaceSizeClass.compact {
-            // resize view for compact height
-            viewWidth = (self.view.frame.size.width * 0.75)
-            viewHeight = (self.view.frame.size.height * 0.8)
-        }
-    
+        let viewHeight = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.7) : (self.view.frame.size.height * 0.5)
+        
         // create the popdown view
         self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
         
@@ -261,7 +196,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func moreTrucksButtonPressed(sender: UIButton) {
         // stop audio
-        soundManager.stopSound()
+        soundManager.stopQueuedSound()
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
         // segue to photo album view of the winning truck
@@ -297,6 +232,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // MARK: -  Return to Main Menu
 
     @IBAction func returnToMainMenu(_ sender: Any) {
+        // stop sound
+        soundManager.stopQueuedSound()
         // return to menu view
         self.navigationController?.popToRootViewController(animated: true)
     }

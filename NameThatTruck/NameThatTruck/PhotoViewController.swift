@@ -60,9 +60,12 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Truck Type is: \(self.truckType.name!)")
-        
+        // set up view and start fetched results controller
+        setUpInitialView()
+        startFetchedResultsController()
+    }
+    
+    func setUpInitialView() {
         // add outline to title font
         titleLabel.attributedText = GameDesign.setTitleLabelFont()
         // hide noImagesLabel
@@ -77,7 +80,11 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         addActivityIndicator()
         // set up custom flow
         fitCollectionFlowToSize(self.view.frame.size)
-        
+    }
+    
+    // MARK: - Collection View
+    
+    func startFetchedResultsController() {
         // start the fetched results controller
         do {
             try fetchedResultsController.performFetch()
@@ -92,20 +99,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             print("Error performing initial fetch for album photos.")
         }
     }
-    
-    // MARK: - Animations
-    
-    func bounceButton(button: UIButton, duration: TimeInterval, scale: CGFloat) {
-        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-            button.transform = CGAffineTransform(scaleX: scale, y: scale)
-        }, completion: { finished in
-            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [], animations: {
-                button.transform = CGAffineTransform(scaleX: 1, y: 1)
-            },completion: nil)
-        })
-    }
-    
-    // MARK: - Collection View
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // loads number of sections or 0
@@ -165,14 +158,12 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         return cell
     }
     
-    
     // MARK: - Fetched Results Controller Delegate
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         insertedIndexPaths = [IndexPath]()
         deletedIndexPaths = [IndexPath]()
         updatedIndexPaths = [IndexPath]()
-        
         print("in controllerWillChangeContent")
     }
     
@@ -191,10 +182,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             updatedIndexPaths.append(indexPath!)
             break
         case .move:
-            print("Move an item. We don't expect to see this in this app.")
+            print("Move an item.")
             break
-            //default:
-            //break
         }
     }
     
@@ -222,8 +211,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         collectionButton.isEnabled = false
         noImagesLabel.isHidden = true
         
-        print("1. Starting request for photos...")
-        
         // exception needed to better images for Paver
         if selectedTruck.name == ConstructionTruckTypes.Paver.rawValue {
             self.selectedTruck.searchTag = "road+paver"
@@ -232,7 +219,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // retrieve images from flickr
         flickrClient.fetchImagesWithSearchTag(tag: self.selectedTruck.searchTag) { (data: AnyObject?, error: NSError?) -> Void in
             // returned from JSON parsing on main thread
-            
             if error != nil {
                 print("There was an error getting the images: \(String(describing: error))")
                 self.activityIndicator.stopAnimating()
@@ -250,7 +236,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                 let photoURLs = self.flickrClient.extractAllPhotoURLStrings(fromJSONDictionary: data)
                 
                 if !photoURLs.isEmpty {
-                    print("5. There were \(photoURLs.count) photos returned.")
                     for url in photoURLs {
                         self.delegate.stack.addFlickrPhotoToDatabase(urlString: url, truckType: self.truckType, fetchedResultsController: self.fetchedResultsController)
                         self.activityIndicator.stopAnimating()
@@ -280,19 +265,9 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         if (self.photoView != nil) {
             self.photoView.view.removeFromSuperview()
         }
-        // find the size classes
-        // let horizontalClass = self.traitCollection.horizontalSizeClass
-        let verticalClass = self.traitCollection.verticalSizeClass
         
-        // view sized for regular height devices
-        var viewWidth = (self.view.frame.size.width * 0.9)
-        var viewHeight = viewWidth
-        
-        if verticalClass == UIUserInterfaceSizeClass.compact {
-            // resize view for compact height
-            viewHeight = (self.view.frame.size.height * 0.9)
-            viewWidth = viewHeight
-        }
+        let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.9)
+        let viewHeight = viewWidth
         
         // create the popdown view
         self.photoView = PhotoView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: (self.view.frame.size.height-viewHeight)/2, width: viewWidth, height: viewHeight))
@@ -342,7 +317,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // truck horn sound effect
         soundManager.playTruckHornSoundEffect()
         // animate
-        bounceButton(button: self.collectionButton, duration: 0.5, scale: 0.3)
+        AnimationManager.bounceButton(button: self.collectionButton, duration: 0.5, scale: 0.3)
         // disable button while new photos load
         collectionButton.isEnabled = false
         // delete saved images

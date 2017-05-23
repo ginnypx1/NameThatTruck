@@ -70,6 +70,17 @@ struct CoreDataStack {
     }
     
     // MARK: - Add Truck Type to Database
+    
+    func checkForTruckType(truck: Truck) {
+        // if selected truck type can't be retrieved, one is created
+        if let truckExists = self.fetchTruckType(name: truck.name) {
+            print("Retrieved \(String(describing: truckExists.name)) from core data.")
+        } else {
+            print("No truck type found. Creating new core data object.")
+            self.addTruckTypeToDatabase(name: truck.name)
+        }
+    }
+    
     func addTruckTypeToDatabase(name: String) {
         let newTruckType = TruckType(name: name, context: context)
         print("Created new truck type: \(String(describing: newTruckType))")

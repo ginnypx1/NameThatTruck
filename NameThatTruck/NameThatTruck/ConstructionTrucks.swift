@@ -26,45 +26,41 @@ enum ConstructionTruckTypes: String {
     case Steamroller = "steamroller"
 }
 
-// MARK: - Create Construction trucks
+// MARK: - Create Construction Trucks
 
 struct ConstructionTrucks {
     
+    // MARK: - Init Contstruction Trucks
+    
+    static let BackhoeLoader: Truck = Truck(name: ConstructionTruckTypes.BackhoeLoader.rawValue, displayName: "Backhoe Loader", videoCredit: "BACKHOE LOADER: BACKHOE LOADER by Eric D https://www.youtube.com/watch?v=UiVH4ZmzkL")
+    static let Bulldozer: Truck = Truck(name: ConstructionTruckTypes.Bulldozer.rawValue, displayName: "Bulldozer", videoCredit: "BULLDOZER: BIG Caterpillar bulldozer machines at work on a beach MUST SEE by Nosey Ned https://www.youtube.com/watch?v=USJ2N0olED8")
+    static let CementMixer: Truck = Truck(name: ConstructionTruckTypes.CementMixer.rawValue, displayName: "Cement Mixer", videoCredit: "CEMENT MIXER: 1979 Mack RS6001 mixer truck for sale | sold at auction February 28,2012 by Purple Wave https://www.youtube.com/watch?v=aFlZM_lJuTk")
+    static let CraneTruck: Truck = Truck(name: ConstructionTruckTypes.CraneTruck.rawValue, displayName: "Crane Truck", videoCredit: "CRANE TRUCK: 1990 Ford F800 Fladbed Crane Truck for sale | sold at auction July 12, 2012 by Purple Wave https://www.youtube.com/watch?v=TQGaNgTTliQ")
+    static let DumpTruck: Truck = Truck(name: ConstructionTruckTypes.DumpTruck.rawValue, displayName: "Dump Truck", videoCredit: "DUMP TRUCK: The Largest Dump Truck Liebherr T282B by Vehicle Channel https://www.youtube.com/watch?v=EnXVM_qlr44")
+    static let Excavator: Truck = Truck(name: ConstructionTruckTypes.Excavator.rawValue, displayName: "Excavator", videoCredit: "EXCAVATOR: Digger NZ by Justus Haufe https://www.youtube.com/watch?v=J07zXL5EiTc&t=10s")
+    static let Forklift: Truck = Truck(name: ConstructionTruckTypes.Forklift.rawValue, displayName: "Forklift", videoCredit: "FORKLIFT: Small Electric Forklift by Erica Liu  https://www.youtube.com/watch?v=W7pOxH9d0B4")
+    static let FrontEndLoader: Truck = Truck(name: ConstructionTruckTypes.FrontEndLoader.rawValue, displayName: "Front End Loader", videoCredit: "FRONT END LOADER: CAT Truck Loader At Work by Julie Barnett https://www.youtube.com/watch?v=i7umujl44YA")
+    static let Grader: Truck = Truck(name: ConstructionTruckTypes.Grader.rawValue, displayName: "Grader", videoCredit: "GRADER: CAT Grader Makes the Road by Julie Barnett https://www.youtube.com/watch?v=cUl3kHqsdxA*/")
+    static let Paver: Truck = Truck(name: ConstructionTruckTypes.Paver.rawValue, displayName: "Paver", videoCredit: "Paving Main Street.wmv by Sara Piazza https://www.youtube.com/watch?v=y6wcUZfUCJE")
+    static let SkidSteer: Truck = Truck(name: ConstructionTruckTypes.SkidSteer.rawValue, displayName: "Skid Steer", videoCredit: "Skid-Steer Loader by Ytrhampton https://www.youtube.com/watch?v=oH0nCS5H94M")
+    static let Steamroller: Truck = Truck(name: ConstructionTruckTypes.Steamroller.rawValue, displayName: "Steamroller", videoCredit: "Hyster C350C double drum roller | no-reserve Internet auction August 25, 2011 by Purple Wave https://www.youtube.com/watch?v=pmXITU8IJbk")
+    
+    // MARK: - All Construction Trucks
+    
     static let allConstructionTrucks: [Truck] = [
-        /* BACKHOE LOADER by Eric D https://www.youtube.com/watch?v=UiVH4ZmzkL */
-        Truck(name: ConstructionTruckTypes.BackhoeLoader.rawValue, displayName: "Backhoe Loader"),
-    
-        /* BIG Caterpillar bulldozer machines at work on a beach MUST SEE by Nosey Ned https://www.youtube.com/watch?v=USJ2N0olED8*/
-        Truck(name: ConstructionTruckTypes.Bulldozer.rawValue, displayName: "Bulldozer"),
-    
-        /* 1979 Mack RS6001 mixer truck for sale | sold at auction February 28,2012 by Purple Wave https://www.youtube.com/watch?v=aFlZM_lJuTk */
-        Truck(name: ConstructionTruckTypes.CementMixer.rawValue, displayName: "Cement Mixer"),
-    
-        /* 1990 Ford F800 Fladbed Crane Truck for sale | sold at auction July 12, 2012 by Purple Wave https://www.youtube.com/watch?v=TQGaNgTTliQ */
-        Truck(name: ConstructionTruckTypes.CraneTruck.rawValue, displayName: "Crane Truck"),
-    
-        /* The Largest Dump Truck Liebherr T282B by Vehicle Channel https://www.youtube.com/watch?v=EnXVM_qlr44 */
-        Truck(name: ConstructionTruckTypes.DumpTruck.rawValue, displayName: "Dump Truck"),
-    
-        /* Digger NZ by Justus Haufe https://www.youtube.com/watch?v=J07zXL5EiTc&t=10s */
-        Truck(name: ConstructionTruckTypes.Excavator.rawValue, displayName: "Excavator"),
-    
-        /* Small Electric Forklift by Erica Liu  https://www.youtube.com/watch?v=W7pOxH9d0B4 */
-        Truck(name: ConstructionTruckTypes.Forklift.rawValue, displayName: "Forklift"),
-    
-        /* CAT Truck Loader At Work by Julie Barnett https://www.youtube.com/watch?v=i7umujl44YA*/
-        Truck(name: ConstructionTruckTypes.FrontEndLoader.rawValue, displayName: "Front End Loader"),
-    
-        /* CAT Grader Makes the Road by Julie Barnett https://www.youtube.com/watch?v=cUl3kHqsdxA*/
-        Truck(name: ConstructionTruckTypes.Grader.rawValue, displayName: "Grader"),
-    
-        /* Paving Main Street.wmv by Sara Piazza https://www.youtube.com/watch?v=y6wcUZfUCJE */
-        Truck(name: ConstructionTruckTypes.Paver.rawValue, displayName: "Paver"),
-    
-        /* Skid-Steer Loader by Ytrhampton https://www.youtube.com/watch?v=oH0nCS5H94M */
-        Truck(name: ConstructionTruckTypes.SkidSteer.rawValue, displayName: "Skid Steer"),
-    
-        /* Hyster C350C double drum roller | no-reserve Internet auction August 25, 2011 by Purple Wave https://www.youtube.com/watch?v=pmXITU8IJbk */
-        Truck(name: ConstructionTruckTypes.Steamroller.rawValue, displayName: "Steamroller")
+        BackhoeLoader,
+        Bulldozer,
+        CementMixer,
+        CraneTruck,
+        DumpTruck,
+        Excavator,
+        Forklift,
+        FrontEndLoader,
+        Grader,
+        Paver,
+        SkidSteer,
+        Steamroller
     ]
+    
 }
+
