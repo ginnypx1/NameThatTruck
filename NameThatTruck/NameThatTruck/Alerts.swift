@@ -12,12 +12,9 @@ import UIKit
 
 class Alerts {
     
-    
-    // display Internet Out alert
     static func displayInternetConnectionAlert(from viewController: UIViewController) {
-        
+        // display Internet Out alert
         let alertController = UIAlertController(title: "No Internet Connection", message: "Please Make Sure Your Device is Connected to the Internet.", preferredStyle: .alert)
-        
         let dismissAction = UIAlertAction(title: "Dismiss", style: .default) { (action: UIAlertAction) -> Void in
             alertController.dismiss(animated: true, completion: nil)
         }
@@ -29,16 +26,12 @@ class Alerts {
         
         // add actions to alert controller
         alertController.addAction(dismissAction)
-        
         viewController.present(alertController, animated: true, completion: nil)
     }
     
-    
-    // alert there was an error downloading the images
     static func displayStandardAlert(from viewController: UIViewController) {
-        
+        // alert there was an error downloading the images
         let alertController = UIAlertController(title: nil, message: "There Was an Error Retrieving the Images. Please Try Again.", preferredStyle: .alert)
-        
         let dismissAction = UIAlertAction(title: "Dismiss", style: .default) { (action: UIAlertAction) -> Void in
             alertController.dismiss(animated: true, completion: nil)
         }
@@ -50,7 +43,6 @@ class Alerts {
         
         // add actions to alert controller
         alertController.addAction(dismissAction)
-        
         viewController.present(alertController, animated: true, completion: nil)
     }
     

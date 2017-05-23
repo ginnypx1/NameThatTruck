@@ -51,5 +51,6 @@ Already built:
 
 To do:
 
+- Add a credit page for Creative Commons licensed videos
 - Can I change the background menu pic just for iPads in 1/3 screen splits?
 - Testing

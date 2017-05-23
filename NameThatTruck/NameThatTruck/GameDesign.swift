@@ -10,12 +10,15 @@ import UIKit
 
 struct GameDesign {
     
-    // game colors
+    // MARK: - Game Colors
+    
     static let roadSignRed = UIColor(red: 192/255, green: 0, blue: 0, alpha: 1)
     static let constructionOrange = UIColor(red: 254/255, green: 184/255, blue: 47/255, alpha: 1)
     static let constructionYellow = UIColor(red: 247/255, green: 212/255, blue: 23/255, alpha: 1)
     static let roadSignGreen = UIColor(red: 0, green: 153/255, blue: 0, alpha: 1)
     static let roadSignBlue = UIColor(red: 0, green: 0, blue: 254/255, alpha: 1)
+    
+    // MARK: - Title Font
     
     static func setTitleLabelFont() -> NSMutableAttributedString {
         // adds an outline to the title label font
@@ -25,6 +28,8 @@ struct GameDesign {
             NSStrokeWidthAttributeName: -2.0])
         return mutableString
     }
+    
+    // MARK: - Game Prompt Sign
     
     static func changeSignForGame(forGameType gameType: GameType, bottomSignView: UIView, topSignView: UIView, winningTruckLabel: UILabel, canYouFindLabel: UILabel) {
         // change the sign coloring to match the game type

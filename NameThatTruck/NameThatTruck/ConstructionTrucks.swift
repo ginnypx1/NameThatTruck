@@ -28,6 +28,9 @@ enum ConstructionTruckTypes: String {
 
 // MARK: - Create Construction Trucks
 
+/* All images are public domain found at pixabay or wikimedia */
+// Gif images are from creative commons licensed videos on YouTube
+
 struct ConstructionTrucks {
     
     // MARK: - Init Contstruction Trucks

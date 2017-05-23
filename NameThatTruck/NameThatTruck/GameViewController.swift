@@ -162,7 +162,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.popdownView.view.removeFromSuperview()
         }
         
-        let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.7)
+        let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.8)
         
         let viewHeight = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.7) : (self.view.frame.size.height * 0.5)
         
