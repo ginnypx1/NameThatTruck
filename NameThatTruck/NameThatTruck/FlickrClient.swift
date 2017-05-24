@@ -24,8 +24,6 @@ class FlickrClient : NSObject {
         
         pageRequested += 1
         
-        print("2. Building request for all photos... Page: \(pageRequested), SearchTags: \(tag)")
-        
         /* Set the Parameters */
         var methodParameters: [String: Any] = [
             FlickrRequest.FlickrParameterKeys.SearchTag: tag,

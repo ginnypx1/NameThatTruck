@@ -34,16 +34,6 @@ class AnimationManager {
         })
     }
     
-//    static func shakeTruck(cell: UICollectionViewCell) {
-//        let animation = CABasicAnimation(keyPath: "position")
-//        animation.duration = 1
-//        animation.repeatCount = 2
-//        animation.autoreverses = true
-//        animation.fromValue = CGPoint(x: cell.center.x - 20, y: cell.center.y)
-//        animation.toValue = CGPoint(x: cell.center.x + 20, y: cell.center.y)
-//        cell.layer.add(animation, forKey: "position")
-//    }
-    
     // MARK: - Animate Pop Up Views
     
     static func animateViewPopdown(popdownView: UIView, dropHeight: CGFloat) {

@@ -90,7 +90,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             try fetchedResultsController.performFetch()
             // if empty, download images
             if self.fetchedResultsController.fetchedObjects?.count == 0 {
-                print("Need to fetch images.")
                 fetchImages()
             } else {
                 print("There were \(String(describing: self.fetchedResultsController.fetchedObjects?.count)) images found.")
@@ -140,7 +139,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             } else {
                 // download and store the image
                 flickrClient.fetchImage(for: flickrPhoto) { (data: Data?) -> Void in
-                    print("6. Fetching image data for photo...")
                     // return on main thread
                     guard let imageData = data, let image = UIImage(data: imageData) else {
                         print("Image data could not be extracted")
@@ -150,7 +148,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                     if let cell = self.collectionView.cellForItem(at: photoIndexPath)
                         as? PhotoViewCell {
                         cell.update(with: image)
-                        print("7. displaying photo")
                     }
                 }
             }

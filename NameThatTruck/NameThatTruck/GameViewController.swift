@@ -107,7 +107,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         // animates a bounce effect when the user presses the truck
         guard let cell = collectionView.cellForItem(at: indexPath) as? TruckViewCell else { return }
         
@@ -115,15 +114,12 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // check to see if user selected the winning truck
         let selectedTruck = gameTrucks[indexPath.row]
-        print("Selected Truck: \(selectedTruck.displayName)")
         
         // if guess is correct, segue to gif view
         if selectedTruck.name == winningTruck.name {
-            print("You got it!")
             self.activateWin(truck: selectedTruck)
             
         } else {
-            print("Try again!")
             self.activateLoss(cell: cell, truck: selectedTruck)
         }
     }

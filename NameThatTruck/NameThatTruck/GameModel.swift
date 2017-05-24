@@ -31,7 +31,6 @@ struct Game {
         for i in 0...5 {
             let truck = shuffledTrucks[i]
             gameTrucks.append(truck)
-            print("\(truck.name) added to game board")
         }
         return gameTrucks
     }
