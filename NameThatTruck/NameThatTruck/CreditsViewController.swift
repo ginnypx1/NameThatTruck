@@ -87,6 +87,6 @@ class CreditsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBAction func returnToMainMenu(_ sender: Any) {
         // return to the main menu view controller
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
