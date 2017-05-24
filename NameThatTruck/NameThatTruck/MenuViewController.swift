@@ -94,4 +94,15 @@ class MenuViewController: UIViewController {
         soundManager.toggleSoundOnOrOff(button: self.toggleSoundButton)
     }
     
+    // MARK: - Show Creative Commons Attribution Credits
+    
+    @IBAction func showCredits(_ sender: Any) {
+        // stop soundtrack
+        soundManager.stopSound()
+        // segue to creditsViewController
+        let creditsViewController = self.storyboard?.instantiateViewController(withIdentifier: "CreditsViewController") as! CreditsViewController
+        self.navigationController?.pushViewController(creditsViewController, animated: true)
+    }
+    
+    
 }

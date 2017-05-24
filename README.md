@@ -27,11 +27,13 @@ let YOUR_API_KEY = <YOUR_API_KEY>
 
 To play the game, select a set of trucks from the menu screen: Emergency Vehicles, Construction Trucks, City Trucks, or all Trucks.
 
-When you reach the game screen, you will see images of six trucks and hear an audio prompt asking you to identify a certain truck (The prompt will also be present on the screen). If you select the wrong truck, the audio prompt will tell you which truck you selected, and again ask you to find a certain truck. If you select the correct truck, a new screen appears with a gif of the truck performing its primary job. 
+When you reach the game screen, you will see images of six trucks and hear an audio prompt asking you to identify a certain truck (The prompt will also be present on the screen). If you select the wrong truck, the audio prompt will tell the name of the truck you selected. If you select the correct truck, a new screen appears with a gif of the truck performing its primary job. 
 
-From the video screen, users can either hit the **<** button to continue the game, or select the **See More Trucks!** button on the bottom of the screen to load a collection view on 21 images of that type of truck pulled from Flickr.
+From the gif video popdown screen, users can either hit the **<-** button to continue the game, or select the **Truck Picture** button  to load a collection view of 21 images of that type of truck pulled from Flickr.
 
-To zoom in on a photo, simply tap the photo, and all the photos change to a larger size. To see all the truck photos again, tap the photo one more time, and the trucks will fill the screen in their original, smaller size. A new collection of trucks can be loaded by pressing the **More trucks!** button at the bottom of the screen. Users can return to the game at any time by pressing the **<** button.
+To zoom in on a photo, simply tap the photo, and the photo will appear close up over the collection view. Hit the **<-** button to make the close-up photo disappear. A new collection of trucks can be loaded at any time by pressing the **See more trucks!** button at the bottom of the screen. This new set of images will replace the stored set of images in Core Data. Users can return directly to the game screen at any time by pressing the **<** button.
+
+The Creative Commons Attribution License credits can be seen by clicking on the **CC BY** button on the main menu screen. Hit the **<-** button to return to the main menu.
 
 ## Technical Information
 
@@ -46,11 +48,11 @@ Already built:
 - Full version of "Name That Truck" that offers construction, emergency, city and all trucks games.
 - Selecting the correct truck shows you a new screen with a repeating gif of that truck working.
 - From the close-up picture of the truck, you can select the photo of the truck and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
-- Push button sound effects
+- Push button animation and sound effects
 - Audio Prompts
+- Credit page for Creative Commons licensed videos
 
 To do:
 
-- Add a credit page for Creative Commons licensed videos
 - Can I change the background menu pic just for iPads in 1/3 screen splits?
 - Testing

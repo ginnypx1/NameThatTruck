@@ -77,6 +77,7 @@
 		3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345221EC955E200FA5FA2 /* snowplow.gif */; };
 		3463452F1EC955E200FA5FA2 /* tow-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345231EC955E200FA5FA2 /* tow-truck.gif */; };
 		3464425A1ED3A3630003B1A9 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346442591ED3A3620003B1A9 /* AnimationManager.swift */; };
+		346549F01ED4D9F90028B314 /* CreditViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346549EF1ED4D9F90028B314 /* CreditViewCell.swift */; };
 		349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047D31EC23F1E00F8F395 /* AppDelegate.swift */; };
 		349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349047D71EC23F1E00F8F395 /* Main.storyboard */; };
 		349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349047DA1EC23F1E00F8F395 /* Assets.xcassets */; };
@@ -102,6 +103,8 @@
 		349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */; };
 		349048191EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */; };
 		3490481B1EC2488200F8F395 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490481A1EC2488200F8F395 /* CoreDataStack.swift */; };
+		349CF2C71ED4C15900EBEC37 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF2C61ED4C15900EBEC37 /* CreditsViewController.swift */; };
+		349CF2C91ED4C3CA00EBEC37 /* CreditsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF2C81ED4C3CA00EBEC37 /* CreditsModel.swift */; };
 		34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */; };
 		34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A689831ED0EE9600D86147 /* PhotoView.xib */; };
 		34A689861ED0EED600D86147 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A689851ED0EED600D86147 /* PhotoView.swift */; };
@@ -203,6 +206,7 @@
 		346345221EC955E200FA5FA2 /* snowplow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snowplow.gif; sourceTree = "<group>"; };
 		346345231EC955E200FA5FA2 /* tow-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tow-truck.gif"; sourceTree = "<group>"; };
 		346442591ED3A3620003B1A9 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		346549EF1ED4D9F90028B314 /* CreditViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditViewCell.swift; sourceTree = "<group>"; };
 		349047D01EC23F1E00F8F395 /* NameThatTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameThatTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349047D31EC23F1E00F8F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349047D81EC23F1E00F8F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 		349048141EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataClass.swift"; path = "../FlickrPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
 		349048151EC2481E00F8F395 /* FlickrPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlickrPhoto+CoreDataProperties.swift"; path = "../FlickrPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3490481A1EC2488200F8F395 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		349CF2C61ED4C15900EBEC37 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		349CF2C81ED4C3CA00EBEC37 /* CreditsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsModel.swift; sourceTree = "<group>"; };
 		34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trucks-are-on-the-road.m4a"; sourceTree = "<group>"; };
 		34A689831ED0EE9600D86147 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 		34A689851ED0EED600D86147 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
@@ -297,6 +303,7 @@
 			children = (
 				349047D31EC23F1E00F8F395 /* AppDelegate.swift */,
 				349047E51EC23F8700F8F395 /* Models */,
+				349CF2C81ED4C3CA00EBEC37 /* CreditsModel.swift */,
 				349047EC1EC240FA00F8F395 /* GameModel.swift */,
 				349047F01EC2412300F8F395 /* Client */,
 				349047F71EC2418300F8F395 /* Controllers */,
@@ -329,6 +336,7 @@
 		349047F71EC2418300F8F395 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				349CF2C61ED4C15900EBEC37 /* CreditsViewController.swift */,
 				34C13C1E1EC788F50091CC2A /* MenuViewController.swift */,
 				349047F81EC2419700F8F395 /* GameViewController.swift */,
 				345353A01EC3BE4F007D9021 /* PopdownView.swift */,
@@ -345,6 +353,7 @@
 				349048011EC2420100F8F395 /* Alerts.swift */,
 				346442591ED3A3620003B1A9 /* AnimationManager.swift */,
 				349048031EC2420900F8F395 /* CollectionFlowLayout.swift */,
+				346549EF1ED4D9F90028B314 /* CreditViewCell.swift */,
 				34F9D65B1ECF8BBE004ABE98 /* GameDesign.swift */,
 				349048051EC2421200F8F395 /* PhotoViewCell.swift */,
 				349048071EC2421A00F8F395 /* TruckViewCell.swift */,
@@ -752,8 +761,10 @@
 				349048111EC2475900F8F395 /* Model.xcdatamodeld in Sources */,
 				349047F41EC2414100F8F395 /* FlickrClient.swift in Sources */,
 				349048161EC2481E00F8F395 /* TruckType+CoreDataClass.swift in Sources */,
+				346549F01ED4D9F90028B314 /* CreditViewCell.swift in Sources */,
 				3490480D1EC2424C00F8F395 /* Reachability.swift in Sources */,
 				349047F91EC2419700F8F395 /* GameViewController.swift in Sources */,
+				349CF2C71ED4C15900EBEC37 /* CreditsViewController.swift in Sources */,
 				349048181EC2481E00F8F395 /* FlickrPhoto+CoreDataClass.swift in Sources */,
 				34F9D65C1ECF8BBF004ABE98 /* GameDesign.swift in Sources */,
 				349048001EC241F700F8F395 /* ActivityIndicator.swift in Sources */,
@@ -761,6 +772,7 @@
 				34F9D6561ECF7637004ABE98 /* SoundManager.swift in Sources */,
 				34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */,
 				349047EB1EC240F100F8F395 /* ConstructionTrucks.swift in Sources */,
+				349CF2C91ED4C3CA00EBEC37 /* CreditsModel.swift in Sources */,
 				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
 				349048021EC2420100F8F395 /* Alerts.swift in Sources */,
 				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
