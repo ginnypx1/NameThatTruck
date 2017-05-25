@@ -62,6 +62,9 @@ class FlickrClient : NSObject {
                 return
             }
             
+            /* Log the call */
+            print("Request to \(getRequestURL) returned a \(statusCode) response.)")
+            
             /* Parse the Parse data and use the data (happens in completion handler) */
             self.parseJSONDataWithCompletionHandler(data, completionHandlerForData: completionHandler)
         }
@@ -100,6 +103,10 @@ class FlickrClient : NSObject {
                 return
             }
             
+            /* Log the call */
+            print("Request to \(photoURL!) returned a \(statusCode) response.)")
+            
+            /* Save image and return to main queue to load images */
             OperationQueue.main.addOperation {
                 flickrPhoto.imageData = data as NSData
                 completionHandler(data)

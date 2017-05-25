@@ -110,7 +110,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // animates a bounce effect when the user presses the truck
         guard let cell = collectionView.cellForItem(at: indexPath) as? TruckViewCell else { return }
         
-        AnimationManager.bounceTruck(cell: cell, duration: 0.3, scale: 0.9)
+        AnimationManager.bounceTruck(cell: cell, duration: 0.3, scale: 0.8)
         
         // check to see if user selected the winning truck
         let selectedTruck = gameTrucks[indexPath.row]
@@ -144,8 +144,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func activateLoss(cell: TruckViewCell, truck: Truck) {
-        // shake Truck
-        // AnimationManager.shakeTruck(cell: cell)
         // audio prompts for loss
         soundManager.sayName(ofTruck: truck)
     }

@@ -8,4 +8,6 @@
 
 import Foundation
 
+// MARK: - Flicker API Key
+
 let YOUR_API_KEY = "1fe8b590a9c09e7751093b5a3aaff4cc"

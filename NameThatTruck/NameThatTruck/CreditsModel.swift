@@ -25,7 +25,8 @@ class Credits {
 
     let allPhotoCredits: [String] = [
         "With the exception of the Fire Chief's Truck, all images are licensed under Public Domain and can be found at Pixabay or Wikimedia Commons.",
-        EmergencyTrucks.fireChiefsTruckPhotoCredit]
+        EmergencyTrucks.fireChiefsTruckPhotoCredit,
+        "The 'More Trucks!' images are provided through the Flickr.com API."]
     
     // MARK: - Video Credits
     

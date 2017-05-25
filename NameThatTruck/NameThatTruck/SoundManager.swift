@@ -9,6 +9,8 @@
 import AVFoundation
 import UIKit
 
+// MARK: - Sound Manager
+
 class SoundManager {
     
     // MARK: - Properties
@@ -82,6 +84,7 @@ class SoundManager {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: sound)
                 guard let player = self.audioPlayer else { return }
                 player.numberOfLoops = -1
+                player.setVolume(1, fadeDuration: 2)
                 player.prepareToPlay()
                 player.play()
             } catch let error {

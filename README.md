@@ -39,16 +39,3 @@ The Creative Commons Attribution License credits can be seen by clicking on the 
 
 - The Flickr API can be found at: https://www.flickr.com/services/api/
 - The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
-
-## Components
-
-- Full version of "Name That Truck" offers construction, emergency, city and all trucks games.
-- Selecting the correct truck shows you a new screen with a repeating gif of that truck working.
-- From the close-up picture of the truck, you can select the photo of the truck and segue to a view of many photos of the same kind of truck fetched with the Flicker API and stored in Core Data.
-- Push button animation and sound effects
-- Audio Prompts
-- Credit page for Creative Commons licensed videos
-
-To do:
-
-- Plug-in professional audio files

@@ -9,6 +9,8 @@
 import Foundation
 import SystemConfiguration
 
+// MARK: - Check Internet Connectivity
+
 func isInternetAvailable() -> Bool {
     
     var zeroAddress = sockaddr_in()
