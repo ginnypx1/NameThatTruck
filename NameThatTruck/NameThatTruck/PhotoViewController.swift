@@ -215,16 +215,19 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         // retrieve images from flickr
         flickrClient.fetchImagesWithSearchTag(tag: self.selectedTruck.searchTag) { (data: AnyObject?, error: NSError?) -> Void in
+            
             // returned from JSON parsing on main thread
+            self.activityIndicator.stopAnimating()
+            self.collectionButton.isEnabled = true
+            
             if error != nil {
                 print("There was an error getting the images: \(String(describing: error))")
-                self.activityIndicator.stopAnimating()
                 if isInternetAvailable() == false {
                     Alerts.displayInternetConnectionAlert(from: self)
                 } else {
                     Alerts.displayStandardAlert(from: self)
                 }
-                self.collectionButton.isEnabled = true
+                
             } else {
                 guard let data = data else {
                     print("No data was returned.")
@@ -240,8 +243,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                     }
                 } else {
                     self.noImagesLabel.isHidden = false
-                    self.activityIndicator.stopAnimating()
-                    self.collectionButton.isEnabled = true
                 }
             }
             self.collectionView.reloadSections(IndexSet(integer: 0))
