@@ -13,6 +13,8 @@ class FlickrClient : NSObject {
     
     // MARK: - Properties
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
     var session = URLSession.shared
     var flickrRequest = FlickrRequest()
     
@@ -108,7 +110,13 @@ class FlickrClient : NSObject {
             
             /* Save image and return to main queue to load images */
             OperationQueue.main.addOperation {
-                flickrPhoto.imageData = data as NSData
+                // add to cache
+                guard let image = UIImage(data: data) else {
+                    print("Image data could not be extracted")
+                    return
+                }
+                self.delegate.imageCache.setObject(image, forKey: photoURLString as AnyObject)
+                
                 completionHandler(data)
             }
         }

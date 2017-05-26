@@ -207,6 +207,7 @@
 		346345231EC955E200FA5FA2 /* tow-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tow-truck.gif"; sourceTree = "<group>"; };
 		346442591ED3A3620003B1A9 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		346549EF1ED4D9F90028B314 /* CreditViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditViewCell.swift; sourceTree = "<group>"; };
+		34659F5E1ED8E18800D6EE2B /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		349047D01EC23F1E00F8F395 /* NameThatTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameThatTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349047D31EC23F1E00F8F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349047D81EC23F1E00F8F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -957,9 +958,10 @@
 		3490480F1EC2475900F8F395 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				34659F5E1ED8E18800D6EE2B /* Model 2.xcdatamodel */,
 				349048101EC2475900F8F395 /* Model.xcdatamodel */,
 			);
-			currentVersion = 349048101EC2475900F8F395 /* Model.xcdatamodel */;
+			currentVersion = 34659F5E1ED8E18800D6EE2B /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

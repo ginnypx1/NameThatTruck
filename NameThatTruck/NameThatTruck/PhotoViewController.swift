@@ -132,12 +132,13 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         if self.fetchedResultsController.fetchedObjects?.count != 0 {
             let flickrPhoto = self.fetchedResultsController.object(at: indexPath) as FlickrPhoto
-            if flickrPhoto.imageData != nil {
-                // make an image from the core data store
-                let photo = UIImage(data: flickrPhoto.imageData! as Data)
-                cell.update(with: photo)
+            guard let urlString = flickrPhoto.urlString else { return cell }
+            // check to see if image is cached
+            if let cachedImage = delegate.imageCache.object(forKey: urlString as AnyObject) as? UIImage {
+                print("Loading from cache.")
+                cell.update(with: cachedImage)
             } else {
-                // download and store the image
+                // download and cache the image
                 flickrClient.fetchImage(for: flickrPhoto) { (data: Data?) -> Void in
                     // return on main thread
                     guard let imageData = data, let image = UIImage(data: imageData) else {

@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let stack = CoreDataStack(modelName: "Model")!
+    let imageCache = NSCache<AnyObject, AnyObject>()
     
     // MARK: - Core Data Save Methods
     
