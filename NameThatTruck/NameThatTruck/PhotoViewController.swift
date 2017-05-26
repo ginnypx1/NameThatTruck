@@ -72,9 +72,9 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         noImagesLabel.isHidden = true
         // set button label
         if selectedTruck.name != CityTruckTypes.SchoolBus.rawValue {
-            collectionButton.setTitle("See More \(self.selectedTruck.displayName)s!", for: .normal)
+            collectionButton.setTitle("See More \(selectedTruck.displayName)s!", for: .normal)
         } else {
-            collectionButton.setTitle("See More \(self.selectedTruck.displayName)es!", for: .normal)
+            collectionButton.setTitle("See More \(selectedTruck.displayName)es!", for: .normal)
         }
         // add activity indicator
         addActivityIndicator()
@@ -92,7 +92,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             if self.fetchedResultsController.fetchedObjects?.count == 0 {
                 fetchImages()
             } else {
-                print("There were \(String(describing: self.fetchedResultsController.fetchedObjects?.count)) images found.")
+                print("There were \(String(describing: fetchedResultsController.fetchedObjects?.count)) images found.")
             }
         } catch {
             print("Error performing initial fetch for album photos.")
@@ -101,12 +101,12 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // loads number of sections or 0
-        return self.fetchedResultsController.sections?.count ?? 0
+        return fetchedResultsController.sections?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // loads the number of FlickrImages found for this Truck for tType
-        let sectionInfo = self.fetchedResultsController.sections![section]
+        let sectionInfo = fetchedResultsController.sections![section]
         print("number Of Cells: \(sectionInfo.numberOfObjects)")
         return sectionInfo.numberOfObjects
     }
@@ -121,17 +121,17 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         guard let selectedImage = cell.imageView.image else { return }
         
         // create black background
-        self.createBlackBackground()
+        createBlackBackground()
         // popdown view slides in from top of screen
-        self.addPhotoView(withImage: selectedImage)
+        addPhotoView(withImage: selectedImage)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // load images fetched from Flickr in the cells
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoViewCell", for: indexPath) as! PhotoViewCell
         
-        if self.fetchedResultsController.fetchedObjects?.count != 0 {
-            let flickrPhoto = self.fetchedResultsController.object(at: indexPath) as FlickrPhoto
+        if fetchedResultsController.fetchedObjects?.count != 0 {
+            let flickrPhoto = fetchedResultsController.object(at: indexPath) as FlickrPhoto
             guard let urlString = flickrPhoto.urlString else { return cell }
             // check to see if image is cached
             if let cachedImage = delegate.imageCache.object(forKey: urlString as AnyObject) as? UIImage {
@@ -211,7 +211,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         // exception needed to better images for Paver
         if selectedTruck.name == ConstructionTruckTypes.Paver.rawValue {
-            self.selectedTruck.searchTag = "road+paver"
+            selectedTruck.searchTag = "road+paver"
         }
         
         // retrieve images from flickr
@@ -261,22 +261,22 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func addPhotoView(withImage image: UIImage) {
         // make sure there's not already a photo view on screen
-        if (self.photoView != nil) {
-            self.photoView.view.removeFromSuperview()
+        if (photoView != nil) {
+            photoView.view.removeFromSuperview()
         }
         
         let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.9)
         let viewHeight = viewWidth
         
         // create the popdown view
-        self.photoView = PhotoView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: (self.view.frame.size.height-viewHeight)/2, width: viewWidth, height: viewHeight))
+        photoView = PhotoView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: (self.view.frame.size.height-viewHeight)/2, width: viewWidth, height: viewHeight))
         
         // Load cell's image as photoView's image
-        self.photoView.imageView.image = image
+        photoView.imageView.image = image
         
-        self.photoView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
-        self.photoView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(photoView)
+        photoView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
+        photoView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+        view.addSubview(photoView)
     }
     
     func backButtonPressed(sender: UIButton) {
@@ -291,21 +291,21 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func createBlackBackground() {
         // grey out the photo album when superview pops up
-        self.blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
-        self.blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
-        self.view.addSubview(self.blackoutView);
+        blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
+        blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
+        self.view.addSubview(blackoutView);
     }
     
     func removeSuperviews() {
         // remove the superviews from the photo album view
-        self.photoView.removeFromSuperview()
-        self.blackoutView.removeFromSuperview()
+        photoView.removeFromSuperview()
+        blackoutView.removeFromSuperview()
     }
     
     // MARK: - Remove Selected Photos
     
     func deleteAllFlickrPhotos() {
-        for photo in self.fetchedResultsController.fetchedObjects! {
+        for photo in fetchedResultsController.fetchedObjects! {
             delegate.stack.context.delete(photo)
         }
     }

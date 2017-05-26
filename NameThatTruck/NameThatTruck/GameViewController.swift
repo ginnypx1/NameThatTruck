@@ -75,7 +75,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.reloadData()
         
         // check for truck entry in core data
-        self.delegate.stack.checkForTruckType(truck: winningTruck)
+        delegate.stack.checkForTruckType(truck: winningTruck)
         
         // play Game Prompt
         soundManager.playGamePrompt(forTruck: winningTruck)
@@ -131,16 +131,16 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         soundManager.playResultsAudio(forTruck: truck, win: true)
         
         // create black background
-        self.createBlackBackground()
+        createBlackBackground()
         // popdown view slides in from top of screen
-        self.addPopdownView()
+        addPopdownView()
         
         // drop down the popdownView
         let dropHeight = (self.view.frame.size.height * 0.15)
         AnimationManager.animateViewPopdown(popdownView: self.popdownView, dropHeight: dropHeight)
         
         // play sound
-        self.soundManager.playSoundForGif(selectedTruck: self.winningTruck)
+        soundManager.playSoundForGif(selectedTruck: self.winningTruck)
     }
     
     func activateLoss(cell: TruckViewCell, truck: Truck) {
@@ -152,8 +152,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func addPopdownView() {
         // make sure there's not already a popdown view on screen
-        if (self.popdownView != nil) {
-            self.popdownView.view.removeFromSuperview()
+        if (popdownView != nil) {
+            popdownView.view.removeFromSuperview()
         }
         
         let viewWidth = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.9) : (self.view.frame.size.width * 0.8)
@@ -161,17 +161,17 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let viewHeight = self.view.frame.size.width >= self.view.frame.height ? (self.view.frame.size.height * 0.7) : (self.view.frame.size.height * 0.5)
         
         // create the popdown view
-        self.popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
+        popdownView = PopdownView(frame: CGRect(x: (self.view.frame.size.width-viewWidth)/2 , y: -800, width: viewWidth, height: viewHeight))
         
         // Load SwiftyGif and set up the gif manager to play the gif
         let gif = UIImage(gifName: "\(winningTruck.gifString)")
-        self.popdownView.imageView.setGifImage(gif, manager: self.gifmanager)
+        popdownView.imageView.setGifImage(gif, manager: self.gifmanager)
         
         // load other elements of popdown window
-        self.popdownView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
-        self.popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
-        self.popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
-        self.popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+        popdownView.view.layer.borderColor = GameDesign.constructionOrange.cgColor
+        popdownView.backButton.addTarget(self, action: #selector(backButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+        popdownView.moreTrucksButton.setImage(winningTruck.image, for: .normal)
+        popdownView.moreTrucksButton.addTarget(self, action: #selector(moreTrucksButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(popdownView)
     }
     
@@ -194,7 +194,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // play truck horn sound effect
         soundManager.playTruckHornSoundEffect()
         // segue to photo album view of the winning truck
-        self.removeSuperviews()
+        removeSuperviews()
         // fetch the current truck type from core data
         let truckType = delegate.stack.fetchTruckType(name: self.winningTruck.name)
         // pass it to photo view controller and segue to pictures of trucks
@@ -212,15 +212,15 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func createBlackBackground() {
         // grey out the game board when superview pops up
-        self.blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
-        self.blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
+        blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
+        blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
         self.view.addSubview(self.blackoutView);
     }
     
     func removeSuperviews() {
         // remove the superviews from the game view
-        self.popdownView.removeFromSuperview()
-        self.blackoutView.removeFromSuperview()
+        popdownView.removeFromSuperview()
+        blackoutView.removeFromSuperview()
     }
     
     // MARK: -  Return to Main Menu

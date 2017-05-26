@@ -19,7 +19,7 @@ struct Section {
     }
 }
 
-class Credits {
+struct Credits {
     
     // MARK: - Photo Credits
 

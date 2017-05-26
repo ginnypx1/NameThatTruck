@@ -1,0 +1,91 @@
+PROJECT
+You Decide!
+A part of the iOS Developer Nanodegree Program
+
+PROJECT REVIEW
+ 
+Meets Specifications
+
+Well, there's almost no room for improvements. You did a great job, I am more than impressed!
+
+Congratulations on finishing the iOS Nanodegree Program! I hope you enjoyed your time here with us. I wish all the best in your career as an iOS Developer.
+
+Best wishes from Brazil!
+
+
+README file
+- The app contains a README that fully describes the intended user experience. After reading the document, a user can easily use the app.
+- The README provides all necessary information to enable the reviewer to build, run, and access the app.
+
+User Interface
+- The app contains multiple pages of interface in a navigation controller or tab controller, or a single view controller with a view that shows and hides significant new content.
+- The user interface includes more than one type of control.
+
+Networking
+- The app includes data from a networked source.
+- The networking code is encapsulated in its own classes.
+- The app clearly indicates network activity, displaying activity indicators and/or progress bars when appropriate.
+- The app displays an alert view if the network connection fails.
+
+Persistent State
+- The app has a persistent state that is stored using Core Data or a service with local persistence capabilities (e.g. Firebase or Realm).
+
+App Functionality
+- The app functions as described in the README, without crashes or other runtime errors.
+
+CODE COMMENTS
+
+PhotoViewController.swift
+Line 104: SUGGESTION: The Udacity Swift naming and style conventions says:
+
+    When accessing properties or methods on self, leave the reference to self implicit by default:
+    private class History {
+        var events: [Event]
+
+        func rewrite() {
+            events = []
+        }
+    }
+    Only include the explicit keyword when required by the language—for example, in a closure, or when parameter names conflict:
+    extension History {
+        init(events: [Event]) {
+            self.events = events
+        }
+
+        var whenVictorious: () -> () {
+            return {
+                self.rewrite()
+            }
+        }
+    }
+    Reason: this makes the capturing semantics of self stand out more in closures, and avoids verbosity elsewhere.
+    Source: The Udacity Swift naming and style conventions Guide
+    (Suggestion now implemented)
+
+Line 110: SUGGESTION: Please remove debugging code from the final submission of your app. (** Note: at the time this was submitted, it was not the final version of the app. That version will be submitted to the App Store.)
+
+Line 301: SUGGESTION: Please go through your code and remove unnecessary references to self. The trick is: remove if, if Xcode complains, put it back. But after a few minutes you will know where to remove it or not. (Suggesion now implemented)
+
+CreditsViewController.swift
+Line 14: SUGGESTION: You can add tableView.deselectRow(at:) in your delegate methods to make sure the cell does not remain selected when you click on it.
+
+Line 51: AWESOME! I love you how separate view from model! That's impressive :)
+
+ActivityIndicator.swift
+Line 15: SUGGESTION: If you want to have more than one activity indicator I'd recommend to move this method to a new file that inherits from UIViewController.
+
+README.md
+Line 42: AWESOME! Wow, impressive README file!
+
+MenuViewController
+Line 38: SUGGESTION: That's nice you play a sound like this. Toddlers will really like it!
+
+GameViewController
+Line 14: AWESOME! I really like how you organize your code, it's really good! I can tell just by looking at your code how a great iOS Developer you are (star emoji)
+
+FlickrClient.swift
+Line 25: AWESOME! Great! This way you make sure not to display the same page.
+
+CreditsModel.swift
+Line 22: SUGGESTION: You can use a struct here as well. Please check this. (Suggestion has been implimented.)
+

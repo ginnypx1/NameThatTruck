@@ -29,7 +29,7 @@ class SoundManager {
     // MARK: - Soundtrack
     
     func playSoundtrack() {
-        if !self.isMuted {
+        if !isMuted {
             let sound = Bundle.main.url(forResource: "trucks-are-on-the-road", withExtension: "m4a")
             do {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: sound!)
@@ -65,7 +65,7 @@ class SoundManager {
     // MARK: - Gif Sound
     
     func playSoundForGif(selectedTruck: Truck) {
-        if !self.isMuted {
+        if !isMuted {
             var sound: URL = Bundle.main.url(forResource: "truck-driving", withExtension: "mp3")!
             
             if EmergencyTrucks.emergencyTrucksWithSirens.contains(selectedTruck.name) {
@@ -96,7 +96,7 @@ class SoundManager {
     // MARK: - Game Prompt
     
     func playGamePrompt(forTruck truck: Truck) {
-        if !self.isMuted {
+        if !isMuted {
             
             let gamePrompt: String
             if Truck.notTrucks.contains(truck.name) {
@@ -118,15 +118,15 @@ class SoundManager {
                 audioItems.append(item2)
             }
             
-            self.playerQueue = AVQueuePlayer(items: audioItems)
-            self.playerQueue.play()
+            playerQueue = AVQueuePlayer(items: audioItems)
+            playerQueue.play()
         }
     }
     
     // MARK: - Say name of truck
     
     func sayName(ofTruck truck: Truck) {
-        if !self.isMuted {
+        if !isMuted {
             let sound = Bundle.main.url(forResource: truck.name, withExtension: "aac")
             do {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: sound!)
@@ -143,7 +143,7 @@ class SoundManager {
     // MARK: - Win or Lose Audio
     
     func playResultsAudio(forTruck truck: Truck, win: Bool) {
-        if !self.isMuted {
+        if !isMuted {
             // check for correct or incorrect identification
             var result: String
             if win {
@@ -166,8 +166,8 @@ class SoundManager {
                 audioItems.append(item2)
             }
             
-            self.playerQueue = AVQueuePlayer(items: audioItems)
-            self.playerQueue.play()
+            playerQueue = AVQueuePlayer(items: audioItems)
+            playerQueue.play()
         }
     }
     
@@ -175,33 +175,33 @@ class SoundManager {
     
     func checkSoundPreferences(button: UIButton) {
         // check to see if sound is save as on or off, set isMuted to that variable
-        self.isMuted = UserDefaults.standard.bool(forKey: "isMuted")
+        isMuted = UserDefaults.standard.bool(forKey: "isMuted")
         print("User Sound is Muted: \(self.isMuted)")
         // change image of toggleSoundButton accordingly
-        self.toggleSoundButtonImage(button: button)
+        toggleSoundButtonImage(button: button)
     }
     
     func toggleSoundOnOrOff(button: UIButton) {
-        if self.isMuted {
+        if isMuted {
             // change it to sound-on (isMuted = false)
-            self.isMuted = false
+            isMuted = false
             UserDefaults.standard.set(false, forKey: "isMuted")
             UserDefaults.standard.synchronize()
-            self.playSoundtrack()
-            self.toggleSoundButtonImage(button: button)
+            playSoundtrack()
+            toggleSoundButtonImage(button: button)
         } else {
             // sound will be turned off
-            self.stopSound()
-            self.isMuted = true
+            stopSound()
+            isMuted = true
             UserDefaults.standard.set(true, forKey: "isMuted")
             UserDefaults.standard.synchronize()
-            self.toggleSoundButtonImage(button: button)
+            toggleSoundButtonImage(button: button)
         }
     }
     
     func toggleSoundButtonImage(button: UIButton) {
         // change the image of the sound button according to sound preferences
-        if self.isMuted {
+        if isMuted {
             // change image to sound-off
             let soundOffImage = UIImage(named: "sound-off")
             button.setImage(soundOffImage, for: .normal)
