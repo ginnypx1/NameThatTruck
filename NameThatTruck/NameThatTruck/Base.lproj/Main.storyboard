@@ -51,7 +51,7 @@
                                                 <color key="textColor" red="0.99607843139999996" green="0.72156862749999995" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="75"/>
+                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="65"/>
                                                 </variation>
                                             </label>
                                         </subviews>
@@ -433,7 +433,7 @@
                                                 <color key="textColor" red="0.99607843137254903" green="0.72156862745098038" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="75"/>
+                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="65"/>
                                                 </variation>
                                             </label>
                                         </subviews>
@@ -621,7 +621,7 @@
                                                 <color key="textColor" red="0.99607843139999996" green="0.72156862749999995" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="75"/>
+                                                    <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="65"/>
                                                 </variation>
                                             </label>
                                         </subviews>
