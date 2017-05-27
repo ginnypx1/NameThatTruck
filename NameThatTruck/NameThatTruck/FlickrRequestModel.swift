@@ -38,7 +38,7 @@ struct FlickrRequest {
         static let DisableJSONCallback: String = "1" /* 1 means "yes" */
         static let MediumURL: String = "url_m"
         static let UseSafeSearch: String = "1" /* 1 means "yes" */
-        static let DesiredNumberOfResults: Int = 21
+        static let DesiredNumberOfResults: Int = 30
         static let PhotosOnly: String = "1" /* 1 means "photos only" */
     }
     
