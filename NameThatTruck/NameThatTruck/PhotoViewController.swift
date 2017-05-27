@@ -32,6 +32,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     // API call
     var flickrClient = FlickrClient()
+    var hasMoreData = true
     
     // fetched results controller
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -204,6 +205,9 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - Fetch Images from Flickr
     
     func fetchImages() {
+        // check to make sure Flickr has more data
+        guard hasMoreData == true else { return }
+        
         // change UI to indicate loading
         activityIndicator.startAnimating()
         collectionButton.isEnabled = false
@@ -235,6 +239,10 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                     return
                 }
                 let photoURLs = self.flickrClient.extractAllPhotoURLStrings(fromJSONDictionary: data)
+                
+                if photoURLs.count < FlickrRequest.FlickrParameterValues.DesiredNumberOfResults {
+                    self.hasMoreData = false
+                }
                 
                 if !photoURLs.isEmpty {
                     for url in photoURLs {
@@ -317,12 +325,14 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         soundManager.playTruckHornSoundEffect()
         // animate
         AnimationManager.bounceButton(button: self.collectionButton, duration: 0.5, scale: 0.3)
-        // disable button while new photos load
-        collectionButton.isEnabled = false
-        // delete saved images
-        deleteAllFlickrPhotos()
-        // fetch new images
-        fetchImages()
+        if hasMoreData {
+            // disable button while new photos load
+            collectionButton.isEnabled = false
+            // delete saved images
+            deleteAllFlickrPhotos()
+            // fetch new images
+            fetchImages()
+        }
     }
     
     @IBAction func returnToGame(_ sender: Any) {
