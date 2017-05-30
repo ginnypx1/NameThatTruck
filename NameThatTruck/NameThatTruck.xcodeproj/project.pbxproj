@@ -52,6 +52,7 @@
 		3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */; };
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
+		345DE48E1EDDEA9A00FC023A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */; };
 		3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345001EC955C900FA5FA2 /* big-rig.gif */; };
 		3463450D1EC955C900FA5FA2 /* bucket-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345011EC955C900FA5FA2 /* bucket-truck.gif */; };
 		3463450E1EC955C900FA5FA2 /* car-transporter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345021EC955C900FA5FA2 /* car-transporter.gif */; };
@@ -181,6 +182,7 @@
 		3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lorimer_No2_Stencil.otf; sourceTree = "<group>"; };
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
+		345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		346345001EC955C900FA5FA2 /* big-rig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "big-rig.gif"; sourceTree = "<group>"; };
 		346345011EC955C900FA5FA2 /* bucket-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bucket-truck.gif"; sourceTree = "<group>"; };
 		346345021EC955C900FA5FA2 /* car-transporter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "car-transporter.gif"; sourceTree = "<group>"; };
@@ -338,11 +340,12 @@
 			isa = PBXGroup;
 			children = (
 				349CF2C61ED4C15900EBEC37 /* CreditsViewController.swift */,
-				34C13C1E1EC788F50091CC2A /* MenuViewController.swift */,
 				349047F81EC2419700F8F395 /* GameViewController.swift */,
+				34C13C1E1EC788F50091CC2A /* MenuViewController.swift */,
 				345353A01EC3BE4F007D9021 /* PopdownView.swift */,
 				349047FC1EC241AB00F8F395 /* PhotoViewController.swift */,
 				34A689851ED0EED600D86147 /* PhotoView.swift */,
+				345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -779,6 +782,7 @@
 				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
 				3464425A1ED3A3630003B1A9 /* AnimationManager.swift in Sources */,
 				349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */,
+				345DE48E1EDDEA9A00FC023A /* SettingsViewController.swift in Sources */,
 				349048041EC2420900F8F395 /* CollectionFlowLayout.swift in Sources */,
 				34A689861ED0EED600D86147 /* PhotoView.swift in Sources */,
 				349048171EC2481E00F8F395 /* TruckType+CoreDataProperties.swift in Sources */,

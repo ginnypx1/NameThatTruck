@@ -177,7 +177,6 @@ class SoundManager {
         // check to see if sound is save as on or off, set isMuted to that variable
         isMuted = UserDefaults.standard.bool(forKey: "isMuted")
         print("User Sound is Muted: \(self.isMuted)")
-        // change image of toggleSoundButton accordingly
         toggleSoundButtonImage(button: button)
     }
     

@@ -189,22 +189,26 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func moreTrucksButtonPressed(sender: UIButton) {
-        // stop audio
-        soundManager.stopQueuedSound()
-        // play truck horn sound effect
-        soundManager.playTruckHornSoundEffect()
         // segue to photo album view of the winning truck
-        removeSuperviews()
-        // fetch the current truck type from core data
-        let truckType = delegate.stack.fetchTruckType(name: self.winningTruck.name)
-        // pass it to photo view controller and segue to pictures of trucks
-        if let truckType = truckType {
-            // segue to photo album
-            let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
-            photoViewController.selectedTruck = self.winningTruck
-            photoViewController.truckType = truckType
-            photoViewController.soundManager = self.soundManager
-            self.navigationController?.pushViewController(photoViewController, animated: true)
+        let photoFeatureMuted = UserDefaults.standard.bool(forKey: "photoFeatureMuted")
+        if !photoFeatureMuted {
+            // stop audio
+            soundManager.stopQueuedSound()
+            // play truck horn sound effect
+            soundManager.playTruckHornSoundEffect()
+            // segue to photo album view of the winning truck
+            removeSuperviews()
+            // fetch the current truck type from core data
+            let truckType = delegate.stack.fetchTruckType(name: self.winningTruck.name)
+            // pass it to photo view controller and segue to pictures of trucks
+            if let truckType = truckType {
+                // segue to photo album
+                let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
+                photoViewController.selectedTruck = self.winningTruck
+                photoViewController.truckType = truckType
+                photoViewController.soundManager = self.soundManager
+                self.navigationController?.pushViewController(photoViewController, animated: true)
+            }
         }
     }
     

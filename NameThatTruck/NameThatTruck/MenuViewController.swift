@@ -13,8 +13,6 @@ class MenuViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var toggleSoundButton: UIButton!
-    
     @IBOutlet weak var constructionGameButton: UIButton!
     @IBOutlet weak var emergencyGameButton: UIButton!
     @IBOutlet weak var cityGameButton: UIButton!
@@ -32,8 +30,6 @@ class MenuViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        // check sound preferences
-        soundManager.checkSoundPreferences(button: self.toggleSoundButton)
         // play soundtrack
         soundManager.playSoundtrack()
     }
@@ -68,7 +64,6 @@ class MenuViewController: UIViewController {
         gameController.soundManager = self.soundManager
         self.navigationController?.pushViewController(gameController, animated: true)
     }
-
     
     // MARK: - Create one of four game types
     
@@ -88,17 +83,14 @@ class MenuViewController: UIViewController {
         createGameType(truckSet: Truck.allTrucks, gameType: .All, button: self.allGameButton)
     }
     
-    // MARK: - Turn game sound on or off
+    // MARK: - Segue to Settings View
     
-    @IBAction func toggleSoundOnOrOff(_ sender: Any) {
-        soundManager.toggleSoundOnOrOff(button: self.toggleSoundButton)
-    }
-    
-    // MARK: - Show Creative Commons Attribution Credits
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func changeGameSettings(_ sender: Any) {
         // stop soundtrack
         soundManager.stopSound()
+        let settingsController = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        settingsController.soundManager = self.soundManager
+        self.present(settingsController, animated: true, completion: nil)
     }
     
 }
