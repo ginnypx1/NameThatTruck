@@ -1,0 +1,46 @@
+/* Extra-small devices (portrait phones, less than 544px) */
+@media screen and (max-width: 543px) {
+    /*body {
+        background-color: red;
+    }*/
+    .jumbotron img {
+        display: block;
+        margin: 0 auto;
+    }
+    #headline {
+        font-size: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 544px) and (max-width: 767px) {
+    /*body {
+        background-color: orange;
+    }*/
+    #headline {
+        font-size: 3rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /*body {
+        background-color: yellow;
+    }*/
+    #headline {
+        font-size: 4rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*body {
+        background-color: green;
+    }*/
+    #headline {
+        font-size: 5rem;
+    }
+}
+
+/* Extra large devices (large desktops) */
+/* No media query, no upper bound on its width */
