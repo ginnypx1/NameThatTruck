@@ -300,8 +300,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     func createBlackBackground() {
         // grey out the photo album when superview pops up
         blackoutView = UIView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height))
-        blackoutView.backgroundColor = UIColor(red: 120/255, green: 150/255, blue: 200/255, alpha: 0.5)
-        self.view.addSubview(blackoutView);
+        blackoutView.backgroundColor = GameDesign.blackoutViewColor
+        self.view.addSubview(blackoutView)
     }
     
     func removeSuperviews() {

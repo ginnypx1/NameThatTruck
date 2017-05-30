@@ -17,6 +17,7 @@ struct GameDesign {
     static let constructionYellow = UIColor(red: 247/255, green: 212/255, blue: 23/255, alpha: 1)
     static let roadSignGreen = UIColor(red: 0, green: 153/255, blue: 0, alpha: 1)
     static let roadSignBlue = UIColor(red: 0, green: 0, blue: 254/255, alpha: 1)
+    static let blackoutViewColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 0.5)
     
     // MARK: - Title Font
     
