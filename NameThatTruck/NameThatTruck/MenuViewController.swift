@@ -30,6 +30,8 @@ class MenuViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        // check sound preferences
+        soundManager.isMuted = UserDefaults.standard.bool(forKey: "isMuted")
         // play soundtrack
         soundManager.playSoundtrack()
     }

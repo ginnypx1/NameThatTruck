@@ -25,7 +25,7 @@ extension GameViewController {
         // adjust dimension to width and height of collectionView
         let collectionViewWidth = size.width - (size.width * 0.1)
         let widthDimension = size.width >= size.height ? (collectionViewWidth - (3*space))/3.0 : (collectionViewWidth - (2*space))/2.0
-        let collectionViewHeight = size.height - (size.height * 0.4)
+        let collectionViewHeight = size.height - (size.height * 0.42)
         let heightDimension = size.width >= size.height ? (collectionViewHeight - (2*space))/2.0 : (collectionViewHeight - (3*space))/3.0
         // set up custom flow
         flowLayout.minimumInteritemSpacing = space
