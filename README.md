@@ -39,10 +39,7 @@ The Creative Commons Attribution License credits can be seen by clicking on the 
 
 - The Flickr API can be found at: https://www.flickr.com/services/api/
 - The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
-
-## Improvements
-
-Firebase Analytics are currently being added to NAME THAT TRUCK
+- Firebase Analytics tracks data pertaining to "Name That Truck"'s usage
 
 ## App Store
 

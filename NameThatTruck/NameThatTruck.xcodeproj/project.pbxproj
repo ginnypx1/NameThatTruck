@@ -50,6 +50,8 @@
 		340F0C091ED1EA6A005DEE09 /* which-truck-is-the.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C031ED1EA6A005DEE09 /* which-truck-is-the.aac */; };
 		340F0C0A1ED1EA6A005DEE09 /* you-touched-the.aac in Resources */ = {isa = PBXBuildFile; fileRef = 340F0C041ED1EA6A005DEE09 /* you-touched-the.aac */; };
 		3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */; };
+		344762771EE07FC8003305F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344762761EE07FC8003305F9 /* GoogleService-Info.plist */; };
+		344762791EE080CF003305F9 /* ClientAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344762781EE080CF003305F9 /* ClientAnalytics.swift */; };
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
 		345DE48E1EDDEA9A00FC023A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */; };
@@ -180,6 +182,8 @@
 		340F0C031ED1EA6A005DEE09 /* which-truck-is-the.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "which-truck-is-the.aac"; sourceTree = "<group>"; };
 		340F0C041ED1EA6A005DEE09 /* you-touched-the.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "you-touched-the.aac"; sourceTree = "<group>"; };
 		3410C60D1ECA4224007BC759 /* Lorimer_No2_Stencil.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lorimer_No2_Stencil.otf; sourceTree = "<group>"; };
+		344762761EE07FC8003305F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		344762781EE080CF003305F9 /* ClientAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAnalytics.swift; sourceTree = "<group>"; };
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
 		345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -306,8 +310,6 @@
 			children = (
 				349047D31EC23F1E00F8F395 /* AppDelegate.swift */,
 				349047E51EC23F8700F8F395 /* Models */,
-				349CF2C81ED4C3CA00EBEC37 /* CreditsModel.swift */,
-				349047EC1EC240FA00F8F395 /* GameModel.swift */,
 				349047F01EC2412300F8F395 /* Client */,
 				349047F71EC2418300F8F395 /* Controllers */,
 				349047FE1EC241DE00F8F395 /* View */,
@@ -320,6 +322,8 @@
 		349047E51EC23F8700F8F395 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				349CF2C81ED4C3CA00EBEC37 /* CreditsModel.swift */,
+				349047EC1EC240FA00F8F395 /* GameModel.swift */,
 				34ADEEF31EC51282003E4A19 /* CoreData */,
 				34ADEEF21EC5126F003E4A19 /* Trucks */,
 			);
@@ -369,6 +373,8 @@
 			isa = PBXGroup;
 			children = (
 				349047DF1EC23F1E00F8F395 /* Info.plist */,
+				344762761EE07FC8003305F9 /* GoogleService-Info.plist */,
+				344762781EE080CF003305F9 /* ClientAnalytics.swift */,
 				3490480A1EC2424400F8F395 /* Private.swift */,
 				3490480C1EC2424C00F8F395 /* Reachability.swift */,
 				34F9D6551ECF7637004ABE98 /* SoundManager.swift */,
@@ -680,6 +686,7 @@
 				340F0BDC1ED1EA4F005DEE09 /* bulldozer.aac in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
 				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
+				344762771EE07FC8003305F9 /* GoogleService-Info.plist in Resources */,
 				340F0BCD1ED1EA42005DEE09 /* snowplow.aac in Resources */,
 				34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */,
 				340F0BC31ED1EA42005DEE09 /* airport-fire-truck.aac in Resources */,
@@ -779,6 +786,7 @@
 				349CF2C91ED4C3CA00EBEC37 /* CreditsModel.swift in Sources */,
 				349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */,
 				349048021EC2420100F8F395 /* Alerts.swift in Sources */,
+				344762791EE080CF003305F9 /* ClientAnalytics.swift in Sources */,
 				349048081EC2421A00F8F395 /* TruckViewCell.swift in Sources */,
 				3464425A1ED3A3630003B1A9 /* AnimationManager.swift in Sources */,
 				349047FD1EC241AB00F8F395 /* PhotoViewController.swift in Sources */,
@@ -915,7 +923,7 @@
 				DEVELOPMENT_TEAM = B875NM54ML;
 				INFOPLIST_FILE = NameThatTruck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.NameThatTruck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VirginiaPennekamp.NameThatTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -929,7 +937,7 @@
 				DEVELOPMENT_TEAM = B875NM54ML;
 				INFOPLIST_FILE = NameThatTruck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.NameThatTruck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VirginiaPennekamp.NameThatTruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

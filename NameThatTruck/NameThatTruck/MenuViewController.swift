@@ -71,18 +71,26 @@ class MenuViewController: UIViewController {
     
     @IBAction func playConstructionTruckGame(_ sender: Any) {
         createGameType(truckSet: ConstructionTrucks.allConstructionTrucks, gameType: .Construction, button: self.constructionGameButton)
+        // send analytics
+        ClientAnalytics.startedContstructionTruckGame(gameType: GameType.Construction.rawValue)
     }
     
     @IBAction func playEmergencyTruckGame(_ sender: Any) {
         createGameType(truckSet: EmergencyTrucks.allEmergencyTrucks, gameType: .Emergency, button: self.emergencyGameButton)
+        // send analytics
+        ClientAnalytics.startedEmergencyTruckGame(gameType: GameType.Emergency.rawValue)
     }
     
     @IBAction func playCityTruckGame(_ sender: Any) {
         createGameType(truckSet: CityTrucks.allCityTrucks, gameType: .City, button: self.cityGameButton)
+        // send analytics
+        ClientAnalytics.startedCityTruckGame(gameType: GameType.City.rawValue)
     }
 
     @IBAction func playAllTrucksGame(_ sender: Any) {
         createGameType(truckSet: Truck.allTrucks, gameType: .All, button: self.allGameButton)
+        // send analytics
+        ClientAnalytics.startedAllTruckGame(gameType: GameType.All.rawValue)
     }
     
     // MARK: - Segue to Settings View

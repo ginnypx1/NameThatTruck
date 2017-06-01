@@ -366,7 +366,7 @@
             <objects>
                 <navigationController storyboardIdentifier="GameNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XWE-kX-HXA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rCd-st-lDh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rCd-st-lDh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -628,8 +628,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHq-d5-Hlc">
-                                                    <rect key="frame" x="16" y="8" width="635" height="28"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="28"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -728,7 +728,7 @@
                                 <rect key="frame" x="32" y="167" width="311" height="333.5"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz1-Do-qo9">
-                                        <rect key="frame" x="76" y="0.0" width="159" height="158.5"/>
+                                        <rect key="frame" x="76" y="0.0" width="159" height="159"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mz1-Do-qo9" secondAttribute="height" multiplier="1:1" id="Mfv-eN-7d7"/>
                                         </constraints>
@@ -738,7 +738,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKM-SJ-qhP">
-                                        <rect key="frame" x="76" y="174.5" width="159" height="159"/>
+                                        <rect key="frame" x="76" y="175" width="159" height="158.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="uKM-SJ-qhP" secondAttribute="height" multiplier="1:1" id="FUA-lu-4Ff"/>
                                         </constraints>

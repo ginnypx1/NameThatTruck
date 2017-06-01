@@ -7,5 +7,6 @@ target 'NameThatTruck' do
 
   # Pods for NameThatTruck
     pod 'SwiftyGif', '3.0.3'
+    pod ‘Firebase/Core’
 
 end

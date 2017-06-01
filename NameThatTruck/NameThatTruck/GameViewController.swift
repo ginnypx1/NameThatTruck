@@ -209,6 +209,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 photoViewController.soundManager = self.soundManager
                 self.navigationController?.pushViewController(photoViewController, animated: true)
             }
+            // send analytics
+            ClientAnalytics.viewedTruckPhotos(truckType: self.winningTruck.name)
         }
     }
     

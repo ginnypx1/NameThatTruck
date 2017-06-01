@@ -7,103 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3347881ABF2D073B20F18996D83A4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		43D36E0CC10238DD2C0467702CB92D0F /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB0DCCA7744D85766EC4C06FE9021E /* UIImage+SwiftyGif.swift */; };
-		54ECF4EC0A80EA973635E5047171FFFC /* Pods-NameThatTruck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71023CED0CAAA12B9ECF127726EEFEF /* Pods-NameThatTruck-dummy.m */; };
-		664C3467365D6602C9DB31498380DFFD /* Pods-NameThatTruck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF15790A4CD7130201365F708A2F0DD /* Pods-NameThatTruck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69CF66D7F5A03E974DBCAFF5FE92A682 /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFDCF9F6DB741A3EA518F439C2A1A1 /* SwiftyGifManager.swift */; };
-		6BFF6B6999E66A8EC74D01CEA5450494 /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3923679871D476A1D85A269192F88F /* SwiftyGif-dummy.m */; };
-		7DBE786A1E8306FFF16B4C4F6C08403B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8D5B58DD2121F0BE025A58B5C217973B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = AECA5800E34AB159B96FB033C505D504 /* Info.plist */; };
-		8F2BB3EB9B7693ED37F3842CF494C1E0 /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA4B449CD1276127F121F222E3991 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93FA70528924F97114F6F9A6265FBA26 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17E4C69C8FD43FCFEC033BDF588762 /* UIImageView+SwiftyGif.swift */; };
-		CA450522EF2B7A33F2F20F9F41A34CBE /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF37DC14285E69129712584A0E1DA38 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		095F090B5855D6DF38B85D2E6AB7DB69 /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF33CFEFF3A4783077258D2662E0558 /* UIImage+SwiftyGif.swift */; };
+		09DA4E340BB9CAED7842284FBC45B1DC /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B11285A625FAA03537E21CBBB87E3C3 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2335B3BEC2340AC09691ED77BAE5F517 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 79FD1294ED4E77E305D3D65A7790F910 /* Info.plist */; };
+		37BD28783291E83BB3C55DE01284CC79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1ABA79785F0CDDBF979DF480D75873 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 053F3F8DDBEE186C20726231E77BDC95 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86DCE16F9B7E5195CFE8E0FBCBE9D83C /* Pods-NameThatTruck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF15790A4CD7130201365F708A2F0DD /* Pods-NameThatTruck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A3D4130330D4291D3D849350AF7F4743 /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2F4487D719C77FBBF29456C280F27A /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F2C66E52CBF0EA2F730423B69B2B70 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB39888D80201CFD8C9631C305422 /* UIImageView+SwiftyGif.swift */; };
+		C1E2EE397EF61EB6991C1EC24DEE4BED /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21DCFE1914FE401DCCB398FA4D31C6 /* SwiftyGifManager.swift */; };
+		C2BE5EBFB91F7FEEB2C7E9D85BE9C14C /* Pods-NameThatTruck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71023CED0CAAA12B9ECF127726EEFEF /* Pods-NameThatTruck-dummy.m */; };
+		D20986B5A81F27711C17CAC8E493B8E2 /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 805A35119A7F2F617B4CE72A77391CF0 /* SwiftyGif-dummy.m */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D5EE42822113A69690FFFB8BD9167F /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E555064D9F9F90A23C6181AFC6AC593B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 26571B2FAAF2997CEE0FA201C7DBDA0A /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DC8BE8BC7595A6E0E47AF26BFCBDB7 /* GoogleToolboxForMac-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18DF66B4D6BDC6EDCCF791ED0D082EC5 /* PBXContainerItemProxy */ = {
+		648649D0896A29042D653FA06C7B7446 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26CC25169BBB7726DB71D90C5B7F0C74;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		FD0EF2E293CDB72FD32296B66CDE7B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AEDA28F279A0F9A68CE06D7BD81548F;
 			remoteInfo = SwiftyGif;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0448E019AAFDB660C3946FFCEC2D5D42 /* Pods-NameThatTruck-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NameThatTruck-resources.sh"; sourceTree = "<group>"; };
-		16349AD8E1ADB820E25E2E6040E551CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053F3F8DDBEE186C20726231E77BDC95 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		0B1ABA79785F0CDDBF979DF480D75873 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		1098C00393FB8D6EED6D2DE097663E60 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
 		1DAE45FBD537824577E2465DFF33FA62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37CFDCF9F6DB741A3EA518F439C2A1A1 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
-		5D17E4C69C8FD43FCFEC033BDF588762 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		1FC55154F7CD59F7D662D3C2589C16AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26571B2FAAF2997CEE0FA201C7DBDA0A /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		2FF5E01C26B191288518BA10A2CF650F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA5CD6DC7C4292B7AFF34438AFC0250 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		51D5EE42822113A69690FFFB8BD9167F /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		5940B817379B22A4D6EF08293AE484B9 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5A6E2903E13805D488737199E98890C6 /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
+		5C1C4BDC10FB11B500F290CD43F10D4F /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E376137BC2094333336CEA9DC5B47AB /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED5A8313A105FA4A8E40D3D38848655 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		753E85451AA4540D01A27733C3431A9D /* Pods-NameThatTruck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NameThatTruck.modulemap"; sourceTree = "<group>"; };
-		77599DC5F67291CFD242D3A5D6FB7E71 /* SwiftyGif.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.xcconfig; sourceTree = "<group>"; };
-		7D3923679871D476A1D85A269192F88F /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
+		79694E6455A405F4B3FC5999C2973378 /* SwiftyGif.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.xcconfig; sourceTree = "<group>"; };
+		79FD1294ED4E77E305D3D65A7790F910 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftyGif/Info.plist; sourceTree = "<group>"; };
+		7B11285A625FAA03537E21CBBB87E3C3 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
+		7E2F4487D719C77FBBF29456C280F27A /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
 		7F7E4A3A876A4D28457978E13F00826E /* Pods-NameThatTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NameThatTruck.release.xcconfig"; sourceTree = "<group>"; };
+		805A35119A7F2F617B4CE72A77391CF0 /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
+		835D1E3626C6AB00353BE9E622A347B6 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835FB259D6C2CB27851A06CA24973A98 /* Pods-NameThatTruck-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NameThatTruck-acknowledgements.plist"; sourceTree = "<group>"; };
+		88DC8BE8BC7595A6E0E47AF26BFCBDB7 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E0CF70F70CB57A0AC345246E3F0E658 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
+		9B21DCFE1914FE401DCCB398FA4D31C6 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
+		A3BAB39888D80201CFD8C9631C305422 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 		A71023CED0CAAA12B9ECF127726EEFEF /* Pods-NameThatTruck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NameThatTruck-dummy.m"; sourceTree = "<group>"; };
 		AC5EC723807720581BF843441E70D9AC /* Pods-NameThatTruck-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NameThatTruck-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AECA5800E34AB159B96FB033C505D504 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftyGif/Info.plist; sourceTree = "<group>"; };
-		B4DDA4B449CD1276127F121F222E3991 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
 		BBF15790A4CD7130201365F708A2F0DD /* Pods-NameThatTruck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NameThatTruck-umbrella.h"; sourceTree = "<group>"; };
 		CB390AD615CD9D336621AF880CEE19DB /* Pods-NameThatTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NameThatTruck.debug.xcconfig"; sourceTree = "<group>"; };
-		CB42C13660DB5D5A9DC32D608CB36A1B /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
-		D8EB0DCCA7744D85766EC4C06FE9021E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
-		DAF37DC14285E69129712584A0E1DA38 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
-		DBD77F308C0BBE14B1B58D958AE59587 /* Pods_NameThatTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NameThatTruck.framework; path = "Pods-NameThatTruck.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF33CFEFF3A4783077258D2662E0558 /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		DC9CCC1ED1F4BF28623D9F2DD1A83344 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		DEF3CA5C214FDE18C3A7789F234173EF /* Pods_NameThatTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NameThatTruck.framework; path = "Pods-NameThatTruck.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF97E5337CAB1EFAFB5409B2750EAF6F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		E7D84528A83A64E534DD76AE7CB67FD1 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		F1835C33E4FF741048497F2D56D4E002 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		FA17E94B421DFBAD42EF7DAE5052962D /* Pods-NameThatTruck-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NameThatTruck-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		243FB164E5D6318122AFCEFC33242F28 /* Frameworks */ = {
+		8B362289CBE13C51C4A2B9529358E636 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3347881ABF2D073B20F18996D83A4F /* Foundation.framework in Frameworks */,
+				37BD28783291E83BB3C55DE01284CC79 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DB965F9BE449909B1BB262FBC8787D9 /* Frameworks */ = {
+		8EE6449D74CD6EEACE7929298FBA1150 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBE786A1E8306FFF16B4C4F6C08403B /* Foundation.framework in Frameworks */,
+				E555064D9F9F90A23C6181AFC6AC593B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19825D10D4DD9653E417C005EBE50363 /* SwiftyGif */ = {
+		07D7A4DB7AE87C5FDB581B41AD924262 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				AECA5800E34AB159B96FB033C505D504 /* Info.plist */,
-				B4DDA4B449CD1276127F121F222E3991 /* SwiftyGif.h */,
-				37CFDCF9F6DB741A3EA518F439C2A1A1 /* SwiftyGifManager.swift */,
-				D8EB0DCCA7744D85766EC4C06FE9021E /* UIImage+SwiftyGif.swift */,
-				5D17E4C69C8FD43FCFEC033BDF588762 /* UIImageView+SwiftyGif.swift */,
-				58D53C60F5974AB15FB53FD173B3F75C /* Support Files */,
+				DC9CCC1ED1F4BF28623D9F2DD1A83344 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0E72F35133268E8FA13E753883FC66DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C4BDC10FB11B500F290CD43F10D4F /* GoogleToolboxForMac.modulemap */,
+				E7D84528A83A64E534DD76AE7CB67FD1 /* GoogleToolboxForMac.xcconfig */,
+				88DC8BE8BC7595A6E0E47AF26BFCBDB7 /* GoogleToolboxForMac-dummy.m */,
+				4EA5CD6DC7C4292B7AFF34438AFC0250 /* GoogleToolboxForMac-prefix.pch */,
+				053F3F8DDBEE186C20726231E77BDC95 /* GoogleToolboxForMac-umbrella.h */,
+				2FF5E01C26B191288518BA10A2CF650F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		21FC0FCFE4369FE479EDDD98FDDEBBA6 /* SwiftyGif */ = {
+			isa = PBXGroup;
+			children = (
+				79FD1294ED4E77E305D3D65A7790F910 /* Info.plist */,
+				7B11285A625FAA03537E21CBBB87E3C3 /* SwiftyGif.h */,
+				9B21DCFE1914FE401DCCB398FA4D31C6 /* SwiftyGifManager.swift */,
+				CBF33CFEFF3A4783077258D2662E0558 /* UIImage+SwiftyGif.swift */,
+				A3BAB39888D80201CFD8C9631C305422 /* UIImageView+SwiftyGif.swift */,
+				948AA4E3B3EF40D99F064A90AF3E76BF /* Support Files */,
 			);
 			name = SwiftyGif;
 			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
-		58D53C60F5974AB15FB53FD173B3F75C /* Support Files */ = {
+		4D17A5A57B5886911B29314A00442753 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16349AD8E1ADB820E25E2E6040E551CF /* Info.plist */,
-				CB42C13660DB5D5A9DC32D608CB36A1B /* SwiftyGif.modulemap */,
-				77599DC5F67291CFD242D3A5D6FB7E71 /* SwiftyGif.xcconfig */,
-				7D3923679871D476A1D85A269192F88F /* SwiftyGif-dummy.m */,
-				9E0CF70F70CB57A0AC345246E3F0E658 /* SwiftyGif-prefix.pch */,
-				DAF37DC14285E69129712584A0E1DA38 /* SwiftyGif-umbrella.h */,
+				5940B817379B22A4D6EF08293AE484B9 /* FirebaseInstanceID.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyGif";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A122CD26449CFF4A5394277787DB0AD /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				70B725502F269A3E2F304BF497B3B66E /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		6599D03892596F51EB8320AA2823A318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF97E5337CAB1EFAFB5409B2750EAF6F /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67060EA84F8824AEF828D4AFFEFC2C0C /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				0B1ABA79785F0CDDBF979DF480D75873 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		70B725502F269A3E2F304BF497B3B66E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1835C33E4FF741048497F2D56D4E002 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		729C65087E388E55024EFD8DFEFA91D6 /* Targets Support Files */ = {
@@ -119,8 +203,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FC21277D0D953B13BEE5EB25881A9C6A /* Pods */,
-				DCFA1A1CB7C2F0514C39E078C0062224 /* Products */,
+				A3BE7AEB0F0871538F08B2C03287E722 /* Pods */,
+				FC4BAF4A54C90CE1F347649B3CBBE6F1 /* Products */,
 				729C65087E388E55024EFD8DFEFA91D6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -143,12 +227,77 @@
 			path = "Target Support Files/Pods-NameThatTruck";
 			sourceTree = "<group>";
 		};
+		90579F05AD85A08487B22F19FAD0D4F7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				07D7A4DB7AE87C5FDB581B41AD924262 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		948AA4E3B3EF40D99F064A90AF3E76BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC55154F7CD59F7D662D3C2589C16AF /* Info.plist */,
+				5A6E2903E13805D488737199E98890C6 /* SwiftyGif.modulemap */,
+				79694E6455A405F4B3FC5999C2973378 /* SwiftyGif.xcconfig */,
+				805A35119A7F2F617B4CE72A77391CF0 /* SwiftyGif-dummy.m */,
+				1098C00393FB8D6EED6D2DE097663E60 /* SwiftyGif-prefix.pch */,
+				7E2F4487D719C77FBBF29456C280F27A /* SwiftyGif-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyGif";
+			sourceTree = "<group>";
+		};
+		A3BE7AEB0F0871538F08B2C03287E722 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90579F05AD85A08487B22F19FAD0D4F7 /* Firebase */,
+				5A122CD26449CFF4A5394277787DB0AD /* FirebaseAnalytics */,
+				CC3B61DDA7A0CA69B43E2CDC97A294B9 /* FirebaseCore */,
+				B83A678D04AF93F8F88AC2BAA04E89AC /* FirebaseInstanceID */,
+				B73E4C2A05C904C588F45E8703150C06 /* GoogleToolboxForMac */,
+				21FC0FCFE4369FE479EDDD98FDDEBBA6 /* SwiftyGif */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B73E4C2A05C904C588F45E8703150C06 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				67060EA84F8824AEF828D4AFFEFC2C0C /* Defines */,
+				E5E319F4BC70AB88164516E3065BBB1B /* NSData+zlib */,
+				0E72F35133268E8FA13E753883FC66DA /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		B83A678D04AF93F8F88AC2BAA04E89AC /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				4D17A5A57B5886911B29314A00442753 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC3B61DDA7A0CA69B43E2CDC97A294B9 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				6599D03892596F51EB8320AA2823A318 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -159,53 +308,82 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DCFA1A1CB7C2F0514C39E078C0062224 /* Products */ = {
+		E5E319F4BC70AB88164516E3065BBB1B /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				DBD77F308C0BBE14B1B58D958AE59587 /* Pods_NameThatTruck.framework */,
-				6E376137BC2094333336CEA9DC5B47AB /* SwiftyGif.framework */,
+				51D5EE42822113A69690FFFB8BD9167F /* GTMNSData+zlib.h */,
+				26571B2FAAF2997CEE0FA201C7DBDA0A /* GTMNSData+zlib.m */,
 			);
-			name = Products;
+			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
-		FC21277D0D953B13BEE5EB25881A9C6A /* Pods */ = {
+		FC4BAF4A54C90CE1F347649B3CBBE6F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19825D10D4DD9653E417C005EBE50363 /* SwiftyGif */,
+				6ED5A8313A105FA4A8E40D3D38848655 /* GoogleToolboxForMac.framework */,
+				DEF3CA5C214FDE18C3A7789F234173EF /* Pods_NameThatTruck.framework */,
+				835D1E3626C6AB00353BE9E622A347B6 /* SwiftyGif.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9B19AC3687444AFD7D6BA27E87625A11 /* Headers */ = {
+		65CE8630D4857B6EE7B23348AE8F55B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664C3467365D6602C9DB31498380DFFD /* Pods-NameThatTruck-umbrella.h in Headers */,
+				A3D4130330D4291D3D849350AF7F4743 /* SwiftyGif-umbrella.h in Headers */,
+				09DA4E340BB9CAED7842284FBC45B1DC /* SwiftyGif.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D8D638D669DA69EA2A1CD29F5F22D0B /* Headers */ = {
+		F0C43BE4820B5B5503C9EDED6F62B15B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA450522EF2B7A33F2F20F9F41A34CBE /* SwiftyGif-umbrella.h in Headers */,
-				8F2BB3EB9B7693ED37F3842CF494C1E0 /* SwiftyGif.h in Headers */,
+				86DCE16F9B7E5195CFE8E0FBCBE9D83C /* Pods-NameThatTruck-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		26CC25169BBB7726DB71D90C5B7F0C74 /* SwiftyGif */ = {
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 256BA86940F88EB4EC2E14242E0DAEE6 /* Build configuration list for PBXNativeTarget "SwiftyGif" */;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
 			buildPhases = (
-				5BBBCC92F2E1706EC93E8A9ED525BCE5 /* Sources */,
-				7DB965F9BE449909B1BB262FBC8787D9 /* Frameworks */,
-				9D8D638D669DA69EA2A1CD29F5F22D0B /* Headers */,
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 6ED5A8313A105FA4A8E40D3D38848655 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AEDA28F279A0F9A68CE06D7BD81548F /* SwiftyGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6830782F999B7388E6455B6814481B /* Build configuration list for PBXNativeTarget "SwiftyGif" */;
+			buildPhases = (
+				689708420C5E8C845DA53C8A795A7593 /* Sources */,
+				8EE6449D74CD6EEACE7929298FBA1150 /* Frameworks */,
+				65CE8630D4857B6EE7B23348AE8F55B2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -213,25 +391,26 @@
 			);
 			name = SwiftyGif;
 			productName = SwiftyGif;
-			productReference = 6E376137BC2094333336CEA9DC5B47AB /* SwiftyGif.framework */;
+			productReference = 835D1E3626C6AB00353BE9E622A347B6 /* SwiftyGif.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8BAC99ECBA9F9CE17BCECFF9C3733F41 /* Pods-NameThatTruck */ = {
+		F8CE2B685E79D2F74C03C5656EC2173B /* Pods-NameThatTruck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B35F3ED172A667D7277A38DEA87FDEA /* Build configuration list for PBXNativeTarget "Pods-NameThatTruck" */;
+			buildConfigurationList = F81F9A032F4E33DABE64664458469EBC /* Build configuration list for PBXNativeTarget "Pods-NameThatTruck" */;
 			buildPhases = (
-				A7259252E464B83DE40AD49B8CF2E0FF /* Sources */,
-				243FB164E5D6318122AFCEFC33242F28 /* Frameworks */,
-				9B19AC3687444AFD7D6BA27E87625A11 /* Headers */,
+				7BB930DFDC1C62F63E9FF0F0559CE977 /* Sources */,
+				8B362289CBE13C51C4A2B9529358E636 /* Frameworks */,
+				F0C43BE4820B5B5503C9EDED6F62B15B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F6DD15A6759359D63EF9376051D54668 /* PBXTargetDependency */,
+				E0F46C0EAE539F0811312280621B999F /* PBXTargetDependency */,
+				9848EB777C5865F6B0E4431C38455B62 /* PBXTargetDependency */,
 			);
 			name = "Pods-NameThatTruck";
 			productName = "Pods-NameThatTruck";
-			productReference = DBD77F308C0BBE14B1B58D958AE59587 /* Pods_NameThatTruck.framework */;
+			productReference = DEF3CA5C214FDE18C3A7789F234173EF /* Pods_NameThatTruck.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -251,52 +430,68 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DCFA1A1CB7C2F0514C39E078C0062224 /* Products */;
+			productRefGroup = FC4BAF4A54C90CE1F347649B3CBBE6F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BAC99ECBA9F9CE17BCECFF9C3733F41 /* Pods-NameThatTruck */,
-				26CC25169BBB7726DB71D90C5B7F0C74 /* SwiftyGif */,
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				F8CE2B685E79D2F74C03C5656EC2173B /* Pods-NameThatTruck */,
+				8AEDA28F279A0F9A68CE06D7BD81548F /* SwiftyGif */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5BBBCC92F2E1706EC93E8A9ED525BCE5 /* Sources */ = {
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5B58DD2121F0BE025A58B5C217973B /* Info.plist in Sources */,
-				6BFF6B6999E66A8EC74D01CEA5450494 /* SwiftyGif-dummy.m in Sources */,
-				69CF66D7F5A03E974DBCAFF5FE92A682 /* SwiftyGifManager.swift in Sources */,
-				43D36E0CC10238DD2C0467702CB92D0F /* UIImage+SwiftyGif.swift in Sources */,
-				93FA70528924F97114F6F9A6265FBA26 /* UIImageView+SwiftyGif.swift in Sources */,
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7259252E464B83DE40AD49B8CF2E0FF /* Sources */ = {
+		689708420C5E8C845DA53C8A795A7593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54ECF4EC0A80EA973635E5047171FFFC /* Pods-NameThatTruck-dummy.m in Sources */,
+				2335B3BEC2340AC09691ED77BAE5F517 /* Info.plist in Sources */,
+				D20986B5A81F27711C17CAC8E493B8E2 /* SwiftyGif-dummy.m in Sources */,
+				C1E2EE397EF61EB6991C1EC24DEE4BED /* SwiftyGifManager.swift in Sources */,
+				095F090B5855D6DF38B85D2E6AB7DB69 /* UIImage+SwiftyGif.swift in Sources */,
+				B9F2C66E52CBF0EA2F730423B69B2B70 /* UIImageView+SwiftyGif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB930DFDC1C62F63E9FF0F0559CE977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BE5EBFB91F7FEEB2C7E9D85BE9C14C /* Pods-NameThatTruck-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F6DD15A6759359D63EF9376051D54668 /* PBXTargetDependency */ = {
+		9848EB777C5865F6B0E4431C38455B62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyGif;
-			target = 26CC25169BBB7726DB71D90C5B7F0C74 /* SwiftyGif */;
-			targetProxy = 18DF66B4D6BDC6EDCCF791ED0D082EC5 /* PBXContainerItemProxy */;
+			target = 8AEDA28F279A0F9A68CE06D7BD81548F /* SwiftyGif */;
+			targetProxy = FD0EF2E293CDB72FD32296B66CDE7B34 /* PBXContainerItemProxy */;
+		};
+		E0F46C0EAE539F0811312280621B999F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 648649D0896A29042D653FA06C7B7446 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1585F2C8773243DCEB8B08AF7C15C747 /* Release */ = {
+		010709B8DEA1103FF7440DC06F0EF1F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77599DC5F67291CFD242D3A5D6FB7E71 /* SwiftyGif.xcconfig */;
+			baseConfigurationReference = 79694E6455A405F4B3FC5999C2973378 /* SwiftyGif.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -321,6 +516,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E3BB37312E5D4518EDFAD78B7C89440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D84528A83A64E534DD76AE7CB67FD1 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,7 +604,7 @@
 			};
 			name = Debug;
 		};
-		7CF2B6A76B8A2B62DBE0691E1D7FC9B8 /* Debug */ = {
+		52941530DF3151D80AA61E290823E6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB390AD615CD9D336621AF880CEE19DB /* Pods-NameThatTruck.debug.xcconfig */;
 			buildSettings = {
@@ -415,7 +643,7 @@
 			};
 			name = Debug;
 		};
-		A835DF475839F4843864B766801A0916 /* Release */ = {
+		7BDBA4BB861D2A2416A3E4DBFD17568F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F7E4A3A876A4D28457978E13F00826E /* Pods-NameThatTruck.release.xcconfig */;
 			buildSettings = {
@@ -452,41 +680,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B7EA9535098F4697EA5F2F3A198ADE12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77599DC5F67291CFD242D3A5D6FB7E71 /* SwiftyGif.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyGif;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -532,32 +725,109 @@
 			};
 			name = Release;
 		};
+		BE9B55DCDA299EAE202F6DB76CAA485A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D84528A83A64E534DD76AE7CB67FD1 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F87F138F08E339A3DD79B7DBB45F2BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79694E6455A405F4B3FC5999C2973378 /* SwiftyGif.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		256BA86940F88EB4EC2E14242E0DAEE6 /* Build configuration list for PBXNativeTarget "SwiftyGif" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B7EA9535098F4697EA5F2F3A198ADE12 /* Debug */,
-				1585F2C8773243DCEB8B08AF7C15C747 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B35F3ED172A667D7277A38DEA87FDEA /* Build configuration list for PBXNativeTarget "Pods-NameThatTruck" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CF2B6A76B8A2B62DBE0691E1D7FC9B8 /* Debug */,
-				A835DF475839F4843864B766801A0916 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
 				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9B55DCDA299EAE202F6DB76CAA485A /* Debug */,
+				4E3BB37312E5D4518EDFAD78B7C89440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6830782F999B7388E6455B6814481B /* Build configuration list for PBXNativeTarget "SwiftyGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F138F08E339A3DD79B7DBB45F2BC5 /* Debug */,
+				010709B8DEA1103FF7440DC06F0EF1F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81F9A032F4E33DABE64664458469EBC /* Build configuration list for PBXNativeTarget "Pods-NameThatTruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52941530DF3151D80AA61E290823E6CA /* Debug */,
+				7BDBA4BB861D2A2416A3E4DBFD17568F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

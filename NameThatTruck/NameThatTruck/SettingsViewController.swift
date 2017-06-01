@@ -55,11 +55,13 @@ class SettingsViewController: UIViewController {
             UserDefaults.standard.synchronize()
             togglePhotoButtonImage()
         } else {
-            // photos phot feature will be turned off
+            // photos feature will be turned off
             photoFeatureMuted = true
             UserDefaults.standard.set(true, forKey: "photoFeatureMuted")
             UserDefaults.standard.synchronize()
             togglePhotoButtonImage()
+            // send analytics
+            ClientAnalytics.disabledTruckPhotos(photoFeatureMuted: true)
         }
     }
     

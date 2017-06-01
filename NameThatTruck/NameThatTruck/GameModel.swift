@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum GameType {
+enum GameType: String {
     case Construction
     case Emergency
     case City

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-NameThatTruck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>26CC25169BBB7726DB71D90C5B7F0C74</key>
+		<key>00103D6C821BE85971C563025527BA5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BAC99ECBA9F9CE17BCECFF9C3733F41</key>
+		<key>8AEDA28F279A0F9A68CE06D7BD81548F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8CE2B685E79D2F74C03C5656EC2173B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
