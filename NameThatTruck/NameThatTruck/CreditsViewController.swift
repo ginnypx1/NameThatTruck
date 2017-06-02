@@ -25,6 +25,7 @@ class CreditsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var photoCredits: [String]!
     var videoCredits: [String]!
+    var privacyPolicy: [String]!
     
     var sections: [Section]!
     
@@ -47,13 +48,16 @@ class CreditsViewController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: - Create Table Sections
     
     func createTableSections() {
+        // create privacy policy
+        privacyPolicy = credits.privacyPolicy
         // grab photo and video credits
         photoCredits = credits.allPhotoCredits
         videoCredits = credits.generateAllVideoCredits()
-        // make two sections
+        // make sections for all
+        let privacyPolicySection = Section(title: "Privacy Policy", objects: self.privacyPolicy)
         let photoSection = Section(title: "Photo Credits", objects: self.photoCredits)
         let videoSection = Section(title: "Video Credits", objects: self.videoCredits)
-        sections = [photoSection, videoSection]
+        sections = [privacyPolicySection, photoSection, videoSection]
     }
     
     // MARK: - Table View Header

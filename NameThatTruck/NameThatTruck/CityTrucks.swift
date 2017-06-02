@@ -70,7 +70,7 @@ struct CityTrucks {
                                      videoCredit: "STREET SWEEPER: 2002 Johnson 3000 Street Sweeper for sale | sold at auction September 15, 2011 by Purple Wave https://www.youtube.com/watch?v=Gcl_c6jeZBE")
     static let Tractor = Truck(name: CityTruckTypes.Tractor.rawValue,
                                displayName: "Tractor",
-                               videoCredit: "TRACTOR: H2012 John Deere 6125R MFWD tractor for sale | sold at auction March 26, 2014 by Purple Wave https://www.youtube.com/watch?v=g95e2kefKQU")
+                               videoCredit: "Formal M with a 4-bottom plow pulling hard by Dennis DeBruler https://www.youtube.com/watch?v=g95e2kefKQU")
     
     // MARK: - All City Trucks
     

@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // configure Firebase
-        FIRApp.configure()
+        FirebaseApp.configure()
         // autosave every minute
         stack.autoSave(60)
         return true

@@ -21,6 +21,10 @@ struct Section {
 
 struct Credits {
     
+    // MARK: - Privacy Policy
+    
+    let privacyPolicy: [String] = ["A detailed Privacy Policy for NAME THAT TRUCK can be found at: http://www.iubenda.com/api/privacy-policy/8140589"]
+    
     // MARK: - Photo Credits
 
     let allPhotoCredits: [String] = [
