@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,10 +32,10 @@
                     <rect key="frame" x="16" y="16" width="293" height="315"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-d8-7Zy">
-                    <rect key="frame" x="-19" y="339" width="363.5" height="103"/>
+                    <rect key="frame" x="-5.5" y="335" width="337.5" height="107"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
-                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="103"/>
+                            <rect key="frame" x="0.0" y="0.0" width="107.5" height="107"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="d01-cU-xDM" secondAttribute="height" multiplier="1:1" id="LWs-yV-dyj"/>
                             </constraints>
@@ -44,9 +44,12 @@
                             </state>
                         </button>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
-                            <rect key="frame" x="119.5" y="0.0" width="244" height="103"/>
+                            <rect key="frame" x="123.5" y="0.0" width="214" height="107"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="2:1" id="3OU-vV-Eph"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
-                            <state key="normal" title="+" image="airport-fire-truck">
+                            <state key="normal" image="airport-fire-truck">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -60,10 +63,10 @@
             </subviews>
             <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Fyv-d8-7Zy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1g6-K7-srB"/>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="85u-n4-eD5"/>
-                <constraint firstItem="Fyv-d8-7Zy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BuO-aZ-XDU"/>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="DOO-K1-Npu"/>
-                <constraint firstItem="Fyv-d8-7Zy" firstAttribute="top" secondItem="ScH-st-uqJ" secondAttribute="bottom" constant="8" id="S5b-81-hyY"/>
+                <constraint firstItem="Fyv-d8-7Zy" firstAttribute="top" secondItem="ScH-st-uqJ" secondAttribute="bottom" constant="4" id="S5b-81-hyY"/>
                 <constraint firstAttribute="trailing" secondItem="ScH-st-uqJ" secondAttribute="trailing" constant="16" id="XjJ-AT-mUH"/>
                 <constraint firstAttribute="bottom" secondItem="Fyv-d8-7Zy" secondAttribute="bottom" constant="8" id="f2o-p7-nfa"/>
                 <constraint firstItem="ScH-st-uqJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="g75-FP-M7b"/>
@@ -82,7 +85,7 @@
         </view>
     </objects>
     <resources>
-        <image name="airport-fire-truck" width="758" height="320"/>
-        <image name="left-turn-sign" width="320" height="320"/>
+        <image name="airport-fire-truck" width="426" height="180"/>
+        <image name="left-turn-sign" width="100" height="100"/>
     </resources>
 </document>

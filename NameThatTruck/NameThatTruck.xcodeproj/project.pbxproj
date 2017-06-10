@@ -55,28 +55,6 @@
 		3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3453539E1EC3BE26007D9021 /* PopdownView.xib */; };
 		345353A11EC3BE4F007D9021 /* PopdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345353A01EC3BE4F007D9021 /* PopdownView.swift */; };
 		345DE48E1EDDEA9A00FC023A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */; };
-		3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345001EC955C900FA5FA2 /* big-rig.gif */; };
-		3463450D1EC955C900FA5FA2 /* bucket-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345011EC955C900FA5FA2 /* bucket-truck.gif */; };
-		3463450E1EC955C900FA5FA2 /* car-transporter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345021EC955C900FA5FA2 /* car-transporter.gif */; };
-		3463450F1EC955C900FA5FA2 /* delivery-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345031EC955C900FA5FA2 /* delivery-truck.gif */; };
-		346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345041EC955C900FA5FA2 /* fuel-truck.gif */; };
-		346345111EC955C900FA5FA2 /* garbage-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345051EC955C900FA5FA2 /* garbage-truck.gif */; };
-		346345121EC955C900FA5FA2 /* ice-cream-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345061EC955C900FA5FA2 /* ice-cream-truck.gif */; };
-		346345131EC955C900FA5FA2 /* mail-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345071EC955C900FA5FA2 /* mail-truck.gif */; };
-		346345141EC955C900FA5FA2 /* pickup-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345081EC955C900FA5FA2 /* pickup-truck.gif */; };
-		346345161EC955CA00FA5FA2 /* street-sweeper.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463450A1EC955C900FA5FA2 /* street-sweeper.gif */; };
-		346345241EC955E200FA5FA2 /* airport-fire-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345181EC955E200FA5FA2 /* airport-fire-truck.gif */; };
-		346345251EC955E200FA5FA2 /* ambulance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345191EC955E200FA5FA2 /* ambulance.gif */; };
-		346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451A1EC955E200FA5FA2 /* fire-boat.gif */; };
-		346345271EC955E200FA5FA2 /* fire-chiefs-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451B1EC955E200FA5FA2 /* fire-chiefs-truck.gif */; };
-		346345281EC955E200FA5FA2 /* ladder-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451C1EC955E200FA5FA2 /* ladder-truck.gif */; };
-		346345291EC955E200FA5FA2 /* military-helicopter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451D1EC955E200FA5FA2 /* military-helicopter.gif */; };
-		3463452A1EC955E200FA5FA2 /* police-boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451E1EC955E200FA5FA2 /* police-boat.gif */; };
-		3463452B1EC955E200FA5FA2 /* police-car.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3463451F1EC955E200FA5FA2 /* police-car.gif */; };
-		3463452C1EC955E200FA5FA2 /* pumper-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345201EC955E200FA5FA2 /* pumper-truck.gif */; };
-		3463452D1EC955E200FA5FA2 /* rescue-helicopter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345211EC955E200FA5FA2 /* rescue-helicopter.gif */; };
-		3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345221EC955E200FA5FA2 /* snowplow.gif */; };
-		3463452F1EC955E200FA5FA2 /* tow-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 346345231EC955E200FA5FA2 /* tow-truck.gif */; };
 		3464425A1ED3A3630003B1A9 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346442591ED3A3620003B1A9 /* AnimationManager.swift */; };
 		346549F01ED4D9F90028B314 /* CreditViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346549EF1ED4D9F90028B314 /* CreditViewCell.swift */; };
 		349047D41EC23F1E00F8F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349047D31EC23F1E00F8F395 /* AppDelegate.swift */; };
@@ -109,23 +87,45 @@
 		34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */; };
 		34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A689831ED0EE9600D86147 /* PhotoView.xib */; };
 		34A689861ED0EED600D86147 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A689851ED0EED600D86147 /* PhotoView.swift */; };
-		34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */; };
-		34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDB1EC51259003E4A19 /* bulldozer.gif */; };
-		34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */; };
-		34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDD1EC51259003E4A19 /* crane-truck.gif */; };
-		34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDE1EC51259003E4A19 /* dump-truck.gif */; };
-		34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEDF1EC51259003E4A19 /* excavator.gif */; };
-		34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE01EC51259003E4A19 /* forklift.gif */; };
-		34ADEEED1EC51259003E4A19 /* grader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE11EC51259003E4A19 /* grader.gif */; };
-		34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE21EC51259003E4A19 /* front-end-loader.gif */; };
-		34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE31EC51259003E4A19 /* paver.gif */; };
-		34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE41EC51259003E4A19 /* skid-steer.gif */; };
-		34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34ADEEE51EC51259003E4A19 /* steamroller.gif */; };
+		34A724251EEC6CDF00EC2A80 /* big-rig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7241D1EEC6CDF00EC2A80 /* big-rig.gif */; };
+		34A724261EEC6CDF00EC2A80 /* bucket-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7241E1EEC6CDF00EC2A80 /* bucket-truck.gif */; };
+		34A724271EEC6CDF00EC2A80 /* car-transporter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7241F1EEC6CDF00EC2A80 /* car-transporter.gif */; };
+		34A724281EEC6CDF00EC2A80 /* delivery-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724201EEC6CDF00EC2A80 /* delivery-truck.gif */; };
+		34A724291EEC6CDF00EC2A80 /* fuel-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724211EEC6CDF00EC2A80 /* fuel-truck.gif */; };
+		34A7242A1EEC6CDF00EC2A80 /* garbage-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724221EEC6CDF00EC2A80 /* garbage-truck.gif */; };
+		34A7242B1EEC6CDF00EC2A80 /* ice-cream-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724231EEC6CDF00EC2A80 /* ice-cream-truck.gif */; };
+		34A7242C1EEC6CDF00EC2A80 /* mail-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724241EEC6CDF00EC2A80 /* mail-truck.gif */; };
+		34A724311EEC6CE900EC2A80 /* pickup-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7242D1EEC6CE900EC2A80 /* pickup-truck.gif */; };
+		34A724321EEC6CE900EC2A80 /* school-bus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7242E1EEC6CE900EC2A80 /* school-bus.gif */; };
+		34A724331EEC6CE900EC2A80 /* street-sweeper.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7242F1EEC6CE900EC2A80 /* street-sweeper.gif */; };
+		34A724341EEC6CE900EC2A80 /* tractor.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724301EEC6CE900EC2A80 /* tractor.gif */; };
+		34A7243E1EEC6D0000EC2A80 /* backhoe-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724351EEC6D0000EC2A80 /* backhoe-loader.gif */; };
+		34A7243F1EEC6D0000EC2A80 /* bulldozer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724361EEC6D0000EC2A80 /* bulldozer.gif */; };
+		34A724401EEC6D0000EC2A80 /* cement-mixer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724371EEC6D0000EC2A80 /* cement-mixer.gif */; };
+		34A724411EEC6D0000EC2A80 /* crane-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724381EEC6D0000EC2A80 /* crane-truck.gif */; };
+		34A724421EEC6D0000EC2A80 /* dump-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724391EEC6D0000EC2A80 /* dump-truck.gif */; };
+		34A724431EEC6D0000EC2A80 /* excavator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7243A1EEC6D0000EC2A80 /* excavator.gif */; };
+		34A724441EEC6D0000EC2A80 /* forklift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7243B1EEC6D0000EC2A80 /* forklift.gif */; };
+		34A724451EEC6D0000EC2A80 /* front-end-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7243C1EEC6D0000EC2A80 /* front-end-loader.gif */; };
+		34A724461EEC6D0000EC2A80 /* grader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7243D1EEC6D0000EC2A80 /* grader.gif */; };
+		34A7244A1EEC6D0800EC2A80 /* paver.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724471EEC6D0800EC2A80 /* paver.gif */; };
+		34A7244B1EEC6D0800EC2A80 /* skid-steer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724481EEC6D0800EC2A80 /* skid-steer.gif */; };
+		34A7244C1EEC6D0800EC2A80 /* steamroller.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724491EEC6D0800EC2A80 /* steamroller.gif */; };
+		34A724531EEC6D1700EC2A80 /* airport-fire-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7244D1EEC6D1700EC2A80 /* airport-fire-truck.gif */; };
+		34A724541EEC6D1700EC2A80 /* ambulance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7244E1EEC6D1700EC2A80 /* ambulance.gif */; };
+		34A724551EEC6D1700EC2A80 /* fire-boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7244F1EEC6D1700EC2A80 /* fire-boat.gif */; };
+		34A724561EEC6D1700EC2A80 /* fire-chiefs-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724501EEC6D1700EC2A80 /* fire-chiefs-truck.gif */; };
+		34A724571EEC6D1700EC2A80 /* ladder-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724511EEC6D1700EC2A80 /* ladder-truck.gif */; };
+		34A724581EEC6D1700EC2A80 /* military-helicopter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724521EEC6D1700EC2A80 /* military-helicopter.gif */; };
+		34A7245F1EEC6D1F00EC2A80 /* police-boat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A724591EEC6D1F00EC2A80 /* police-boat.gif */; };
+		34A724601EEC6D1F00EC2A80 /* police-car.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7245A1EEC6D1F00EC2A80 /* police-car.gif */; };
+		34A724611EEC6D1F00EC2A80 /* pumper-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7245B1EEC6D1F00EC2A80 /* pumper-truck.gif */; };
+		34A724621EEC6D1F00EC2A80 /* rescue-helicopter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7245C1EEC6D1F00EC2A80 /* rescue-helicopter.gif */; };
+		34A724631EEC6D1F00EC2A80 /* snowplow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7245D1EEC6D1F00EC2A80 /* snowplow.gif */; };
+		34A724641EEC6D1F00EC2A80 /* tow-truck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34A7245E1EEC6D1F00EC2A80 /* tow-truck.gif */; };
 		34C13C1D1EC76D1E0091CC2A /* EmergencyTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */; };
 		34C13C1F1EC788F60091CC2A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C1E1EC788F50091CC2A /* MenuViewController.swift */; };
 		34C13C211EC78BC80091CC2A /* CityTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C13C201EC78BC80091CC2A /* CityTrucks.swift */; };
-		34EBE5C91EE1C0FA00A1F0FE /* tractor.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EBE5C81EE1C0F900A1F0FE /* tractor.gif */; };
-		34EBE5CB1EE1CE5C00A1F0FE /* school-bus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EBE5CA1EE1CE5C00A1F0FE /* school-bus.gif */; };
 		34F9D6321ECE1C23004ABE98 /* truck-horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */; };
 		34F9D6331ECE1C23004ABE98 /* sirens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6301ECE1C23004ABE98 /* sirens.mp3 */; };
 		34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */; };
@@ -187,28 +187,6 @@
 		3453539E1EC3BE26007D9021 /* PopdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopdownView.xib; sourceTree = "<group>"; };
 		345353A01EC3BE4F007D9021 /* PopdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopdownView.swift; path = ../PopdownView.swift; sourceTree = "<group>"; };
 		345DE48D1EDDEA9A00FC023A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		346345001EC955C900FA5FA2 /* big-rig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "big-rig.gif"; sourceTree = "<group>"; };
-		346345011EC955C900FA5FA2 /* bucket-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bucket-truck.gif"; sourceTree = "<group>"; };
-		346345021EC955C900FA5FA2 /* car-transporter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "car-transporter.gif"; sourceTree = "<group>"; };
-		346345031EC955C900FA5FA2 /* delivery-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "delivery-truck.gif"; sourceTree = "<group>"; };
-		346345041EC955C900FA5FA2 /* fuel-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fuel-truck.gif"; sourceTree = "<group>"; };
-		346345051EC955C900FA5FA2 /* garbage-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "garbage-truck.gif"; sourceTree = "<group>"; };
-		346345061EC955C900FA5FA2 /* ice-cream-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ice-cream-truck.gif"; sourceTree = "<group>"; };
-		346345071EC955C900FA5FA2 /* mail-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mail-truck.gif"; sourceTree = "<group>"; };
-		346345081EC955C900FA5FA2 /* pickup-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pickup-truck.gif"; sourceTree = "<group>"; };
-		3463450A1EC955C900FA5FA2 /* street-sweeper.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "street-sweeper.gif"; sourceTree = "<group>"; };
-		346345181EC955E200FA5FA2 /* airport-fire-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "airport-fire-truck.gif"; sourceTree = "<group>"; };
-		346345191EC955E200FA5FA2 /* ambulance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ambulance.gif; sourceTree = "<group>"; };
-		3463451A1EC955E200FA5FA2 /* fire-boat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fire-boat.gif"; sourceTree = "<group>"; };
-		3463451B1EC955E200FA5FA2 /* fire-chiefs-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fire-chiefs-truck.gif"; sourceTree = "<group>"; };
-		3463451C1EC955E200FA5FA2 /* ladder-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ladder-truck.gif"; sourceTree = "<group>"; };
-		3463451D1EC955E200FA5FA2 /* military-helicopter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "military-helicopter.gif"; sourceTree = "<group>"; };
-		3463451E1EC955E200FA5FA2 /* police-boat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "police-boat.gif"; sourceTree = "<group>"; };
-		3463451F1EC955E200FA5FA2 /* police-car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "police-car.gif"; sourceTree = "<group>"; };
-		346345201EC955E200FA5FA2 /* pumper-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pumper-truck.gif"; sourceTree = "<group>"; };
-		346345211EC955E200FA5FA2 /* rescue-helicopter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "rescue-helicopter.gif"; sourceTree = "<group>"; };
-		346345221EC955E200FA5FA2 /* snowplow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snowplow.gif; sourceTree = "<group>"; };
-		346345231EC955E200FA5FA2 /* tow-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tow-truck.gif"; sourceTree = "<group>"; };
 		346442591ED3A3620003B1A9 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		346549EF1ED4D9F90028B314 /* CreditViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditViewCell.swift; sourceTree = "<group>"; };
 		34659F5E1ED8E18800D6EE2B /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
@@ -244,23 +222,45 @@
 		34A689801ED0E30700D86147 /* trucks-are-on-the-road.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trucks-are-on-the-road.m4a"; sourceTree = "<group>"; };
 		34A689831ED0EE9600D86147 /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 		34A689851ED0EED600D86147 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
-		34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backhoe-loader.gif"; sourceTree = "<group>"; };
-		34ADEEDB1EC51259003E4A19 /* bulldozer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bulldozer.gif; sourceTree = "<group>"; };
-		34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cement-mixer.gif"; sourceTree = "<group>"; };
-		34ADEEDD1EC51259003E4A19 /* crane-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "crane-truck.gif"; sourceTree = "<group>"; };
-		34ADEEDE1EC51259003E4A19 /* dump-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dump-truck.gif"; sourceTree = "<group>"; };
-		34ADEEDF1EC51259003E4A19 /* excavator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = excavator.gif; sourceTree = "<group>"; };
-		34ADEEE01EC51259003E4A19 /* forklift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = forklift.gif; sourceTree = "<group>"; };
-		34ADEEE11EC51259003E4A19 /* grader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grader.gif; sourceTree = "<group>"; };
-		34ADEEE21EC51259003E4A19 /* front-end-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "front-end-loader.gif"; sourceTree = "<group>"; };
-		34ADEEE31EC51259003E4A19 /* paver.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paver.gif; sourceTree = "<group>"; };
-		34ADEEE41EC51259003E4A19 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
-		34ADEEE51EC51259003E4A19 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
+		34A7241D1EEC6CDF00EC2A80 /* big-rig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "big-rig.gif"; sourceTree = "<group>"; };
+		34A7241E1EEC6CDF00EC2A80 /* bucket-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bucket-truck.gif"; sourceTree = "<group>"; };
+		34A7241F1EEC6CDF00EC2A80 /* car-transporter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "car-transporter.gif"; sourceTree = "<group>"; };
+		34A724201EEC6CDF00EC2A80 /* delivery-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "delivery-truck.gif"; sourceTree = "<group>"; };
+		34A724211EEC6CDF00EC2A80 /* fuel-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fuel-truck.gif"; sourceTree = "<group>"; };
+		34A724221EEC6CDF00EC2A80 /* garbage-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "garbage-truck.gif"; sourceTree = "<group>"; };
+		34A724231EEC6CDF00EC2A80 /* ice-cream-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ice-cream-truck.gif"; sourceTree = "<group>"; };
+		34A724241EEC6CDF00EC2A80 /* mail-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mail-truck.gif"; sourceTree = "<group>"; };
+		34A7242D1EEC6CE900EC2A80 /* pickup-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pickup-truck.gif"; sourceTree = "<group>"; };
+		34A7242E1EEC6CE900EC2A80 /* school-bus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "school-bus.gif"; sourceTree = "<group>"; };
+		34A7242F1EEC6CE900EC2A80 /* street-sweeper.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "street-sweeper.gif"; sourceTree = "<group>"; };
+		34A724301EEC6CE900EC2A80 /* tractor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tractor.gif; sourceTree = "<group>"; };
+		34A724351EEC6D0000EC2A80 /* backhoe-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backhoe-loader.gif"; sourceTree = "<group>"; };
+		34A724361EEC6D0000EC2A80 /* bulldozer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bulldozer.gif; sourceTree = "<group>"; };
+		34A724371EEC6D0000EC2A80 /* cement-mixer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cement-mixer.gif"; sourceTree = "<group>"; };
+		34A724381EEC6D0000EC2A80 /* crane-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "crane-truck.gif"; sourceTree = "<group>"; };
+		34A724391EEC6D0000EC2A80 /* dump-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dump-truck.gif"; sourceTree = "<group>"; };
+		34A7243A1EEC6D0000EC2A80 /* excavator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = excavator.gif; sourceTree = "<group>"; };
+		34A7243B1EEC6D0000EC2A80 /* forklift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = forklift.gif; sourceTree = "<group>"; };
+		34A7243C1EEC6D0000EC2A80 /* front-end-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "front-end-loader.gif"; sourceTree = "<group>"; };
+		34A7243D1EEC6D0000EC2A80 /* grader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grader.gif; sourceTree = "<group>"; };
+		34A724471EEC6D0800EC2A80 /* paver.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paver.gif; sourceTree = "<group>"; };
+		34A724481EEC6D0800EC2A80 /* skid-steer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "skid-steer.gif"; sourceTree = "<group>"; };
+		34A724491EEC6D0800EC2A80 /* steamroller.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = steamroller.gif; sourceTree = "<group>"; };
+		34A7244D1EEC6D1700EC2A80 /* airport-fire-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "airport-fire-truck.gif"; sourceTree = "<group>"; };
+		34A7244E1EEC6D1700EC2A80 /* ambulance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ambulance.gif; sourceTree = "<group>"; };
+		34A7244F1EEC6D1700EC2A80 /* fire-boat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fire-boat.gif"; sourceTree = "<group>"; };
+		34A724501EEC6D1700EC2A80 /* fire-chiefs-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fire-chiefs-truck.gif"; sourceTree = "<group>"; };
+		34A724511EEC6D1700EC2A80 /* ladder-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ladder-truck.gif"; sourceTree = "<group>"; };
+		34A724521EEC6D1700EC2A80 /* military-helicopter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "military-helicopter.gif"; sourceTree = "<group>"; };
+		34A724591EEC6D1F00EC2A80 /* police-boat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "police-boat.gif"; sourceTree = "<group>"; };
+		34A7245A1EEC6D1F00EC2A80 /* police-car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "police-car.gif"; sourceTree = "<group>"; };
+		34A7245B1EEC6D1F00EC2A80 /* pumper-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pumper-truck.gif"; sourceTree = "<group>"; };
+		34A7245C1EEC6D1F00EC2A80 /* rescue-helicopter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "rescue-helicopter.gif"; sourceTree = "<group>"; };
+		34A7245D1EEC6D1F00EC2A80 /* snowplow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snowplow.gif; sourceTree = "<group>"; };
+		34A7245E1EEC6D1F00EC2A80 /* tow-truck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tow-truck.gif"; sourceTree = "<group>"; };
 		34C13C1C1EC76D1E0091CC2A /* EmergencyTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyTrucks.swift; sourceTree = "<group>"; };
 		34C13C1E1EC788F50091CC2A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		34C13C201EC78BC80091CC2A /* CityTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTrucks.swift; sourceTree = "<group>"; };
-		34EBE5C81EE1C0F900A1F0FE /* tractor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tractor.gif; sourceTree = "<group>"; };
-		34EBE5CA1EE1CE5C00A1F0FE /* school-bus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "school-bus.gif"; sourceTree = "<group>"; };
 		34F9D62F1ECE1C23004ABE98 /* truck-horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-horn.mp3"; sourceTree = "<group>"; };
 		34F9D6301ECE1C23004ABE98 /* sirens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sirens.mp3; sourceTree = "<group>"; };
 		34F9D6311ECE1C23004ABE98 /* truck-driving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truck-driving.mp3"; sourceTree = "<group>"; };
@@ -408,42 +408,42 @@
 		34ADEED91EC5123C003E4A19 /* GIFs */ = {
 			isa = PBXGroup;
 			children = (
-				346345181EC955E200FA5FA2 /* airport-fire-truck.gif */,
-				346345191EC955E200FA5FA2 /* ambulance.gif */,
-				3463451A1EC955E200FA5FA2 /* fire-boat.gif */,
-				3463451B1EC955E200FA5FA2 /* fire-chiefs-truck.gif */,
-				3463451C1EC955E200FA5FA2 /* ladder-truck.gif */,
-				3463451D1EC955E200FA5FA2 /* military-helicopter.gif */,
-				3463451E1EC955E200FA5FA2 /* police-boat.gif */,
-				3463451F1EC955E200FA5FA2 /* police-car.gif */,
-				346345201EC955E200FA5FA2 /* pumper-truck.gif */,
-				346345211EC955E200FA5FA2 /* rescue-helicopter.gif */,
-				346345221EC955E200FA5FA2 /* snowplow.gif */,
-				346345231EC955E200FA5FA2 /* tow-truck.gif */,
-				346345001EC955C900FA5FA2 /* big-rig.gif */,
-				346345011EC955C900FA5FA2 /* bucket-truck.gif */,
-				346345021EC955C900FA5FA2 /* car-transporter.gif */,
-				346345031EC955C900FA5FA2 /* delivery-truck.gif */,
-				346345041EC955C900FA5FA2 /* fuel-truck.gif */,
-				346345051EC955C900FA5FA2 /* garbage-truck.gif */,
-				346345061EC955C900FA5FA2 /* ice-cream-truck.gif */,
-				346345071EC955C900FA5FA2 /* mail-truck.gif */,
-				346345081EC955C900FA5FA2 /* pickup-truck.gif */,
-				3463450A1EC955C900FA5FA2 /* street-sweeper.gif */,
-				34EBE5CA1EE1CE5C00A1F0FE /* school-bus.gif */,
-				34EBE5C81EE1C0F900A1F0FE /* tractor.gif */,
-				34ADEEDA1EC51259003E4A19 /* backhoe-loader.gif */,
-				34ADEEDB1EC51259003E4A19 /* bulldozer.gif */,
-				34ADEEDC1EC51259003E4A19 /* cement-mixer.gif */,
-				34ADEEDD1EC51259003E4A19 /* crane-truck.gif */,
-				34ADEEDE1EC51259003E4A19 /* dump-truck.gif */,
-				34ADEEDF1EC51259003E4A19 /* excavator.gif */,
-				34ADEEE01EC51259003E4A19 /* forklift.gif */,
-				34ADEEE11EC51259003E4A19 /* grader.gif */,
-				34ADEEE21EC51259003E4A19 /* front-end-loader.gif */,
-				34ADEEE31EC51259003E4A19 /* paver.gif */,
-				34ADEEE41EC51259003E4A19 /* skid-steer.gif */,
-				34ADEEE51EC51259003E4A19 /* steamroller.gif */,
+				34A7244D1EEC6D1700EC2A80 /* airport-fire-truck.gif */,
+				34A7244E1EEC6D1700EC2A80 /* ambulance.gif */,
+				34A724351EEC6D0000EC2A80 /* backhoe-loader.gif */,
+				34A7241D1EEC6CDF00EC2A80 /* big-rig.gif */,
+				34A7241E1EEC6CDF00EC2A80 /* bucket-truck.gif */,
+				34A724361EEC6D0000EC2A80 /* bulldozer.gif */,
+				34A7241F1EEC6CDF00EC2A80 /* car-transporter.gif */,
+				34A724371EEC6D0000EC2A80 /* cement-mixer.gif */,
+				34A724381EEC6D0000EC2A80 /* crane-truck.gif */,
+				34A724201EEC6CDF00EC2A80 /* delivery-truck.gif */,
+				34A724391EEC6D0000EC2A80 /* dump-truck.gif */,
+				34A7243A1EEC6D0000EC2A80 /* excavator.gif */,
+				34A7244F1EEC6D1700EC2A80 /* fire-boat.gif */,
+				34A724501EEC6D1700EC2A80 /* fire-chiefs-truck.gif */,
+				34A7243B1EEC6D0000EC2A80 /* forklift.gif */,
+				34A7243C1EEC6D0000EC2A80 /* front-end-loader.gif */,
+				34A724211EEC6CDF00EC2A80 /* fuel-truck.gif */,
+				34A724221EEC6CDF00EC2A80 /* garbage-truck.gif */,
+				34A7243D1EEC6D0000EC2A80 /* grader.gif */,
+				34A724231EEC6CDF00EC2A80 /* ice-cream-truck.gif */,
+				34A724511EEC6D1700EC2A80 /* ladder-truck.gif */,
+				34A724241EEC6CDF00EC2A80 /* mail-truck.gif */,
+				34A724521EEC6D1700EC2A80 /* military-helicopter.gif */,
+				34A724471EEC6D0800EC2A80 /* paver.gif */,
+				34A7242D1EEC6CE900EC2A80 /* pickup-truck.gif */,
+				34A724591EEC6D1F00EC2A80 /* police-boat.gif */,
+				34A7245A1EEC6D1F00EC2A80 /* police-car.gif */,
+				34A7245B1EEC6D1F00EC2A80 /* pumper-truck.gif */,
+				34A7245C1EEC6D1F00EC2A80 /* rescue-helicopter.gif */,
+				34A7242E1EEC6CE900EC2A80 /* school-bus.gif */,
+				34A724481EEC6D0800EC2A80 /* skid-steer.gif */,
+				34A7245D1EEC6D1F00EC2A80 /* snowplow.gif */,
+				34A724491EEC6D0800EC2A80 /* steamroller.gif */,
+				34A7242F1EEC6CE900EC2A80 /* street-sweeper.gif */,
+				34A7245E1EEC6D1F00EC2A80 /* tow-truck.gif */,
+				34A724301EEC6CE900EC2A80 /* tractor.gif */,
 			);
 			name = GIFs;
 			sourceTree = "<group>";
@@ -610,95 +610,95 @@
 			buildActionMask = 2147483647;
 			files = (
 				340F0BC41ED1EA42005DEE09 /* ambulance.aac in Resources */,
-				3463450F1EC955C900FA5FA2 /* delivery-truck.gif in Resources */,
-				3463452F1EC955E200FA5FA2 /* tow-truck.gif in Resources */,
 				340F0BF51ED1EA5B005DEE09 /* car-transporter.aac in Resources */,
 				340F0BFC1ED1EA5B005DEE09 /* school-bus.aac in Resources */,
+				34A724621EEC6D1F00EC2A80 /* rescue-helicopter.gif in Resources */,
+				34A724561EEC6D1700EC2A80 /* fire-chiefs-truck.gif in Resources */,
+				34A7243E1EEC6D0000EC2A80 /* backhoe-loader.gif in Resources */,
+				34A724531EEC6D1700EC2A80 /* airport-fire-truck.gif in Resources */,
+				34A724281EEC6CDF00EC2A80 /* delivery-truck.gif in Resources */,
 				340F0C081ED1EA6A005DEE09 /* thats-right.aac in Resources */,
-				3463452B1EC955E200FA5FA2 /* police-car.gif in Resources */,
 				340F0BDD1ED1EA4F005DEE09 /* cement-mixer.aac in Resources */,
 				340F0BCB1ED1EA42005DEE09 /* pumper-truck.aac in Resources */,
+				34A724601EEC6D1F00EC2A80 /* police-car.gif in Resources */,
 				34F9D65F1ECFB2FC004ABE98 /* helicopter.mp3 in Resources */,
 				34F9D6591ECF7A95004ABE98 /* truck-horn1.mp3 in Resources */,
-				34EBE5C91EE1C0FA00A1F0FE /* tractor.gif in Resources */,
-				346345241EC955E200FA5FA2 /* airport-fire-truck.gif in Resources */,
-				34ADEEEA1EC51259003E4A19 /* dump-truck.gif in Resources */,
 				34A689841ED0EE9700D86147 /* PhotoView.xib in Resources */,
 				340F0C091ED1EA6A005DEE09 /* which-truck-is-the.aac in Resources */,
+				34A724421EEC6D0000EC2A80 /* dump-truck.gif in Resources */,
+				34A7244B1EEC6D0800EC2A80 /* skid-steer.gif in Resources */,
 				340F0BFA1ED1EA5B005DEE09 /* mail-truck.aac in Resources */,
-				3463452C1EC955E200FA5FA2 /* pumper-truck.gif in Resources */,
-				34EBE5CB1EE1CE5C00A1F0FE /* school-bus.gif in Resources */,
-				346345141EC955C900FA5FA2 /* pickup-truck.gif in Resources */,
 				349047DE1EC23F1E00F8F395 /* LaunchScreen.storyboard in Resources */,
 				340F0BC71ED1EA42005DEE09 /* ladder-truck.aac in Resources */,
-				34ADEEEC1EC51259003E4A19 /* forklift.gif in Resources */,
 				340F0C071ED1EA6A005DEE09 /* that-truck-is-a.aac in Resources */,
-				3463450E1EC955C900FA5FA2 /* car-transporter.gif in Resources */,
-				34ADEEEB1EC51259003E4A19 /* excavator.gif in Resources */,
 				340F0BC61ED1EA42005DEE09 /* fire-chiefs-truck.aac in Resources */,
 				340F0BC81ED1EA42005DEE09 /* military-helicopter.aac in Resources */,
-				3463450C1EC955C900FA5FA2 /* big-rig.gif in Resources */,
-				346345121EC955C900FA5FA2 /* ice-cream-truck.gif in Resources */,
 				340F0BFE1ED1EA5B005DEE09 /* tractor.aac in Resources */,
-				34ADEEE81EC51259003E4A19 /* cement-mixer.gif in Resources */,
 				340F0BF41ED1EA5B005DEE09 /* bucket-truck.aac in Resources */,
-				346345131EC955C900FA5FA2 /* mail-truck.gif in Resources */,
-				346345111EC955C900FA5FA2 /* garbage-truck.gif in Resources */,
 				340F0BFB1ED1EA5B005DEE09 /* pickup-truck.aac in Resources */,
-				346345281EC955E200FA5FA2 /* ladder-truck.gif in Resources */,
 				340F0C061ED1EA6A005DEE09 /* good-job.aac in Resources */,
-				34ADEEE91EC51259003E4A19 /* crane-truck.gif in Resources */,
+				34A724611EEC6D1F00EC2A80 /* pumper-truck.gif in Resources */,
 				349047DB1EC23F1E00F8F395 /* Assets.xcassets in Resources */,
-				34ADEEED1EC51259003E4A19 /* grader.gif in Resources */,
 				340F0BCA1ED1EA42005DEE09 /* police-car.aac in Resources */,
+				34A724571EEC6D1700EC2A80 /* ladder-truck.gif in Resources */,
 				340F0BDB1ED1EA4F005DEE09 /* backhoe-loader.aac in Resources */,
+				34A724311EEC6CE900EC2A80 /* pickup-truck.gif in Resources */,
+				34A724401EEC6D0000EC2A80 /* cement-mixer.gif in Resources */,
 				34F9D65A1ECF7A95004ABE98 /* truck-horn2.mp3 in Resources */,
 				340F0BF31ED1EA5B005DEE09 /* big-rig.aac in Resources */,
 				340F0C051ED1EA6A005DEE09 /* can-you-find-the.aac in Resources */,
 				340F0BF71ED1EA5B005DEE09 /* fuel-truck.aac in Resources */,
+				34A724431EEC6D0000EC2A80 /* excavator.gif in Resources */,
+				34A724641EEC6D1F00EC2A80 /* tow-truck.gif in Resources */,
 				340F0BE01ED1EA4F005DEE09 /* excavator.aac in Resources */,
 				340F0BF61ED1EA5B005DEE09 /* delivery-truck.aac in Resources */,
-				34ADEEF01EC51259003E4A19 /* skid-steer.gif in Resources */,
-				3463450D1EC955C900FA5FA2 /* bucket-truck.gif in Resources */,
-				3463452A1EC955E200FA5FA2 /* police-boat.gif in Resources */,
-				346345291EC955E200FA5FA2 /* military-helicopter.gif in Resources */,
-				346345161EC955CA00FA5FA2 /* street-sweeper.gif in Resources */,
 				340F0BFD1ED1EA5B005DEE09 /* street-sweeper.aac in Resources */,
 				34F9D6601ECFB2FC004ABE98 /* ice-cream-truck.mp3 in Resources */,
 				34F9D6321ECE1C23004ABE98 /* truck-horn.mp3 in Resources */,
-				346345271EC955E200FA5FA2 /* fire-chiefs-truck.gif in Resources */,
 				340F0BE21ED1EA4F005DEE09 /* front-end-loader.aac in Resources */,
-				34ADEEE71EC51259003E4A19 /* bulldozer.gif in Resources */,
-				346345251EC955E200FA5FA2 /* ambulance.gif in Resources */,
+				34A724411EEC6D0000EC2A80 /* crane-truck.gif in Resources */,
 				340F0BE51ED1EA4F005DEE09 /* skid-steer.aac in Resources */,
+				34A724581EEC6D1700EC2A80 /* military-helicopter.gif in Resources */,
+				34A724451EEC6D0000EC2A80 /* front-end-loader.gif in Resources */,
+				34A724321EEC6CE900EC2A80 /* school-bus.gif in Resources */,
+				34A7242C1EEC6CDF00EC2A80 /* mail-truck.gif in Resources */,
+				34A724251EEC6CDF00EC2A80 /* big-rig.gif in Resources */,
+				34A724631EEC6D1F00EC2A80 /* snowplow.gif in Resources */,
 				340F0BF81ED1EA5B005DEE09 /* garbage-truck.aac in Resources */,
 				340F0C0A1ED1EA6A005DEE09 /* you-touched-the.aac in Resources */,
+				34A724331EEC6CE900EC2A80 /* street-sweeper.gif in Resources */,
 				3453539F1EC3BE27007D9021 /* PopdownView.xib in Resources */,
 				340F0BE31ED1EA4F005DEE09 /* grader.aac in Resources */,
-				3463452E1EC955E200FA5FA2 /* snowplow.gif in Resources */,
-				34ADEEE61EC51259003E4A19 /* backhoe-loader.gif in Resources */,
 				340F0BCE1ED1EA42005DEE09 /* tow-truck.aac in Resources */,
 				340F0BE41ED1EA4F005DEE09 /* paver.aac in Resources */,
-				3463452D1EC955E200FA5FA2 /* rescue-helicopter.gif in Resources */,
-				346345101EC955C900FA5FA2 /* fuel-truck.gif in Resources */,
 				34F9D6331ECE1C23004ABE98 /* sirens.mp3 in Resources */,
+				34A724341EEC6CE900EC2A80 /* tractor.gif in Resources */,
 				3410C60E1ECA4224007BC759 /* Lorimer_No2_Stencil.otf in Resources */,
 				340F0BC51ED1EA42005DEE09 /* fire-boat.aac in Resources */,
 				340F0BDC1ED1EA4F005DEE09 /* bulldozer.aac in Resources */,
+				34A7242A1EEC6CDF00EC2A80 /* garbage-truck.gif in Resources */,
 				349047D91EC23F1E00F8F395 /* Main.storyboard in Resources */,
-				34ADEEF11EC51259003E4A19 /* steamroller.gif in Resources */,
 				344762771EE07FC8003305F9 /* GoogleService-Info.plist in Resources */,
+				34A7244C1EEC6D0800EC2A80 /* steamroller.gif in Resources */,
 				340F0BCD1ED1EA42005DEE09 /* snowplow.aac in Resources */,
+				34A724541EEC6D1700EC2A80 /* ambulance.gif in Resources */,
 				34A689811ED0E30800D86147 /* trucks-are-on-the-road.m4a in Resources */,
+				34A7243F1EEC6D0000EC2A80 /* bulldozer.gif in Resources */,
+				34A7242B1EEC6CDF00EC2A80 /* ice-cream-truck.gif in Resources */,
 				340F0BC31ED1EA42005DEE09 /* airport-fire-truck.aac in Resources */,
-				34ADEEEE1EC51259003E4A19 /* front-end-loader.gif in Resources */,
 				340F0BE61ED1EA4F005DEE09 /* steamroller.aac in Resources */,
+				34A724551EEC6D1700EC2A80 /* fire-boat.gif in Resources */,
 				340F0BC91ED1EA42005DEE09 /* police-boat.aac in Resources */,
 				34F9D6341ECE1C23004ABE98 /* truck-driving.mp3 in Resources */,
 				340F0BDE1ED1EA4F005DEE09 /* crane-truck.aac in Resources */,
+				34A7244A1EEC6D0800EC2A80 /* paver.gif in Resources */,
+				34A724271EEC6CDF00EC2A80 /* car-transporter.gif in Resources */,
+				34A724441EEC6D0000EC2A80 /* forklift.gif in Resources */,
+				34A724261EEC6CDF00EC2A80 /* bucket-truck.gif in Resources */,
 				340F0BE11ED1EA4F005DEE09 /* forklift.aac in Resources */,
-				346345261EC955E200FA5FA2 /* fire-boat.gif in Resources */,
-				34ADEEEF1EC51259003E4A19 /* paver.gif in Resources */,
+				34A7245F1EEC6D1F00EC2A80 /* police-boat.gif in Resources */,
+				34A724461EEC6D0000EC2A80 /* grader.gif in Resources */,
+				34A724291EEC6CDF00EC2A80 /* fuel-truck.gif in Resources */,
 				340F0BCC1ED1EA42005DEE09 /* rescue-helicopter.aac in Resources */,
 				340F0BDF1ED1EA4F005DEE09 /* dump-truck.aac in Resources */,
 				340F0BF91ED1EA5B005DEE09 /* ice-cream-truck.aac in Resources */,
