@@ -6,7 +6,7 @@ I started my coding journey in the fall of 2012 in order to build this game for 
 
 ## App Store
 
-Download [NAME THAT TRUCK](https://itunes.apple.com/us/app/namethattruck/id1244210414?ls=1&mt=8) from the App Store!
+[Download NAME THAT TRUCK from the AppStore!](https://itunes.apple.com/us/app/namethattruck/id1244210414?ls=1&mt=8)
 
 ![NAME THAT TRUCK](https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg)
 
