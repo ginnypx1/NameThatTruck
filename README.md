@@ -8,7 +8,7 @@ I started my coding journey in the fall of 2012 in order to build this game for 
 
 Download [NAME THAT TRUCK](https://itunes.apple.com/us/app/namethattruck/id1244210414?ls=1&mt=8) from the App Store!
 
-![NAME THAT TRUCK](https://github.com/ginnypx1/NameThatTruck/blob/gh-pages/img/AppStoreBadge.svg)
+![NAME THAT TRUCK](https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg)
 
 ## Instructions
 
