@@ -10,7 +10,14 @@ JUMBOTRON
 /********************************
 FONTS
 *********************************/
+
+@font-face {
+    font-family: Lorimer_No2_Stencil;
+    src: url(../fonts/Lorimer_No2_Stencil.otf);
+}
+
 h1 {
+    font-family: Lorimer_No2_Stencil;
     color: #FEB827; /*construction orange*/
     font-size: 8rem;
 }
