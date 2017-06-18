@@ -4,24 +4,9 @@
 
 I started my coding journey in the fall of 2012 in order to build this game for my son. I am incredibly excited that I'm finally building it for him and toddlers around the world to enjoy.
 
-## Install
+## App Store
 
-To check out my version of "Name That Truck":
-
-1. Clone or download my repository:
-` $ https://github.com/ginnypx1/NameThatTruck.git `
-
-2. Enter the "Name That Truck" directory:
-` $ cd /NameThatTruck-master/ `
-
-3. Open "Name That Truck" in XCode:
-` $ open NameThatTruck.xcodeproj `
-
-To run the project, you will need to add a Private.swift file with your Flickr API key information:
-
-```
-let YOUR_API_KEY = <YOUR_API_KEY>
-```
+Download [NAME THAT TRUCK](https://itunes.apple.com/us/app/namethattruck/id1244210414?ls=1&mt=8) from the App Store!
 
 ## Instructions
 
@@ -33,14 +18,10 @@ From the gif video popdown screen, users can either hit the **<-** button to con
 
 To zoom in on a photo, simply tap the photo, and the photo will appear close up over the collection view. Hit the **<-** button to make the close-up photo disappear. A new collection of trucks can be loaded at any time by pressing the **See more trucks!** button at the bottom of the screen. This new set of images will replace the stored set of images in Core Data. Users can return directly to the game screen at any time by pressing the **<** button.
 
-The Creative Commons Attribution License credits can be seen by clicking on the **CC BY** button on the main menu screen. Hit the **<-** button to return to the main menu.
+The Creative Commons Attribution License credits can be seen by clicking on the **CC BY** button on the settings screen. Game audio can be toggled on and off from the settings screen. More Trucks feature can also be deactivated from the settings page if a parent prefers. Hit the **<-** button to return to the main menu.
 
 ## Technical Information
 
 - The Flickr API can be found at: https://www.flickr.com/services/api/
 - The SwiftyGif Cocoa Pod can be found at: https://cocoapods.org/?q=swiftygif
 - Firebase Analytics tracks data pertaining to "Name That Truck"'s usage
-
-## App Store
-
-NAME THAT TRUCK is currently under review for inclusion in Apple's App Store.

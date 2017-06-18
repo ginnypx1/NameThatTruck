@@ -32,10 +32,10 @@
                     <rect key="frame" x="16" y="16" width="293" height="315"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-d8-7Zy">
-                    <rect key="frame" x="-5.5" y="335" width="337.5" height="107"/>
+                    <rect key="frame" x="-6" y="335" width="337" height="107"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d01-cU-xDM">
-                            <rect key="frame" x="0.0" y="0.0" width="107.5" height="107"/>
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="d01-cU-xDM" secondAttribute="height" multiplier="1:1" id="LWs-yV-dyj"/>
                             </constraints>
@@ -44,9 +44,9 @@
                             </state>
                         </button>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Qn-nA4">
-                            <rect key="frame" x="123.5" y="0.0" width="214" height="107"/>
+                            <rect key="frame" x="123" y="0.0" width="214" height="107"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="2:1" id="3OU-vV-Eph"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="qrj-Qn-nA4" secondAttribute="height" multiplier="2:1" id="9Fx-sF-ll6"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="LorimerNo2Stencil" family="Lorimer No 2" pointSize="48"/>
                             <state key="normal" image="airport-fire-truck">
