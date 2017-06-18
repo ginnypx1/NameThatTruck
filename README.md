@@ -8,6 +8,8 @@ I started my coding journey in the fall of 2012 in order to build this game for 
 
 Download [NAME THAT TRUCK](https://itunes.apple.com/us/app/namethattruck/id1244210414?ls=1&mt=8) from the App Store!
 
+[NAME THAT TRUCK](img/Badge.svg?raw=true "Title")
+
 ## Instructions
 
 To play the game, select a set of trucks from the menu screen: Emergency Vehicles, Construction Trucks, City Trucks, or all Trucks.
